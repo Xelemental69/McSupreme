@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+    <head><title>Información sobre el producto.</title></head>
+
+
+    <body>
+
+        <h3>Información sobre el producto.</h3>
+
+        <form action = "pruub.html" method = "post">
+
+            <fieldset>
+                <legend>Datos básicos</legend>
+
+                <label for = "BRUH">Nombre</label><br/>
+                <input type="text" name="BRUH" placeholder="Joker" size="50" maxlength="250"/>
+
+                <br/><br/>
+
+                <label for = "HETAP">Descripción</label><br/>
+                <textarea name="HETAP" placeholder="This textbox is rated GG!" cols="40" rows="5"></textarea>
+
+                <br/><br/>
+
+                <label for = "Dis_pear">Foto</label>
+                <input type="file" name="Dis_pear"/>
+
+                <br/><br/>
+
+                <input type="checkbox" name="BBC" value="si">Añadir contador de visitas
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos básicos</legend>
+
+                <label for="SoupPrice">Precio </label>
+
+                <input type="text" name="SoupPrice" placeholder="Soup Price" size="10" maxlength="10"/> &euro;
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- Espacios entre SoupPrice y OS -->
+
+                <label for="OS">Impuestos</label>
+                <select id="OS" name="OS">
+                    <option value="4%" selected="selected">4%</option>
+                    <option value="7%">7%</option>
+                    <option value="16%">16%</option>
+                    <option value="25%">25%</option>
+                </select>
+
+                <br/><br/>
+
+                Promoción<br/>
+
+                <input type="radio" name="promoto" id="none" />Ninguno<br/>
+                <input type="radio" name="promoto" id="free" />Transporte Gratuito<br/>
+                <input type="radio" name="promoto" id="dis5" />Descuento de 5%<br/>
+
+
+            </fieldset>
+
+            <input type="submit" name="GGEZ" value="Enviar"/>
+            
+        </form>
+
+    </body>
+
+</html>
