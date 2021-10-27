@@ -18,7 +18,8 @@ public class B {
         // Declaramos las variables a usar, junto con el Scanner:
         
         int vatiosAp, vatP, vatV, vatLl, horasV, horasLl, horasP;
-        double kWhP, kWhV, kWhLl, precioP, precioV, precioLl, precioFinal;
+        double kWhP, kWhV, kWhLl, precioP, precioV, precioLl, precioFinal, kvatP, kvatV;
+        double kvatLl;
         Scanner entry = new Scanner(System.in);
         boolean punta=true, valle=true, llana=true, exit;
         
@@ -55,6 +56,10 @@ public class B {
                     + " de los de las horas no coinciden");
                 }
 
+                kvatP = vatP/1000.0;
+                kvatV = vatV/1000.0;
+                kvatLl = vatLl/1000.0;                
+                
             }while(vatiosAp<1 || vatiosAp>4500 || (vatP+vatV+vatLl!=vatiosAp));
 
             do{//Se pide el tiempo, en horas punta, valle y llanas, que está el 
@@ -122,9 +127,9 @@ public class B {
             //Una vez ya tenemos los datos (con o sin insistencia), se calcula
            //el precio final, sumando los de las distintas horas, y se muestra
           //en pantalla:
-            precioP = (vatP*horasP)*kWhP;
-            precioV = (vatV*horasV)*kWhV;
-            precioLl = (vatLl*horasLl)*kWhLl;
+            precioP = (kvatP*horasP)*kWhP;
+            precioV = (kvatV*horasV)*kWhV;
+            precioLl = (kvatLl*horasLl)*kWhLl;
             
             precioFinal = precioP + precioV + precioLl;
 

@@ -18,7 +18,7 @@ public class A {
         // Declaramos las variables a usar, junto con el Scanner:
         
         int vatiosAp, horas;
-        double kWh, precioFinal;
+        double kWh, kW, precioFinal;
         Scanner entry = new Scanner(System.in);
         boolean exit;
         
@@ -38,6 +38,8 @@ public class A {
                 }
 
             }while(vatiosAp<1 || vatiosAp>4500);
+            
+            kW = vatiosAp/1000.0;
 
             do{//Se pide el tiempo que está el aparato en funcionamiento al día
               //si es menor a 1 o mayor a 24, se insiste hasta que entre en el
@@ -70,7 +72,7 @@ public class A {
 
             //Una vez ya tenemos los datos (con o sin insistencia), se calcula
            //el precio final y se muestra en pantalla:
-            precioFinal = (vatiosAp*horas)*kWh;
+            precioFinal = (kW*horas)*kWh;
 
             System.out.printf("El precio a pagar es de: %.2f€\n", precioFinal);
 
