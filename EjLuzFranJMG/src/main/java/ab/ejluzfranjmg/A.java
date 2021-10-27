@@ -39,6 +39,7 @@ public class A {
 
             }while(vatiosAp<1 || vatiosAp>4500);
             
+            //Convertimos los vatios a kilovatios:
             kW = vatiosAp/1000.0;
 
             do{//Se pide el tiempo que está el aparato en funcionamiento al día

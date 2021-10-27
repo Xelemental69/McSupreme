@@ -55,7 +55,8 @@ public class B {
                     System.out.println("Error, los vatios totales y el conjunto"
                     + " de los de las horas no coinciden");
                 }
-
+                
+                //Convertimos los vatios a kilovatios:
                 kvatP = vatP/1000.0;
                 kvatV = vatV/1000.0;
                 kvatLl = vatLl/1000.0;                
