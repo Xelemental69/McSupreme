@@ -19,9 +19,9 @@ public class B {
     public static void main(String[] args) {
         // Declaramos las variables a usar, junto con el Scanner:
 
-        int vatiosAp, vatP, vatV, vatLl, horasV, horasLl, horasP;
-        double kWhP, kWhV, kWhLl, precioP, precioV, precioLl, precioFinal, kvatP, kvatV;
-        double kvatLl;
+        int vatiosAp, vatP, vatV, vatLl;
+        double kWhP, kWhV, horasV, horasLl, horasP, kWhLl, precioP, precioV;
+        double kvatLl, precioLl, precioFinal, kvatP, kvatV;
         Scanner entry = new Scanner(System.in);
         boolean punta = true, valle = true, llana = true, exit;
 
@@ -80,12 +80,12 @@ public class B {
                         + " el aparato al día: ");
                 horasLl = entry.nextInt();
 
-                if ((horasP + horasV + horasLl) < 1 || (horasP + horasV + horasLl) > 24) {
+                if ((horasP + horasV + horasLl) < 0 || (horasP + horasV + horasLl) > 24) {
                     System.out.println("ERROR, los datos no se sitúan"
                             + " en el rango deseado (entre 1 y 24 horas)");
                 }
 
-            } while ((horasP + horasV + horasLl) < 1 || (horasP + horasV + horasLl) > 24);
+            } while ((horasP + horasV + horasLl) < 0 || (horasP + horasV + horasLl) > 24);
 
             do {//Se pide el precio por kWh en las distintas horas, y si no 
                 //entran en el rango o no mantienen su orden en coste, se
@@ -146,17 +146,13 @@ public class B {
                 //Es más óptimo con if, pero por variar, aquí está en switch.
 
                 case 'S':
-                    System.out.println("Ha elegido salir del programa.");
-                    exit = true;
-                    break;
+                    
                 case 's'://(Para que valga con la minúscula)
                     System.out.println("Ha elegido salir del programa.");
                     exit = true;
                     break;
                 case 'N':
-                    System.out.println("Ha elegido reiniciar el programa.");
-                    exit = false;
-                    break;
+                    
                 case 'n'://(Para que valga con la minúscula)
                     System.out.println("Ha elegido reiniciar el programa.");
                     exit = false;

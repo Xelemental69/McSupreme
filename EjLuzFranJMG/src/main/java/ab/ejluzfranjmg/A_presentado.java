@@ -19,8 +19,8 @@ public class A {
     public static void main(String[] args) {
         // Declaramos las variables a usar, junto con el Scanner:
 
-        int vatiosAp, horas;
-        double kWh, kW, precioFinal;
+        int vatiosAp;
+        double kWh, horas, kW, precioFinal;
         Scanner entry = new Scanner(System.in);
         boolean exit;
 
@@ -49,14 +49,14 @@ public class A {
                 //rango.
                 System.out.println("Introduce las horas en la que está activo el"
                         + " aparato al día: ");
-                horas = entry.nextInt();
+                horas = entry.nextDouble();
 
-                if (horas < 1 || horas > 24) {
+                if (horas < 0 || horas > 24) {
                     System.out.println("ERROR, el dato no se sitúa"
                             + " en el rango deseado (entre 1 y 24 horas)");
                 }
 
-            } while (horas < 1 || horas > 24);
+            } while (horas < 0 || horas > 24);
 
             do {//Se pide el precio por kWh, y si no entra en el rango, se
                 //permitirá al bucle que insista hasta que esté en el rango, 
@@ -88,17 +88,13 @@ public class A {
                 //Es más óptimo con if, pero por variar, aquí está en switch.
 
                 case 'S':
-                    System.out.println("Ha elegido salir del programa.");
-                    exit = true;
-                    break;
+                   
                 case 's'://(Para que valga con la minúscula)
                     System.out.println("Ha elegido salir del programa.");
                     exit = true;
                     break;
                 case 'N':
-                    System.out.println("Ha elegido reiniciar el programa.");
-                    exit = false;
-                    break;
+                    
                 case 'n'://(Para que valga con la minúscula)
                     System.out.println("Ha elegido reiniciar el programa.");
                     exit = false;
