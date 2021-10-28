@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author Francisco José Mateos Gil (Xelemental)
  */
-public class A {
+public class A_presentado {
 
     /**
      * @param args the command line arguments
@@ -42,7 +42,7 @@ public class A {
             } while (vatiosAp < 1 || vatiosAp > 4500);
 
             //Convertimos los vatios a kilovatios:
-            kW = vatiosAp / 1000.0;
+            kW = (double)vatiosAp / 1000;
 
             do {//Se pide el tiempo que está el aparato en funcionamiento al día
                 //si es menor a 1 o mayor a 24, se insiste hasta que entre en el

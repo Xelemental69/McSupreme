@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author Francisco José Mateos Gil (Xelemental)
  */
-public class B {
+public class B_presentado {
 
     /**
      * @param args the command line arguments
