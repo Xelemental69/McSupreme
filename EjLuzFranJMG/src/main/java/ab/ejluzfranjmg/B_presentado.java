@@ -38,6 +38,8 @@ public class B_presentado {
                 if (vatiosAp < 1 || vatiosAp > 4500) {
                     System.out.println("ERROR, el dato no se sitúa"
                             + " en el rango deseado");
+                    vatP=vatV=vatLl=0;
+                    continue;
                 }
 
                 //Pedimos ahora las horas punta, valle y llanas. Si la suma de
@@ -57,12 +59,12 @@ public class B_presentado {
                             + " de los de las horas no coinciden");
                 }
 
-                //Convertimos los vatios a kilovatios:
+            } while (vatiosAp < 1 || vatiosAp > 4500 || (vatP + vatV + vatLl != vatiosAp));
+            
+            //Convertimos los vatios a kilovatios:
                 kvatP = vatP / 1000.0;
                 kvatV = vatV / 1000.0;
                 kvatLl = vatLl / 1000.0;
-
-            } while (vatiosAp < 1 || vatiosAp > 4500 || (vatP + vatV + vatLl != vatiosAp));
 
             do {//Se pide el tiempo, en horas punta, valle y llanas, que está el 
                 //aparato en funcionamiento al día. Si la suma de dichas horas es
