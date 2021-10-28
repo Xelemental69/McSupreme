@@ -84,7 +84,6 @@ public class BancoEmoSidoEnganiaos_new {
                         || (anosHipoteca + edad) > 75);
 
             
-
         
         }while(!exit);
 
