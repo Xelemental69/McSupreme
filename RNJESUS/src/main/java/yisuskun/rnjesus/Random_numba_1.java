@@ -76,9 +76,11 @@ public class Random_numba_1 {
 
         System.out.println("El nº introducido es " + chicken);
 
-        if (chicken % 2 == 0) {
+        if(chicken==2){
+            primo = true;
+        }else if (chicken % 2 == 0) {
             primo = false;
-        } else {
+        }else {
             for (int i = 3; i < chicken / 2; i += 2) {
                 if (chicken % i == 0) {
                     primo = false;
