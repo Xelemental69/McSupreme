@@ -12,16 +12,19 @@ import java.util.*;
  */
 public class Random_numba_1 {
 
-    /**
-     *
-     * @param args the command line arguments
-     *
-     * Opción de introducir un nº positivo o que sea rng Rangu: 2-600.000.000
-     *
-     * Si nº es par => NO PRIMO Si no, recorre rango de impares desde 3 hasta
-     * nº/2
-     *
-     */
+    /**************************************************************************
+    *                                                                         *
+    * @param args the command line arguments                                 //
+    *                                                                        //
+    * Opción de introducir un nº positivo o que sea rng Rangu: 2-600.000.000 //
+    *                                                                        //
+    * Si nº es 2 => PRIMO.                                                   //
+    *                                                                        //
+    * Si nº es par => NO PRIMO.                                              //
+    * Si no, recorre rango de impares desde 3 hasta                          
+    * nº/2 para comprobar si es primo o no.                                  //
+    *                                                                        //
+    **************************************************************************/
     public static void main(String[] args) {
         // TODO code application logic here
         long chicken;
