@@ -26,15 +26,15 @@ public class Random_numba_1 {
     *                                                                        //
     **************************************************************************/
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Declaramos las variables (entre ellas, nuestro Long Chicken del BK)
         long chicken;
         boolean random, primo = true;
         Scanner entry = new Scanner(System.in);
-
+        //Declaramos e inicializamos nuestro RNG
         Random pita = new Random();
 
-        do {
-
+        do {//Pedimos si se introduce el nº manualmente o lo genera nuestro RNG
+           //(a través del boolean random):
             System.out.println("Desea introducir el número (N) o sacarlo"
                     + " al azar (R) :");
             switch (entry.next().charAt(0)) {
@@ -44,13 +44,16 @@ public class Random_numba_1 {
                     random = false;
                     
                     break;
+                    
                 case 'R':
 
                 case 'r':
                     random = true;
                     
                     break;
-                default:
+                    
+                default://¿La opción no es una tecla aceptada? 
+                    //PERMÍTEME QUE INSISTA
                     System.out.println("ERROR DE ENTRADA. EL PRIMER CARACTER "
                             + "NO COINCIDE. EL PROCESO NO COMPUTA.");
                     chicken = (long) 0;
@@ -58,11 +61,11 @@ public class Random_numba_1 {
 
             }
 
-            if (random) {
+            if (random) {//Si random es true, el RNG genera el número:
 
                 chicken = pita.nextInt(600_000_000) + 2;
 
-            } else {
+            } else {//Si es false, se nos pide el nº por pantalla
 
                 System.out.println("Introduce el número del rango aceptado: ");
                 chicken = entry.nextInt();
@@ -70,15 +73,19 @@ public class Random_numba_1 {
             }
 
             if (chicken < 2 || chicken > 600_000_000) {
-
+                //¿Y si se sale del rango...? PERMÍTEME QUE INSISTA
                 System.out.println("ERROR, NÚMERO FUERA DE RANGO.");
 
             }
 
         } while (chicken < 2 || chicken > 600_000_000);
 
+        //Mostramos el número del pedido de nuestro Long Chicken en pantalla:        
         System.out.println("El nº introducido es " + chicken);
 
+        //Comprobamos si el número es primo (si es 2, es primo, si es múltiplo
+       //de 2, no es primo, y si no es ni 2 ni su múltiplo, se comprueba si es
+      //divisible por algún número menor a su mitad).
         if(chicken==2){
             primo = true;
         }else if (chicken % 2 == 0) {
@@ -90,7 +97,8 @@ public class Random_numba_1 {
                 }
             }
         }
-
+        
+        //Mostramos si es primo o no por pantalla:
         if (primo) {
             System.out.println("El nº: " + chicken + " ES primo");
         } else {
