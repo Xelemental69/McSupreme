@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Formulario de registro - Mi web.</title>
+	<meta charset="UTF-8"/>
+	<link href="../Images/favicon.jpg" rel="shortcut icon"/>
+</head>
+
+<body>
+
+	<h1>Formulario</h1>
+
+	<form action="../Principal/index.html" method="get">
+	
+	<fieldset>
+	<legend>Completar</legend>
+	
+	<label for="name">Nombre:</label>
+	<input type="text" name="name" id="name" maxlength="50"/>
+	
+	<br/>
+	
+	<label for="apell">Apellidos:</label>
+	<input type="text" name="apell" id="apell" maxlength="50" />
+	
+	<br/>
+	
+	<label for="contr">Contrase&ntilde;a:</label>
+	<input type="password" name="contr" id="contr" maxlength="50" />
+	
+	<br/> <br/>
+	
+	<input type="checkbox" name="Len" id="Len" />
+	<label for="Len">Lengua</label>
+	
+	<input type="checkbox" name="Mat" id="Mat" />
+	<label for="Mat">Matem&aacute;ticas</label>
+	
+	<input type="checkbox" name="Hissss" id="Hissss" />
+	<label for="Hissss">Historia</label>
+	
+	<input type="checkbox" name="Geo" id="Geo" />
+	<label for="Geo">Geograf&iacute;a</label>
+	
+	<br/>
+	
+	<label for="Filo">Elija un fichero</label>
+	<input type="file" name="filo" id="filo" />
+	
+	<br/>
+	
+	<textarea name="esc" id="esc" placeholder="Utilice este cuadro para escribir" cols="40" rows="5"></textarea>
+	
+	<br/>
+	
+	<input type="radio" name="Imag" id="JPG" />
+	<label for="JPG">JPG</label>
+	<input type="radio" name="Imag" id="PNG" value="selected"/>
+	<label for="PNG">PNG</label>
+	
+	<br/> <br/>
+	
+	<label for="OS">Seleccione un Puerto de Comunicaciones:</label>
+	<select name="OS" id="OS">
+	
+	<option name="PS2" id="PS2" >PS2</option>
+	
+	<option name="USB" id="USB">USB</option>
+	
+	<option name="Paralelo" id="Paralelo">Paralelo</option>
+	
+	
+	
+	</select>
+	
+	</fieldset>
+	
+	<p align="right">
+	<input type="submit" name="Enviar" value="Enviar" id="Enviar" />
+	<input type="reset" name="Borrar Todo" value="Borrar Todo" id="Borrar Todo" />
+	</p>
+	
+	</form>
+
+</body>
+
+</html>
