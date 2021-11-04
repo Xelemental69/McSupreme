@@ -67,7 +67,7 @@ public class JuegoAleatorio {
         
         if(j1Score == 3){
             System.out.println("El Jugador 1");
-        }else if (j2Score == 3){
+        }else{
             System.out.println("El Jugador 2");
         }
         
