@@ -88,7 +88,7 @@ public class Bo5_1v1_SinCamiseta {
         }
             
             //Mostramos el nº de ronda
-            System.out.println(ronda + "a ronda: ");
+            System.out.println(ronda + "a RONDA: ");
             
             //Generamos los números al azar y los mostramos:
             numj1 = rng.nextInt(5) + 1;
