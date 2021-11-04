@@ -118,7 +118,7 @@ public class Bo5_1v1_SinCamiseta {
                 j2Score++;
             }else{
                 System.out.println("Empate, nadie gana puntos."
-                + "\nVenga, con más ánimo que vuestro profesor tiene hambre.");
+                + "\nVenga, con más ánimo que vuestro profe tiene hambre.");
             }
             
             ronda++;
