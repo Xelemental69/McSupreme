@@ -132,7 +132,7 @@ public class Bo5_1v1_SinCamiseta {
             System.out.println("El Jugador 1"
             + "\n¡Felicidades Jugador 2,\n ha ganado el honor de invitar a Vico a "
                     + " un helado!");
-        }else if (j2Score == 3){
+        }else{
             System.out.println("El Jugador 2"
             + "\n¡Felicidades Jugador 1,\n Ha conseguido el honor de invitar a Vico"
                     + " a un helado!");
