@@ -126,7 +126,7 @@ public class Bo5_1v1_SinCamiseta {
         }
         
         //Tras salir del bucle, mostramos quién ha ganado el mejor de 5:        
-        System.out.println("Y el ganador de esta partida es...");
+        System.out.println("\nY el ganador de esta partida es...");
         
         if(j1Score == 3){
             System.out.println("El Jugador 1"
