@@ -4,6 +4,7 @@
  */
 package mejorde5.denoviembrefjmg;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 /**
  *
  * @author fco-j
@@ -17,10 +18,25 @@ public class JuegoAleatorio {
         // Declaramos nuestras variables:
         Random ruleta = new Random();
         Random rng = new Random();
-        int j1Score = 0,j2Score = 0,numj1,numj2,nT;
+        int j1Score = 0,j2Score = 0,numj1,numj2,nT,ronda = 1;
         
         //Iniciamos el bucle para el mejor de 5
         while(j1Score < 3 && j2Score < 3){
+            
+            try {//Testeando una forma de pausar el programa por 2 segundos...            
+            TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException ie) {
+            Thread.currentThread().interrupt();
+            }
+            
+            //Mostramos el nº de ronda
+            System.out.println(ronda + "a RONDA: ");
+            
+            try {//Testeando una forma de pausar el programa por 1 segundo...            
+            TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException ie) {
+            Thread.currentThread().interrupt();
+            }
             
             //Generamos los números al azar y los mostramos:
             numj1 = rng.nextInt(5) + 1;
