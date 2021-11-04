@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 /**
  *
- * @author fco-j
+ * @author Xelemental McSupreme
  */
 public class Bo5_1v1_SinCamiseta {
 
