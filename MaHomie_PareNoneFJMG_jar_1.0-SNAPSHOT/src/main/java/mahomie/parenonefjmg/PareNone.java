@@ -18,8 +18,8 @@ public class PareNone {
         //Declaramos las variables:
         Scanner entry = new Scanner(System.in);        
         int j1 = 12, j2 = 12, n;
-        boolean j1pares = false, reset = false;
-        char choice = ' ';
+        boolean j1pares = false, reset;
+        char choice;
         Random slap = new Random();
         
 
@@ -120,14 +120,22 @@ public class PareNone {
                                 j1pares = false;
 
                             }
+                            
+                            reset = false;
 
                         }catch(InputMismatchException ime){
                             System.out.println("ERROR: Tienes que introducir un"
                                       + " número.\n");
 
-                            continue;
+                            entry.nextLine();
+                            
+                            reset = true;
 
                         }
+                        
+                        }while(reset);
+                        
+                        do{
 
                         try{
 
