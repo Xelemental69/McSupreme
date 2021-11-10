@@ -23,7 +23,7 @@ public class Calc {
         Scanner calc = new Scanner(System.in);
         int option = 0;
         double op1, op2, res;
-        boolean exit = true, matiasPratz;
+        boolean exit = false, matiasPratz;
         
         do{
                           
