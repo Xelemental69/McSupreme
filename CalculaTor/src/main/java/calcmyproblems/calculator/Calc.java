@@ -30,6 +30,36 @@ public class Calc {
                     
     }
     
+    private static double LeerDouble(){
+        //Pide por pantalla los números, dando error si lo introducido es otro
+       //tipo de caracter.
+        double x = 0;
+        Scanner calc = new Scanner(System.in);
+        boolean matiasPratz;
+        
+        do{
+        
+        try{
+            
+            x = calc.nextDouble();
+            
+            matiasPratz = false;
+            
+        } catch (InputMismatchException ime) {
+                            //Si lo introducido no es un número, salta error
+                            //y se vuelven a pedir los nºs para la operación
+                            System.out.println("ERROR: Tiene que introducir un "
+                                    + "número");
+                            x = 0;
+                            calc.nextLine();
+                            matiasPratz = true;
+                        }
+        
+        }while(matiasPratz);
+        
+        return x;
+    }
+    
     private static double suma(double x, double y) {//Realiza la suma de los
         //dos parámetros introducidos
 
@@ -138,163 +168,107 @@ public class Calc {
 
                 case 1:
 
-                    do {//Opción 1: Suma
+                    //Opción 1: Suma
 
                         System.out.println("Opción elegida: Suma");
 
-                        try {//Se pide los números y se realiza la suma, mostrando 
-                            //por pantalla el resultado:
+                        //Se pide los números y se realiza la suma, mostrando 
+                        //por pantalla el resultado:
 
                             System.out.println("Introduzca el 1er sumando:");
-                            op1 = calc.nextDouble();
+                            op1 = LeerDouble();
 
                             System.out.println("Introduzca el 2º sumando:");
-                            op2 = calc.nextDouble();
+                            op2 = LeerDouble();
 
                             //res = op1 + op2;
-                            System.out.println("El resultado es: " + suma(op1, op2));
-
-                            matiasPratz = false;
-
-                        } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Formato incorrecto");
-                            calc.nextLine();
-                            matiasPratz = true;
-                        }
-
-                    } while (matiasPratz);
-
+                            System.out.println("El resultado es: "
+                                    + suma(op1, op2));
+                            
                     break;
 
                 case 2:
 
-                    do {//Opción 2: Resta
+                    //Opción 2: Resta
 
                         System.out.println("Opción elegida: Resta");
 
-                        try {//Se pide los números y se realiza la resta, mostrando 
-                            //por pantalla el resultado:
+                        //Se pide los números y se realiza la resta, mostrando 
+                        //por pantalla el resultado:
 
                             System.out.println("Introduzca el 1er operador:");
-                            op1 = calc.nextDouble();
+                            op1 = LeerDouble();
 
                             System.out.println("Introduzca el 2º operador:");
-                            op2 = calc.nextDouble();
+                            op2 = LeerDouble();
 
                             //res = op1 - op2;
-                            System.out.println("El resultado es: " + resta(op1, op2));
-
-                            matiasPratz = false;
-
-                        } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Formato incorrecto");
-                            calc.nextLine();
-                            matiasPratz = true;
-                        }
-
-                    } while (matiasPratz);
+                            System.out.println("El resultado es: "
+                                    + resta(op1, op2));
 
                     break;
 
                 case 3:
 
-                    do {//Opción 3: Multiplicación
+                    //Opción 3: Multiplicación
 
                         System.out.println("Opción elegida: Multiplicación");
 
-                        try {//Se pide los números y se realiza la multiplicación,
-                            //mostrando por pantalla el resultado:
+                        //Se pide los números y se realiza la multiplicación,
+                        //mostrando por pantalla el resultado:
 
                             System.out.println("Introduzca el 1er factor:");
-                            op1 = calc.nextDouble();
+                            op1 = LeerDouble();
 
                             System.out.println("Introduzca el 2º factor:");
-                            op2 = calc.nextDouble();
+                            op2 = LeerDouble();
 
                             //res = op1 * op2;
-                            System.out.println("El resultado es: " + multi(op1, op2));
-
-                            matiasPratz = false;
-
-                        } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Formato incorrecto");
-                            calc.nextLine();
-                            matiasPratz = true;
-                        }
-
-                    } while (matiasPratz);
-
+                            System.out.println("El resultado es: "
+                                    + multi(op1, op2));
+                        
                     break;
 
                 case 4:
 
-                    do {//Opción 4: División
+                    //Opción 4: División
 
                         System.out.println("Opción elegida: División");
 
-                        try {//Se pide los números y se realiza la división, mostrando 
-                            //por pantalla el resultado:
+                        //Se pide los números y se realiza la división,
+                        //mostrando por pantalla el resultado:
 
                             System.out.println("Introduzca el 1er número:");
-                            op1 = calc.nextDouble();
+                            op1 = LeerDouble();
 
                             System.out.println("Introduzca el divisor:");
-                            op2 = calc.nextDouble();
+                            op2 = LeerDouble();
 
                             //res = op1 / op2;
-                            System.out.println("El resultado es: " + divi(op1, op2));
-
-                            matiasPratz = false;
-
-                        } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Formato incorrecto");
-                            calc.nextLine();
-                            matiasPratz = true;
-                        }
-
-                    } while (matiasPratz);
-
+                            System.out.println("El resultado es: "
+                                    + divi(op1, op2));                            
+                    
                     break;
 
                 case 5:
 
-                    do {//Opción 5: Módulo
+                    //Opción 5: Módulo
 
                         System.out.println("Opción elegida: Módulo");
 
-                        try {//Se pide los números y se realiza la división, mostrando 
-                            //por pantalla el resto de la misma:
+                    //Se pide los números y se realiza la división, mostrando 
+                    //por pantalla el resto de la misma:
 
                             System.out.println("Introduzca el 1er operando:");
-                            op1 = calc.nextDouble();
+                            op1 = LeerDouble();
 
                             System.out.println("Introduzca el 2º operando:");
-                            op2 = calc.nextDouble();
+                            op2 = LeerDouble();
 
                             //res = op1 % op2;
                             System.out.println("El resto de la división es: "
                                     + mod(op1, op2));
-
-                            matiasPratz = false;
-
-                        } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Formato incorrecto");
-                            calc.nextLine();
-                            matiasPratz = true;
-                        }
-
-                    } while (matiasPratz);
-
+                        
                     break;
                     
                 case 6:
