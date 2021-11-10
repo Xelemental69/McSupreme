@@ -15,6 +15,42 @@ public class Calc {
     /**
      * @param args the command line arguments
      */
+    
+    private static double suma(double x, double y){
+        
+        double z = x + y;        
+        return z;
+        
+    }
+    
+    private static double resta(double x, double y){
+        
+        double z = x - y;        
+        return z;
+        
+    }
+    
+    private static double multi(double x, double y){
+        
+        double z = x * y;        
+        return z;
+        
+    }
+    
+    private static double divi(double x, double y){
+        
+        double z = x / y;        
+        return z;
+        
+    }
+    
+    private static double mod(double x, double y){
+        
+        double z = x % y;        
+        return z;
+        
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
@@ -71,9 +107,10 @@ public class Calc {
 
                     System.out.println("Introduzca el 2º sumando:");
                     op2 = calc.nextDouble();
-
-                    res = op1 + op2;
-                    System.out.println("El resultado es: " + res);
+                    
+                    //res = op1 + op2;
+                    
+                    System.out.println("El resultado es: " + suma(op1,op2));
 
                     matiasPratz = false;
 
@@ -104,8 +141,8 @@ public class Calc {
                     System.out.println("Introduzca el 2º operador:");
                     op2 = calc.nextDouble();
 
-                    res = op1 - op2;
-                    System.out.println("El resultado es: " + res);
+                    //res = op1 - op2;
+                    System.out.println("El resultado es: " + resta(op1,op2));
 
                     matiasPratz = false;
 
@@ -136,8 +173,8 @@ public class Calc {
                     System.out.println("Introduzca el 2º factor:");
                     op2 = calc.nextDouble();
 
-                    res = op1 * op2;
-                    System.out.println("El resultado es: " + res);
+                    //res = op1 * op2;
+                    System.out.println("El resultado es: " + multi(op1,op2));
 
                     matiasPratz = false;
 
@@ -168,8 +205,8 @@ public class Calc {
                     System.out.println("Introduzca el divisor:");
                     op2 = calc.nextDouble();
 
-                    res = op1 / op2;
-                    System.out.println("El resultado es: " + res);
+                    //res = op1 / op2;
+                    System.out.println("El resultado es: " + divi(op1,op2));
 
                     matiasPratz = false;
 
@@ -200,8 +237,9 @@ public class Calc {
                     System.out.println("Introduzca el 2º operando:");
                     op2 = calc.nextDouble();
 
-                    res = op1 % op2;
-                    System.out.println("El resto de la división es: " + res);
+                    //res = op1 % op2;
+                    System.out.println("El resto de la división es: "
+                            + mod(op1,op2));
 
                     matiasPratz = false;
 
