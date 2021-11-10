@@ -25,7 +25,8 @@ public class Calc {
         System.out.println("3: Multiplicación");
         System.out.println("4: División");
         System.out.println("5: Módulo");
-        System.out.println("6: Salir");
+        System.out.println("6: Devolver el nº entero introducido");
+        System.out.println("7: Salir");
                     
     }
     
@@ -68,6 +69,36 @@ public class Calc {
         return z;
 
     }
+    
+    private static int MostrarLoIntroducido(){
+        
+        int x;
+        boolean repeat;
+        Scanner entry = new Scanner(System.in);
+        
+        do{
+            
+            try{
+                
+                System.out.println("Introduzca un número entero");
+                x = entry.nextInt();
+                repeat = false;
+                
+            } catch (InputMismatchException ime) {
+                            //Si lo introducido no es un número, salta error
+                            //y se vuelven a pedir los nºs para la operación
+                            System.out.println("ERROR: Tiene que introducir un "
+                                    + "número");
+                            x = 0;
+                            entry.nextLine();
+                            repeat = true;
+                        }
+            
+        }while(repeat);
+                        
+        return x;
+        
+    }
 
     public static void main(String[] args) {
         // TODO code application logic here
@@ -90,7 +121,7 @@ public class Calc {
                     
                     option = calc.nextInt();
 
-                    if (option < 1 || option > 6) {
+                    if (option < 1 || option > 7) {
                         //Si el nº introducido no es entre 1 y 6, se insiste
                         System.out.println("Introduce un número válido");
                     }
@@ -264,6 +295,13 @@ public class Calc {
 
                     } while (matiasPratz);
 
+                    break;
+                    
+                case 6:
+                    
+                    System.out.println("El nº introducido es: "
+                            + MostrarLoIntroducido());
+                    
                     break;
 
                 default:
