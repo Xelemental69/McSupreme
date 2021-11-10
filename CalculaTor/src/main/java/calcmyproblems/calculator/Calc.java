@@ -15,9 +15,8 @@ public class Calc {
     /**
      * @param args the command line arguments
      */
-    
-    private static void menu(){//Muestra el menú de opciones
-        
+    private static void menu() {//Muestra el menú de opciones
+
         System.out.println("Bienvenido a la calculadora.");
         System.out.println("¿Qué función desea realiar?");
         System.out.println("1: Suma");
@@ -27,39 +26,39 @@ public class Calc {
         System.out.println("5: Módulo");
         System.out.println("6: Devolver el nº entero introducido");
         System.out.println("7: Salir");
-                    
+
     }
-    
-    private static double LeerDouble(){
+
+    private static double leerDouble() {
         //Pide por pantalla los números, dando error si lo introducido es otro
-       //tipo de caracter.
+        //tipo de caracter.
         double x = 0;
         Scanner calc = new Scanner(System.in);
         boolean matiasPratz;
-        
-        do{
-        
-        try{
-            
-            x = calc.nextDouble();
-            
-            matiasPratz = false;
-            
-        } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Tiene que introducir un "
-                                    + "número");
-                            x = 0;
-                            calc.nextLine();
-                            matiasPratz = true;
-                        }
-        
-        }while(matiasPratz);
-        
+
+        do {
+
+            try {
+
+                x = calc.nextDouble();
+
+                matiasPratz = false;
+
+            } catch (InputMismatchException ime) {
+                //Si lo introducido no es un número, salta error
+                //y se vuelven a pedir los nºs para la operación
+                System.out.println("ERROR: Tiene que introducir un "
+                        + "número");
+                x = 0;
+                calc.nextLine();
+                matiasPratz = true;
+            }
+
+        } while (matiasPratz);
+
         return x;
     }
-    
+
     private static double suma(double x, double y) {//Realiza la suma de los
         //dos parámetros introducidos
 
@@ -99,35 +98,35 @@ public class Calc {
         return z;
 
     }
-    
-    private static int MostrarLoIntroducido(){
-        
+
+    private static int mostrarLoIntroducido() {
+
         int x;
         boolean permitemeQueInsista;
         Scanner entry = new Scanner(System.in);
-        
-        do{
-            
-            try{
-                
+
+        do {
+
+            try {
+
                 System.out.println("Introduzca un número entero");
                 x = entry.nextInt();
                 permitemeQueInsista = false;
-                
+
             } catch (InputMismatchException ime) {
-                            //Si lo introducido no es un número, salta error
-                            //y se vuelven a pedir los nºs para la operación
-                            System.out.println("ERROR: Tiene que introducir un "
-                                    + "número");
-                            x = 0;
-                            entry.nextLine();
-                            permitemeQueInsista = true;
-                        }
-            
-        }while(permitemeQueInsista);
-                        
+                //Si lo introducido no es un número, salta error
+                //y se vuelven a pedir los nºs para la operación
+                System.out.println("ERROR: Tiene que introducir un "
+                        + "número");
+                x = 0;
+                entry.nextLine();
+                permitemeQueInsista = true;
+            }
+
+        } while (permitemeQueInsista);
+
         return x;
-        
+
     }
 
     public static void main(String[] args) {
@@ -146,9 +145,9 @@ public class Calc {
             do {
 
                 try {//Pedimos la opción para operar:
-                    
+
                     menu();
-                    
+
                     option = calc.nextInt();
 
                     if (option < 1 || option > 7) {
@@ -169,113 +168,103 @@ public class Calc {
                 case 1:
 
                     //Opción 1: Suma
+                    System.out.println("Opción elegida: Suma");
 
-                        System.out.println("Opción elegida: Suma");
+                    //Se pide los números y se realiza la suma, mostrando 
+                    //por pantalla el resultado:
+                    System.out.println("Introduzca el 1er sumando:");
+                    op1 = leerDouble();
 
-                        //Se pide los números y se realiza la suma, mostrando 
-                        //por pantalla el resultado:
+                    System.out.println("Introduzca el 2º sumando:");
+                    op2 = leerDouble();
 
-                            System.out.println("Introduzca el 1er sumando:");
-                            op1 = LeerDouble();
+                    //res = op1 + op2;
+                    System.out.println("El resultado es: "
+                            + suma(op1, op2));
 
-                            System.out.println("Introduzca el 2º sumando:");
-                            op2 = LeerDouble();
-
-                            //res = op1 + op2;
-                            System.out.println("El resultado es: "
-                                    + suma(op1, op2));
-                            
                     break;
 
                 case 2:
 
                     //Opción 2: Resta
+                    System.out.println("Opción elegida: Resta");
 
-                        System.out.println("Opción elegida: Resta");
+                    //Se pide los números y se realiza la resta, mostrando 
+                    //por pantalla el resultado:
+                    System.out.println("Introduzca el 1er operador:");
+                    op1 = leerDouble();
 
-                        //Se pide los números y se realiza la resta, mostrando 
-                        //por pantalla el resultado:
+                    System.out.println("Introduzca el 2º operador:");
+                    op2 = leerDouble();
 
-                            System.out.println("Introduzca el 1er operador:");
-                            op1 = LeerDouble();
-
-                            System.out.println("Introduzca el 2º operador:");
-                            op2 = LeerDouble();
-
-                            //res = op1 - op2;
-                            System.out.println("El resultado es: "
-                                    + resta(op1, op2));
+                    //res = op1 - op2;
+                    System.out.println("El resultado es: "
+                            + resta(op1, op2));
 
                     break;
 
                 case 3:
 
                     //Opción 3: Multiplicación
+                    System.out.println("Opción elegida: Multiplicación");
 
-                        System.out.println("Opción elegida: Multiplicación");
+                    //Se pide los números y se realiza la multiplicación,
+                    //mostrando por pantalla el resultado:
+                    System.out.println("Introduzca el 1er factor:");
+                    op1 = leerDouble();
 
-                        //Se pide los números y se realiza la multiplicación,
-                        //mostrando por pantalla el resultado:
+                    System.out.println("Introduzca el 2º factor:");
+                    op2 = leerDouble();
 
-                            System.out.println("Introduzca el 1er factor:");
-                            op1 = LeerDouble();
+                    //res = op1 * op2;
+                    System.out.println("El resultado es: "
+                            + multi(op1, op2));
 
-                            System.out.println("Introduzca el 2º factor:");
-                            op2 = LeerDouble();
-
-                            //res = op1 * op2;
-                            System.out.println("El resultado es: "
-                                    + multi(op1, op2));
-                        
                     break;
 
                 case 4:
 
                     //Opción 4: División
+                    System.out.println("Opción elegida: División");
 
-                        System.out.println("Opción elegida: División");
+                    //Se pide los números y se realiza la división,
+                    //mostrando por pantalla el resultado:
+                    System.out.println("Introduzca el 1er número:");
+                    op1 = leerDouble();
 
-                        //Se pide los números y se realiza la división,
-                        //mostrando por pantalla el resultado:
+                    System.out.println("Introduzca el divisor:");
+                    op2 = leerDouble();
 
-                            System.out.println("Introduzca el 1er número:");
-                            op1 = LeerDouble();
+                    //res = op1 / op2;
+                    System.out.println("El resultado es: "
+                            + divi(op1, op2));
 
-                            System.out.println("Introduzca el divisor:");
-                            op2 = LeerDouble();
-
-                            //res = op1 / op2;
-                            System.out.println("El resultado es: "
-                                    + divi(op1, op2));                            
-                    
                     break;
 
                 case 5:
 
                     //Opción 5: Módulo
-
-                        System.out.println("Opción elegida: Módulo");
+                    System.out.println("Opción elegida: Módulo");
 
                     //Se pide los números y se realiza la división, mostrando 
                     //por pantalla el resto de la misma:
+                    System.out.println("Introduzca el 1er operando:");
+                    op1 = leerDouble();
 
-                            System.out.println("Introduzca el 1er operando:");
-                            op1 = LeerDouble();
+                    System.out.println("Introduzca el 2º operando:");
+                    op2 = leerDouble();
 
-                            System.out.println("Introduzca el 2º operando:");
-                            op2 = LeerDouble();
+                    //res = op1 % op2;
+                    System.out.println("El resto de la división es: "
+                            + mod(op1, op2));
 
-                            //res = op1 % op2;
-                            System.out.println("El resto de la división es: "
-                                    + mod(op1, op2));
-                        
                     break;
-                    
+
                 case 6:
-                    
+
                     System.out.println("El nº introducido es: "
-                            + MostrarLoIntroducido());
-                    
+                            + mostrarLoIntroducido());
+
                     break;
 
                 default:
