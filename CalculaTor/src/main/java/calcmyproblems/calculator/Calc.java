@@ -56,14 +56,14 @@ public class Calc {
 
         } while (matiasPratz);
 
-        return x;
+        return x;//Devuelve el operando con return
     }
 
     private static double suma(double x, double y) {//Realiza la suma de los
         //dos parámetros introducidos
 
         double z = x + y;
-        return z;
+        return z;//Devuelve el resultado con return
 
     }
 
@@ -71,7 +71,7 @@ public class Calc {
         //dos parámetros introducidos
 
         double z = x - y;
-        return z;
+        return z;//Devuelve el resultado con return
 
     }
 
@@ -79,7 +79,7 @@ public class Calc {
         //de los dos parámetros introducidos
 
         double z = x * y;
-        return z;
+        return z;//Devuelve el resultado con return
 
     }
 
@@ -87,7 +87,7 @@ public class Calc {
         //dos parámetros introducidos
 
         double z = x / y;
-        return z;
+        return z;//Devuelve el resultado con return
 
     }
 
@@ -95,7 +95,7 @@ public class Calc {
         //dos parámetros introducidos
 
         double z = x % y;
-        return z;
+        return z;//Devuelve el resto con return
 
     }
 
@@ -125,7 +125,7 @@ public class Calc {
 
         } while (permitemeQueInsista);
 
-        return x;
+        return x;//Devuelve el nº con return
 
     }
 
