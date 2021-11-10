@@ -73,7 +73,7 @@ public class Calc {
     private static int MostrarLoIntroducido(){
         
         int x;
-        boolean repeat;
+        boolean permitemeQueInsista;
         Scanner entry = new Scanner(System.in);
         
         do{
@@ -82,7 +82,7 @@ public class Calc {
                 
                 System.out.println("Introduzca un número entero");
                 x = entry.nextInt();
-                repeat = false;
+                permitemeQueInsista = false;
                 
             } catch (InputMismatchException ime) {
                             //Si lo introducido no es un número, salta error
@@ -91,10 +91,10 @@ public class Calc {
                                     + "número");
                             x = 0;
                             entry.nextLine();
-                            repeat = true;
+                            permitemeQueInsista = true;
                         }
             
-        }while(repeat);
+        }while(permitemeQueInsista);
                         
         return x;
         
