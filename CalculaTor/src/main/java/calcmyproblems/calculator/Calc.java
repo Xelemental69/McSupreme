@@ -24,6 +24,7 @@ public class Calc {
         int option = 0;
         double op1, op2, res;
         boolean exit = false, matiasPratz;
+        char y;
         
         do{
                           
@@ -224,12 +225,14 @@ public class Calc {
 
             }
             
+            calc.nextLine();//Limpiamos el búffer
+            
             if(!exit){//Si no se ha seleccionado la opción de salir al inicio,
                 //se pide al usuario si quiere reiniciar el programa:
                 System.out.println("¿Desea reiniciar el programa?");
-                System.out.println("(Si es así, escriba: Y ");
-                if(calc.nextLine().charAt(0) == 'Y' 
-                        || calc.nextLine().charAt(0) == 'y'){
+                System.out.println("(Si es así, escriba: Y) ");
+                y = calc.nextLine().charAt(0);
+                if(y == 'Y' || y == 'y'){
                     System.out.println("Reiniciando programa...");
                     exit = false;
                 }else{
@@ -237,6 +240,7 @@ public class Calc {
                     exit = true;
                 }
             }
+            
             
         }while(!exit);
 
