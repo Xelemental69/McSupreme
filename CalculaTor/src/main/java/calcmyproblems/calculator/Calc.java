@@ -15,35 +15,54 @@ public class Calc {
     /**
      * @param args the command line arguments
      */
-    private static double suma(double x, double y) {
+    
+    private static void menu(){//Muestra el menú de opciones
+        
+        System.out.println("Bienvenido a la calculadora.");
+        System.out.println("¿Qué función desea realiar?");
+        System.out.println("1: Suma");
+        System.out.println("2: Resta");
+        System.out.println("3: Multiplicación");
+        System.out.println("4: División");
+        System.out.println("5: Módulo");
+        System.out.println("6: Salir");
+                    
+    }
+    
+    private static double suma(double x, double y) {//Realiza la suma de los
+        //dos parámetros introducidos
 
         double z = x + y;
         return z;
 
     }
 
-    private static double resta(double x, double y) {
+    private static double resta(double x, double y) {//Realiza la resta de los
+        //dos parámetros introducidos
 
         double z = x - y;
         return z;
 
     }
 
-    private static double multi(double x, double y) {
+    private static double multi(double x, double y) {//Realiza la multiplicación
+        //de los dos parámetros introducidos
 
         double z = x * y;
         return z;
 
     }
 
-    private static double divi(double x, double y) {
+    private static double divi(double x, double y) {//Realiza la división de los
+        //dos parámetros introducidos
 
         double z = x / y;
         return z;
 
     }
 
-    private static double mod(double x, double y) {
+    private static double mod(double x, double y) {//Realiza el módulo de los
+        //dos parámetros introducidos
 
         double z = x % y;
         return z;
@@ -66,15 +85,9 @@ public class Calc {
             do {
 
                 try {//Pedimos la opción para operar:
-
-                    System.out.println("Bienvenido a la calculadora.");
-                    System.out.println("¿Qué función desea realiar?");
-                    System.out.println("1: Suma");
-                    System.out.println("2: Resta");
-                    System.out.println("3: Multiplicación");
-                    System.out.println("4: División");
-                    System.out.println("5: Módulo");
-                    System.out.println("6: Salir");
+                    
+                    menu();
+                    
                     option = calc.nextInt();
 
                     if (option < 1 || option > 6) {
