@@ -138,7 +138,7 @@ public class Calc {
         int option = 0;
         double op1, op2;
         //double res;
-        boolean exit = false, matiasPratz;
+        boolean exit = false;
         char y;
 
         do {
