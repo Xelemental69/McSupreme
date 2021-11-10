@@ -58,7 +58,8 @@ public class Calc {
 
         Scanner calc = new Scanner(System.in);
         int option = 0;
-        double op1, op2, res;
+        double op1, op2;
+        //double res;
         boolean exit = false, matiasPratz;
         char y;
         
