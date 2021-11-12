@@ -51,7 +51,7 @@ public class RNGToAdivinanza {
 
                     //Pedimos por pantalla los números:
                     System.out.println("Para el rango de nºs con los cuales opera"
-                            + " nuestra ruleta del azar...");
+                            + "\nnuestra ruleta del azar...\n");
 
                     System.out.println("Introduzca el primer nº entero:");
                     x = limit.nextInt();
