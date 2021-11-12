@@ -17,8 +17,9 @@ public class RNGToAdivinanza {
      * @param args the command line arguments
      */
     private static int wheelOfGuessing(int n, int m) {
-        Random ruleta = new Random();
+        Random ruleta = new Random();//Declaramos el RNG
 
+        //Sacamos el número entre los dos introducidos previamente:
         int guest = ruleta.nextInt(n - m + 1) + m;
 
         return guest;
@@ -93,6 +94,8 @@ public class RNGToAdivinanza {
             }
 
             System.out.println("\n¡QUE EMPIEZE EL ESPECTÁCULO!\n");
+            
+            limit.nextLine();
 
             while (!win && chances > 0) {
 
@@ -104,7 +107,7 @@ public class RNGToAdivinanza {
 
                     if (guess == target) {
                         //Si el usuario acierta:
-                        System.out.println("\nENHORABUENA");
+                        System.out.println("\n¡ENHORABUENA!");
                         
                         try {//Delay de 1 segundo...            
                             TimeUnit.SECONDS.sleep(1);
@@ -177,7 +180,7 @@ public class RNGToAdivinanza {
 
                 default:
                     System.out.println("Saliendo del programa...");
-                    reset = true;
+                    reset = false;
                     break;
 
             }
