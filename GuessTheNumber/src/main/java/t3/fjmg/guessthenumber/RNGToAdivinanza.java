@@ -31,7 +31,7 @@ public class RNGToAdivinanza {
         // Declaramos las variables:        
         Scanner limit = new Scanner(System.in);
         int x, y, guess, target, chances;
-        boolean repeat, reset, win = false;
+        boolean permitemeQueInsista, andAnotherOne, win = false;
         char exit;
 
         do {
@@ -60,19 +60,19 @@ public class RNGToAdivinanza {
                     System.out.println("Introduzca el segundo nº entero:");
                     y = limit.nextInt();
 
-                    repeat = false;
+                    permitemeQueInsista = false;
 
                 } catch (InputMismatchException ime) {
                     //Si se introduce algo que no sea un nº, salta este error:
                     System.out.println("ERROR: Introduzca solo NÚMEROS.");
-                    repeat = true;
+                    permitemeQueInsista = true;
                     x = y = 0;
                     //Para evitar problemas, limpiamos el búffer:
                     limit.nextLine();
 
                 }
 
-            } while (repeat);
+            } while (permitemeQueInsista);
 
             //Calculamos el nº a adivinar:
             if (x >= y) {
@@ -175,17 +175,17 @@ public class RNGToAdivinanza {
 
                 case 'y':
                     System.out.println("Iniciando el reseteo...");
-                    reset = true;
+                    andAnotherOne = true;
                     break;
 
                 default:
                     System.out.println("Saliendo del programa...");
-                    reset = false;
+                    andAnotherOne = false;
                     break;
 
             }
 
-        } while (reset);
+        } while (andAnotherOne);
 
     }
 
