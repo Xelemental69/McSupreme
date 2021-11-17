@@ -21,7 +21,8 @@ public class GenerarClave {
             v = candado.nextInt(10);
             y = candado.nextInt(10);
             
-        }while( (v + y) % 2 == 0);
+        }while( ((v + y) % 2 == 0) || (v == y));
+        
         
         do{
             //Generamos los números dentro de un bucle en el cual solo podrán
