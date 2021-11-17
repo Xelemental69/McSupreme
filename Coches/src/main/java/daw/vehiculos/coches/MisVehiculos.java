@@ -5,6 +5,7 @@
 package daw.vehiculos.coches;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  *
@@ -46,6 +47,14 @@ public class MisVehiculos {
 
         Vehiculos newVuga = new Vehiculos("", "",
                  "", "", 0);
+        
+        try {//Delay de 1 segundo...            
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException ie) {
+                Thread.currentThread().interrupt();
+            }
+        
+        System.out.println("Para el nuevo coche...");
 
         System.out.println("Introduzca la matrícula");
         mat = entry.nextLine();
