@@ -39,25 +39,34 @@ public class OhJoderNoQueHabeisHecho {
         
         }while(v == y || v == w || v == x || y == w || y == x || w == x);
         
+            System.out.println(v);
+            System.out.println(w);
+            System.out.println(x);
+            System.out.println(y);
+        
         //Generamos una letra
         z = (char) (candado.nextInt(122 - 33 + 1) + 33);
+        System.out.println(z);
         
         do{
             //Generamos otra letra dentro de un bucle que dejará salir un valor
            //que no sea idéntico al anterior
             a = (char) (candado.nextInt(122 - 33 + 1) + 33);
         }while(a==z);
+        System.out.println(a);
         
         do{
             //Generamos otra letra dentro de un bucle que dejará salir un valor
            //que no sea idéntico a los anteriores
             b = (char) (candado.nextInt(122 - 33 + 1) + 33);
         }while(b == z || b == a);
+        System.out.println(b);
         
         do{
         //Generamos la última letra
         c = (char) (candado.nextInt(122 - 33 + 1) + 33);
         }while(c == z || c == a || c == b);   
+        System.out.println(c);
         
         //Generamos un nº al azar que determinará el orden de los caracteres
         order = candado.nextInt(4);
