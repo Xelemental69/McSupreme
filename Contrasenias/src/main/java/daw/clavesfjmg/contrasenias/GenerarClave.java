@@ -22,6 +22,8 @@ public class GenerarClave {
                //salir si la suma de ambos es impar
                 v = candado.nextInt(10);
                 y = candado.nextInt(10);
+                
+                System.out.println("Prueba de v&y: " + v + y);
 
             }while( ((v + y) % 2 == 0));
                 
@@ -32,6 +34,8 @@ public class GenerarClave {
                //salir si el producto de ambos es par
                 w = candado.nextInt(10);
                 x = candado.nextInt(10);
+                
+                System.out.println("Prueba de w&x: " + w + x);
 
             }while( (w * x) % 2 != 0);
             

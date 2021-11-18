@@ -26,6 +26,8 @@ public class OhJoderNoQueHabeisHecho {
                //salir si la suma de ambos es impar
                 v = candado.nextInt(10);
                 y = candado.nextInt(10);
+                
+                System.out.println("Prueba de v&y: " + v + y);
 
             }while( (v + y) % 2 == 0);
 
@@ -34,6 +36,8 @@ public class OhJoderNoQueHabeisHecho {
                //salir si el producto de ambos es par
                 w = candado.nextInt(10);
                 x = candado.nextInt(10);
+                
+                System.out.println("Prueba de w&x: " + w + x);
 
             }while( (w * x) % 2 != 0);
             
@@ -52,6 +56,7 @@ public class OhJoderNoQueHabeisHecho {
         //Generamos una letra                
             letra = candado.nextInt(122 - 33 + 1) + 33;
             z = (char) letra;//Para comprobar si sale número y resetear el valor
+            System.out.println("Prueba de z: " + z);
         }while(letra >= 48 && letra <= 57);
         
         System.out.println(z);
@@ -61,6 +66,7 @@ public class OhJoderNoQueHabeisHecho {
            //que no sea idéntico al anterior
            letra = candado.nextInt(122 - 33 + 1) + 33;
             a = (char) letra;//Para comprobar si sale número y resetear el valor
+            System.out.println("Prueba de a: " + a);
         }while(a==z || (letra >= 48 && letra <= 57));
         System.out.println(a);
         
@@ -69,6 +75,7 @@ public class OhJoderNoQueHabeisHecho {
            //que no sea idéntico a los anteriores
            letra = candado.nextInt(122 - 33 + 1) + 33;
             b = (char) letra;//Para comprobar si sale número y resetear el valor
+            System.out.println("Prueba de b: " + b);
         }while(b == z || b == a || (letra >= 48 && letra <= 57));
         System.out.println(b);
         
@@ -76,6 +83,7 @@ public class OhJoderNoQueHabeisHecho {
         //Generamos la última letra
             letra = candado.nextInt(122 - 33 + 1) + 33;
             c = (char) letra;//Para comprobar si sale número y resetear el valor
+            System.out.println("Prueba de c: " + c);
         }while(c == z || c == a || c == b || (letra >= 48 && letra <= 57));   
         System.out.println(c);
         
