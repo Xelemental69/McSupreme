@@ -45,7 +45,7 @@ public class GenerarClave {
         } while (v == y || v == w || v == x || y == w || y == x || w == x);
 
         //Generamos una letra
-        z = (char) (candado.nextInt(122 - 33 + 1) + 33);
+        z = (char) (candado.nextInt(88 - 70 + 1) + 70);
 
         System.out.println("Su clave generara es: " + v + w + x + y + z);
 
