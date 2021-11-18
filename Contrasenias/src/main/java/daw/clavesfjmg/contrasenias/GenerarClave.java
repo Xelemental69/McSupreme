@@ -24,8 +24,9 @@ public class GenerarClave {
                 y = candado.nextInt(10);
 
             }while( ((v + y) % 2 == 0));
-
-
+                
+            
+            
             do{
                 //Generamos los números dentro de un bucle en el cual solo podrán
                //salir si el producto de ambos es par
@@ -33,6 +34,8 @@ public class GenerarClave {
                 x = candado.nextInt(10);
 
             }while( (w * x) % 2 != 0);
+            
+            System.out.println("Probando: " + v + w + x + y);
             
         }while(v == y || v == w || v == x || y == w || y == x || w == x);
         

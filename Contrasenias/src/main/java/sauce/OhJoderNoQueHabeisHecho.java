@@ -36,13 +36,17 @@ public class OhJoderNoQueHabeisHecho {
                 x = candado.nextInt(10);
 
             }while( (w * x) % 2 != 0);
+            
+            System.out.println("Probando: " + v + w + x + y);
         
         }while(v == y || v == w || v == x || y == w || y == x || w == x);
         
+            /*
             System.out.println(v);
             System.out.println(w);
             System.out.println(x);
             System.out.println(y);
+            */
         
         do{
         //Generamos una letra                
