@@ -27,6 +27,7 @@ public class OhJoderNoQueHabeisHecho {
                 v = candado.nextInt(10);
                 y = candado.nextInt(10);
 
+                //Mostramos los números por pantalla
                 System.out.println("Prueba de v&y: " + v + y);
 
             } while ((v + y) % 2 == 0);
@@ -37,12 +38,14 @@ public class OhJoderNoQueHabeisHecho {
                 w = candado.nextInt(10);
                 x = candado.nextInt(10);
 
+                //Mostramos los números por pantalla
                 System.out.println("Prueba de w&x: " + w + x);
 
             } while ((w * x) % 2 != 0);
 
             System.out.println("Probando: " + v + w + x + y);
-
+            
+            //Si algún nº es igual que otro... PERMÍTEME QUE INSISTA (se repite)
         } while (v == y || v == w || v == x || y == w || y == x || w == x);
 
         /*
@@ -55,32 +58,41 @@ public class OhJoderNoQueHabeisHecho {
             //Generamos una letra                
             letra = candado.nextInt(122 - 33 + 1) + 33;
             z = (char) letra;//Para comprobar si sale número y resetear el valor
+            
+            //Mostramos el caracter por pantalla
             System.out.println("Prueba de z: " + z);
 
         } while (letra >= 48 && letra <= 57);
 
         do {
             //Generamos otra letra dentro de un bucle que dejará salir un valor
-            //que no sea idéntico al anterior
+            //que no sea ni idéntico al anterior ni un nº
             letra = candado.nextInt(122 - 33 + 1) + 33;
             a = (char) letra;//Para comprobar si sale número y resetear el valor
+            
+            //Mostramos el caracter por pantalla
             System.out.println("Prueba de a: " + a);
 
         } while (a == z || (letra >= 48 && letra <= 57));
 
         do {
             //Generamos otra letra dentro de un bucle que dejará salir un valor
-            //que no sea idéntico a los anteriores
+            //que no sea ni idéntico a los anteriores ni un nº
             letra = candado.nextInt(122 - 33 + 1) + 33;
             b = (char) letra;//Para comprobar si sale número y resetear el valor
+            
+            //Mostramos el caracter por pantalla
             System.out.println("Prueba de b: " + b);
 
         } while (b == z || b == a || (letra >= 48 && letra <= 57));
 
         do {
-            //Generamos la última letra
+            //Generamos una última letra dentro de un bucle que dejará salir un 
+            //valor que no sea ni idéntico a los anteriores ni un nº
             letra = candado.nextInt(122 - 33 + 1) + 33;
             c = (char) letra;//Para comprobar si sale número y resetear el valor
+            
+            //Mostramos el caracter por pantalla
             System.out.println("Prueba de c: " + c);
 
         } while (c == z || c == a || c == b || (letra >= 48 && letra <= 57));

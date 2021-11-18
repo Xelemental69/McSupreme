@@ -26,6 +26,7 @@ public class GenerarClave {
                 v = candado.nextInt(10);
                 y = candado.nextInt(10);
 
+                //Mostramos los números por pantalla:
                 System.out.println("Prueba de v&y: " + v + y);
 
             } while (((v + y) % 2 == 0));
@@ -36,10 +37,12 @@ public class GenerarClave {
                 w = candado.nextInt(10);
                 x = candado.nextInt(10);
 
+                //Mostramos los números por pantalla
                 System.out.println("Prueba de w&x: " + w + x);
 
             } while ((w * x) % 2 != 0);
-
+            
+            //Si algún nº es igual que otro... PERMÍTEME QUE INSISTA (se repite)
             System.out.println("Probando: " + v + w + x + y);
 
         } while (v == y || v == w || v == x || y == w || y == x || w == x);
