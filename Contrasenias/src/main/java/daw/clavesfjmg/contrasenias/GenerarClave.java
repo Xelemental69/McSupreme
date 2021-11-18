@@ -16,21 +16,25 @@ public class GenerarClave {
         char z;
         
         do{
-            //Generamos los números dentro de un bucle en el cual solo podrán
-           //salir si la suma de ambos es impar
-            v = candado.nextInt(10);
-            y = candado.nextInt(10);
-            
-        }while( ((v + y) % 2 == 0) || (v == y));
         
-        
-        do{
-            //Generamos los números dentro de un bucle en el cual solo podrán
-           //salir si el producto de ambos es par
-            w = candado.nextInt(10);
-            x = candado.nextInt(10);
+            do{
+                //Generamos los números dentro de un bucle en el cual solo podrán
+               //salir si la suma de ambos es impar
+                v = candado.nextInt(10);
+                y = candado.nextInt(10);
+
+            }while( ((v + y) % 2 == 0));
+
+
+            do{
+                //Generamos los números dentro de un bucle en el cual solo podrán
+               //salir si el producto de ambos es par
+                w = candado.nextInt(10);
+                x = candado.nextInt(10);
+
+            }while( (w * x) % 2 != 0);
             
-        }while( (w * x) % 2 != 0);
+        }while(v == y || v == w || v == x || y == w || y == x || w == x);
         
         //Generamos una letra
         z = (char) (candado.nextInt(122 - 33 + 1) + 33);
