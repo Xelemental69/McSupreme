@@ -15,7 +15,7 @@ public class OhJoderNoQueHabeisHecho {
     public static void main(String[] args) {
         //Generamos las variables para hacer una clave potencialmente compleja
         Random candado = new Random();
-        int v, w, x, y;
+        int v, w, x, y, letra;
         char z, a, b, c;
         int order;
         
@@ -44,28 +44,35 @@ public class OhJoderNoQueHabeisHecho {
             System.out.println(x);
             System.out.println(y);
         
-        //Generamos una letra
-        z = (char) (candado.nextInt(122 - 33 + 1) + 33);
+        do{
+        //Generamos una letra                
+            letra = candado.nextInt(122 - 33 + 1) + 33;
+            z = (char) letra;//Para comprobar si sale número y resetear el valor
+        }while(letra >= 48 && letra <= 57);
+        
         System.out.println(z);
         
         do{
             //Generamos otra letra dentro de un bucle que dejará salir un valor
            //que no sea idéntico al anterior
-            a = (char) (candado.nextInt(122 - 33 + 1) + 33);
-        }while(a==z);
+           letra = candado.nextInt(122 - 33 + 1) + 33;
+            a = (char) letra;//Para comprobar si sale número y resetear el valor
+        }while(a==z || (letra >= 48 && letra <= 57));
         System.out.println(a);
         
         do{
             //Generamos otra letra dentro de un bucle que dejará salir un valor
            //que no sea idéntico a los anteriores
-            b = (char) (candado.nextInt(122 - 33 + 1) + 33);
-        }while(b == z || b == a);
+           letra = candado.nextInt(122 - 33 + 1) + 33;
+            b = (char) letra;//Para comprobar si sale número y resetear el valor
+        }while(b == z || b == a || (letra >= 48 && letra <= 57));
         System.out.println(b);
         
         do{
         //Generamos la última letra
-        c = (char) (candado.nextInt(122 - 33 + 1) + 33);
-        }while(c == z || c == a || c == b);   
+            letra = candado.nextInt(122 - 33 + 1) + 33;
+            c = (char) letra;//Para comprobar si sale número y resetear el valor
+        }while(c == z || c == a || c == b || (letra >= 48 && letra <= 57));   
         System.out.println(c);
         
         //Generamos un nº al azar que determinará el orden de los caracteres
