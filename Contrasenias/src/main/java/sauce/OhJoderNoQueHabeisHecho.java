@@ -59,7 +59,7 @@ public class OhJoderNoQueHabeisHecho {
             System.out.println("Prueba de z: " + z);
         }while(letra >= 48 && letra <= 57);
         
-        System.out.println(z);
+        
         
         do{
             //Generamos otra letra dentro de un bucle que dejará salir un valor
@@ -68,7 +68,8 @@ public class OhJoderNoQueHabeisHecho {
             a = (char) letra;//Para comprobar si sale número y resetear el valor
             System.out.println("Prueba de a: " + a);
         }while(a==z || (letra >= 48 && letra <= 57));
-        System.out.println(a);
+        
+        
         
         do{
             //Generamos otra letra dentro de un bucle que dejará salir un valor
@@ -77,7 +78,8 @@ public class OhJoderNoQueHabeisHecho {
             b = (char) letra;//Para comprobar si sale número y resetear el valor
             System.out.println("Prueba de b: " + b);
         }while(b == z || b == a || (letra >= 48 && letra <= 57));
-        System.out.println(b);
+        
+        
         
         do{
         //Generamos la última letra
@@ -85,7 +87,8 @@ public class OhJoderNoQueHabeisHecho {
             c = (char) letra;//Para comprobar si sale número y resetear el valor
             System.out.println("Prueba de c: " + c);
         }while(c == z || c == a || c == b || (letra >= 48 && letra <= 57));   
-        System.out.println(c);
+        
+        
         
         //Generamos un nº al azar que determinará el orden de los caracteres
         order = candado.nextInt(4);
