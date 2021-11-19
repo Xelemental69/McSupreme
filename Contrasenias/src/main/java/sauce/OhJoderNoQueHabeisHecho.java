@@ -17,7 +17,8 @@ public class OhJoderNoQueHabeisHecho {
         Random candado = new Random();//Random permite generar datos al azar
         int v, w, x, y, letra;//Números enteros
         char z, a, b, c;//caracteres (solo uno por variable)
-        int order;//Condición (true or false)
+        int order;//Servirá como condición luego para determinar una entre 4
+        //formas de organizar los caracteres en la clave
 
         do {
 
