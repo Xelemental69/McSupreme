@@ -14,18 +14,20 @@ public class OhJoderNoQueHabeisHecho {
 
     public static void main(String[] args) {
         //Generamos las variables para hacer una clave potencialmente compleja
-        Random candado = new Random();
-        int v, w, x, y, letra;
-        char z, a, b, c;
-        int order;
+        Random candado = new Random();//Random permite generar datos al azar
+        int v, w, x, y, letra;//Números enteros
+        char z, a, b, c;//caracteres (solo uno por variable)
+        int order;//Condición (true or false)
 
         do {
 
             do {
                 //Generamos los números dentro de un bucle en el cual solo podrán
                 //salir si la suma de ambos es impar
-                v = candado.nextInt(10);
-                y = candado.nextInt(10);
+                v = candado.nextInt(10);//En esta línea cogemos al azar un nº
+                //entre 0 y 9
+                y = candado.nextInt(10);//En esta línea cogemos al azar un nº
+                //entre 0 y 9
 
                 //Mostramos los números por pantalla
                 System.out.println("Prueba de v&y: " + v + y);
@@ -35,8 +37,10 @@ public class OhJoderNoQueHabeisHecho {
             do {
                 //Generamos los números dentro de un bucle en el cual solo podrán
                 //salir si el producto de ambos es par
-                w = candado.nextInt(10);
-                x = candado.nextInt(10);
+                w = candado.nextInt(10);//En esta línea cogemos al azar un nº
+                //entre 0 y 9
+                x = candado.nextInt(10);//En esta línea cogemos al azar un nº
+                //entre 0 y 9
 
                 //Mostramos los números por pantalla
                 System.out.println("Prueba de w&x: " + w + x);
@@ -48,12 +52,8 @@ public class OhJoderNoQueHabeisHecho {
             //Si algún nº es igual que otro... PERMÍTEME QUE INSISTA (se repite)
         } while (v == y || v == w || v == x || y == w || y == x || w == x);
 
-        /*
-            System.out.println(v);
-            System.out.println(w);
-            System.out.println(x);
-            System.out.println(y);
-         */
+
+        
         do {
             //Generamos una letra                
             letra = candado.nextInt(122 - 33 + 1) + 33;
@@ -67,7 +67,12 @@ public class OhJoderNoQueHabeisHecho {
         do {
             //Generamos otra letra dentro de un bucle que dejará salir un valor
             //que no sea ni idéntico al anterior ni un nº
+            
+            //En la siguiente línea cogemos el valor de la letra en UNICODE 
+           //y lo limitamos para ajustarse al rango de caracteres que queremos 
+          //(De "!" a "z"):
             letra = candado.nextInt(122 - 33 + 1) + 33;
+            
             a = (char) letra;//Para comprobar si sale número y resetear el valor
             
             //Mostramos el caracter por pantalla
@@ -78,7 +83,12 @@ public class OhJoderNoQueHabeisHecho {
         do {
             //Generamos otra letra dentro de un bucle que dejará salir un valor
             //que no sea ni idéntico a los anteriores ni un nº
+            
+            //En la siguiente línea cogemos el valor de la letra en UNICODE 
+           //y lo limitamos para ajustarse al rango de caracteres que queremos 
+          //(De "!" a "z"):
             letra = candado.nextInt(122 - 33 + 1) + 33;
+            
             b = (char) letra;//Para comprobar si sale número y resetear el valor
             
             //Mostramos el caracter por pantalla
@@ -89,7 +99,12 @@ public class OhJoderNoQueHabeisHecho {
         do {
             //Generamos una última letra dentro de un bucle que dejará salir un 
             //valor que no sea ni idéntico a los anteriores ni un nº
+            
+            //En la siguiente línea cogemos el valor de la letra en UNICODE 
+           //y lo limitamos para ajustarse al rango de caracteres que queremos 
+          //(De "!" a "z"):
             letra = candado.nextInt(122 - 33 + 1) + 33;
+            
             c = (char) letra;//Para comprobar si sale número y resetear el valor
             
             //Mostramos el caracter por pantalla
