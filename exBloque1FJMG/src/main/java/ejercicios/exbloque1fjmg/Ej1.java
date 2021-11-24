@@ -18,8 +18,15 @@ public class Ej1 {
      */
     private static double x1(int a, int b, int c) {//Fórmula para calcular x1
         double x;
+        double bres = b * (-1);
+        double bsq = b * b;
+        double ac4 = 4 * a * c;
+        
+        System.out.println(bres);
+        System.out.println(bsq);
+        System.out.println(ac4);
 
-        x = (Math.sqrt((b * b) - (4 * a * c)) - b) / (2 * a);
+        x = (double)(bres + Math.sqrt(bsq - ac4)) / (2 * a);
 
         return x;
 
@@ -27,8 +34,11 @@ public class Ej1 {
 
     private static double x2(int a, int b, int c) {//Fórmula para calcular x2
         double x;
+        double bres = b * (-1);
+        double bsq = b * b;
+        double ac4 = 4 * a * c;
 
-        x = (double) ((-b) - Math.sqrt((b * b) - (4 * a * c))) / (2 * a);
+        x = (double)(bres - Math.sqrt(bsq - ac4)) / (2 * a);
 
         return x;
 
