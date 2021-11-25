@@ -16,7 +16,7 @@ public class Ej3 {
     private static double x1(int a, int b, int c) {//Fórmula para calcular x1
         double x;
         double bres = b * (-1);
-        double bsq = b * b;
+        double bsq = (double) b * b;
         double ac4 = 4 * a * c;
         double bMinFac = bsq - ac4;
         
@@ -26,7 +26,7 @@ public class Ej3 {
         System.out.println(bMinFac);
         System.out.println(Math.sqrt(bMinFac));
 
-        x = (double)(bres + Math.sqrt(bMinFac)) / (2 * a);
+        x = (bres + Math.sqrt(bMinFac)) / (2 * a);
 
         return x;
 
@@ -35,7 +35,7 @@ public class Ej3 {
     private static double x2(int a, int b, int c) {//Fórmula para calcular x2
         double x;
         double bres = b * (-1);
-        double bsq = b * b;
+        double bsq = (double) b * b;
         double ac4 = 4 * a * c;
         double bMinFac = bsq - ac4;
         
@@ -45,7 +45,7 @@ public class Ej3 {
         System.out.println(bMinFac);
         System.out.println(Math.sqrt(bMinFac));
 
-        x = (double)(bres - Math.sqrt(bMinFac)) / (2 * a);
+        x = (bres - Math.sqrt(bMinFac)) / (2 * a);
 
         return x;
 

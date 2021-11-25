@@ -16,7 +16,7 @@ public class Ej2 {
     private static double x1(int a, int b, int c) {//Fórmula para calcular x1
         double x;
         double bres = b * (-1);
-        double bsq = b * b;
+        double bsq = (double) b * b;
         double ac4 = 4 * a * c;
         double bMinFac = bsq - ac4;
         

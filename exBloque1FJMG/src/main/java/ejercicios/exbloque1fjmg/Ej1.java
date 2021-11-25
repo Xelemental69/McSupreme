@@ -38,7 +38,7 @@ public class Ej1 {
     private static double x2(int a, int b, int c) {//Fórmula para calcular x2
         double x;
         double bres = b * (-1);
-        double bsq = b * b;
+        double bsq = (double) b * b;
         double ac4 = 4 * a * c;
         double bMinFac = bsq - ac4;
         
