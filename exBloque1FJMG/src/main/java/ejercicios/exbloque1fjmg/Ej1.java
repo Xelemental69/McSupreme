@@ -21,12 +21,15 @@ public class Ej1 {
         double bres = b * (-1);
         double bsq = b * b;
         double ac4 = 4 * a * c;
+        double bMinFac = bsq - ac4;
         
         System.out.println(bres);
         System.out.println(bsq);
         System.out.println(ac4);
+        System.out.println(bMinFac);
+        System.out.println(Math.sqrt(bMinFac));
 
-        x = (double)(bres + Math.sqrt(bsq - ac4)) / (2 * a);
+        x = (double)(bres + Math.sqrt(bMinFac)) / (2 * a);
 
         return x;
 
@@ -37,8 +40,15 @@ public class Ej1 {
         double bres = b * (-1);
         double bsq = b * b;
         double ac4 = 4 * a * c;
+        double bMinFac = bsq - ac4;
+        
+        System.out.println(bres);
+        System.out.println(bsq);
+        System.out.println(ac4);
+        System.out.println(bMinFac);
+        System.out.println(Math.sqrt(bMinFac));
 
-        x = (double)(bres - Math.sqrt(bsq - ac4)) / (2 * a);
+        x = (double)(bres - Math.sqrt(bMinFac)) / (2 * a);
 
         return x;
 
