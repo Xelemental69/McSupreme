@@ -10,13 +10,15 @@ package daw.poo;
  */
 public class CajaCarton {
     
+    long id;
     int ancho;   //milímetros
     int alto;   //milímetros
     int largo; //milímetros
     int peso; //gramos
     
-    public CajaCarton(int ancho, int alto, int largo, int peso){
+    public CajaCarton(long id, int ancho, int alto, int largo, int peso){
         
+        this.id = id;
         this.ancho = ancho;
         this.alto = alto;
         this.largo = largo;
@@ -24,6 +26,9 @@ public class CajaCarton {
         
     }
     
+    public String getID() {
+        return "ID: " + this.id + "mm";
+    }
     
     public String getancho() {
         return "Ancho: " + this.ancho + "mm";
