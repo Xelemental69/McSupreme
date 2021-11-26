@@ -1,0 +1,69 @@
+#p1{
+	text-align: right;
+}
+#p2{
+	text-align: center;
+}
+
+#linea_hor{
+
+	width: 100%;
+	height: 1px;
+	border-top: 1px dashed #CCC;
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+}
+#linea_ver{
+
+	height: 100%;
+	width: 1px;
+	border-left: 1px dashed #CCC;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	
+}
+
+#d1{
+
+ width: 60px; height: 60px; border: 2px solid blue; position: absolute; top: 0px; left: 0px;
+
+}
+
+#d2{
+
+ width: 60px; height: 60px; border: 2px solid green; position: absolute; bottom: 0px; left: 0px;
+
+}
+
+#d3{
+
+ width: 60px; height: 60px; border: 2px solid red; position: absolute; top: 50%; left: 50%;
+	
+}
+
+#d4{
+
+ width: 60px; height: 60px; border: 2px solid orange; position: absolute; bottom: 50%; right: 50%;
+	
+}
+
+#d5{
+
+ width: 60px; height: 60px; border: 2px solid lightpink; position: absolute; top: 50%; right: 0;
+	
+}
+
+#d6{
+
+ width: 60px; height: 60px; border: 2px solid lightblue; position: absolute; top: 25%; right: 25%;
+	
+}
+
+#d7{
+
+ border: 2px solid lightblue; position: absolute; top: 50%; right: 50%; width: 400px; height: 400px; margin-right: -200px; margin-top: -200px;
+	
+}
