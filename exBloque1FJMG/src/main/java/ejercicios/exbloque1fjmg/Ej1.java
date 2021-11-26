@@ -100,7 +100,7 @@ public class Ej1 {
 
         } else {
 
-            if ((b * b) < (4 * a * c)) {
+            if ((Math.pow(b, 2)) < (4 * a * c)) {
 
                 //Si b² es menor que 4ac, salta error por no poder resolver
                 //la ecuación

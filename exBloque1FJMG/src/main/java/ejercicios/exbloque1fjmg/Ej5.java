@@ -24,8 +24,8 @@ public class Ej5 {
 
     private static void countdown() {//Método para la cuenta atrás:
 
-        for (int i = 1000; i > 100; i -= 5) {//Vamos mostrando múltiplos de 5
-            //entre 1000 y 100
+         for (int i = 1000; i >= 100; i -= 5) {//Vamos mostrando múltiplos de 5
+                  //entre 1000 y 100
 
             System.out.println("| " + i + " |");
 
