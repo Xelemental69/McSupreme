@@ -29,13 +29,14 @@ public class Empleado {
     double sueldoBase;
     double pagoHoraExtra;
     int horasExtra;
-    double irpf;
+    int irpf = 20;
+    int newirpf;
     boolean casado;
     int hijos;
     
     public Empleado(String nombre1, String nombre2, String apellido1,
     String apellido2, String nif, double sueldoBase, double pagoHoraExtra,
-    int horasExtra, double irpf, boolean casado, int hijos){
+    int horasExtra, int irpf, boolean casado, int hijos){
         
         this.nombre1 = nombre1;
         this.nombre2 = nombre2;
@@ -45,7 +46,9 @@ public class Empleado {
         this.sueldoBase = sueldoBase;
         this.pagoHoraExtra = pagoHoraExtra;
         this.horasExtra = horasExtra;
-        this.irpf = irpf;
+        if(irpf > 0 && irpf < 21){
+            this.irpf = irpf;
+        }
         this.casado = casado;
         this.hijos = hijos;
         
@@ -53,67 +56,69 @@ public class Empleado {
     
     public void setNombre1(String nombre1){
         
-        
+        this.nombre1 = nombre1;
         
     }
     
     public void setNombre2(String nombre2){
         
-        
+        this.nombre2 = nombre2;
         
     }
     
     public void setApellido1(String apellido1){
         
-        
+        this.apellido1 = apellido1;
         
     }
     
     public void setApellido2(String apellido2){
         
-        
+        this.apellido2 = apellido2;
         
     }
     
     public void setNIF(String nif){
         
-        
+        this.nif = nif;
         
     }
     
     public void setSueldoBase(double sueldoBase){
         
-        
+        this.sueldoBase = sueldoBase;
         
     }
     
     public void setPagoHoraExtra(double pagoHoraExtra){
         
-        
+        this.pagoHoraExtra = pagoHoraExtra;
         
     }
     
     public void setHorasExtra(int horasExtra){
         
-        
+        this.horasExtra = horasExtra;
         
     }
     
-    public void setIRPF(double irpf){
+    public void setIRPF(int irpf){
         
-        
+        if(irpf > 0 && irpf < 21){
+            this.irpf = irpf;
+        }
         
     }
     
     public void setCasado(boolean casado){
 
-
+        this.casado = casado;
 
     }
     
     public void setHijos(int hijos){
         
-        
+        this.hijos = hijos;
         
     }
     
@@ -165,9 +170,25 @@ public class Empleado {
 
     }
 
-    public double getIRPF(){
+    public int getIRPF(){
 
-        return this.irpf;
+        if(this.casado){
+            
+            this.newirpf = this.irpf - 2 - this.hijos;
+                    
+        }else{
+            
+            this.newirpf = this.irpf - this.hijos;
+                      
+        }     
+        
+        if(this.newirpf < 0){
+            
+            this.newirpf = 0;
+            
+        }
+        
+        return this.newirpf;
 
     }
 
@@ -181,6 +202,47 @@ public class Empleado {
 
         return this.hijos;
 
+    }
+    
+    public double ComplementoHE() {
+        
+        return (this.horasExtra * this.pagoHoraExtra);
+        
+    }
+    
+    public double getSueldoBruto(){
+        
+        return (this.sueldoBase + ComplementoHE());
+        
+    }
+    
+    public double sueldoNeto(){
+        
+        double irpfPerc = (double)this.newirpf / 100;
+        
+        return (getSueldoBruto() - (getSueldoBruto() * irpfPerc));
+        
+    }
+    
+    public void basicInfo(){
+        
+        System.out.println("1er Nombre: " + this.nombre1 + "\n"
+         + "2º Nombre: " + this.nombre2 + "\n" + "1er Apellido: "
+         + this.apellido1 + "\n" + "2º Appellido" + this.apellido2 + 
+         "NIF: " + this.nif + "\n" + "Estado civil: " + (this.casado ? 
+                "Casado" : "No Casado") + "\n" + "Hijos: " + this.hijos);
+        
+    }
+    
+    public void allInfo(){
+        
+        basicInfo();
+        
+        System.out.println("Sueldo base: " + this.sueldoBase + "\n"
+        + "Complemento horas: " + this.ComplementoHE() + "Sueldo bruto: "
+        + this.getSueldoBruto() + "IRPF: " + this.newirpf + "%\n"
+        + "Sueldo neto: " + this.sueldoNeto());
+        
     }
     
 }

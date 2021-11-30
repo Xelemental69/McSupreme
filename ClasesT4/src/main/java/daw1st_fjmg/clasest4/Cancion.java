@@ -21,8 +21,8 @@ package daw1st_fjmg.clasest4;
  */
 public class Cancion {
     
-    String titulo;
-    String autor;
+    String titulo = "";
+    String autor = "";
     
     public Cancion(String titulo, String autor){
         
