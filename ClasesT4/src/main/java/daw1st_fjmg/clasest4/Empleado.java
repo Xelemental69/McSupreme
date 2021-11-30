@@ -42,8 +42,8 @@ public class Empleado {
         this.apellido2 = "Mystery";
         this.nif = "01234567Z";
         this.sueldoBase = 0;
-        this.pagoHoraExtra = 0;
-        this.horasExtra = 10;
+        this.pagoHoraExtra = 10;
+        this.horasExtra = 0;
         this.irpf = 20;
         this.casado = false;
         this.hijos = 0;
@@ -60,10 +60,10 @@ public class Empleado {
         this.apellido2 = apellido2;
         this.nif = nif;
         this.sueldoBase = sueldoBase;
-        this.pagoHoraExtra = pagoHoraExtra;
-        if (!(horasExtra < 10 || horasExtra > 25)) {
-            this.horasExtra = horasExtra;
+        if (!(pagoHoraExtra < 10 || horasExtra > 25)) {
+            this.pagoHoraExtra = pagoHoraExtra;
         }
+        this.horasExtra = horasExtra;        
         if (irpf > 0 && irpf < 21) {
             this.irpf = irpf;
         } else {
