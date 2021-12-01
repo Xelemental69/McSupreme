@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ * Click https://www.youtube.com/watch?v=dQw4w9WgXcQ
  */
 package daw1st_fjmg.clasest4;
 
@@ -10,8 +10,8 @@ package daw1st_fjmg.clasest4;
  */
 public class Cafetera {
 
-    double capacidadMaxima;
-    double cantidadActual;
+    private double capacidadMaxima;
+    private double cantidadActual;
 
     public Cafetera() {
 
@@ -22,15 +22,19 @@ public class Cafetera {
 
     public Cafetera(double capacidadMaxima) {
 
-        this.capacidadMaxima = capacidadMaxima;
-        this.cantidadActual = capacidadMaxima;
+        this.capacidadMaxima = Math.abs(capacidadMaxima);
+        this.cantidadActual = Math.abs(capacidadMaxima);
 
     }
 
     public Cafetera(double capacidadMaxima, double capacidadActual) {
 
-        this.capacidadMaxima = capacidadMaxima;
-        this.cantidadActual = capacidadActual;
+        this.capacidadMaxima = Math.abs(capacidadMaxima);
+        this.cantidadActual = Math.abs(capacidadActual);
+
+        if (this.cantidadActual > this.capacidadMaxima) {
+            this.cantidadActual = this.capacidadMaxima;
+        }
 
     }
 
@@ -78,6 +82,12 @@ public class Cafetera {
 
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Cafetera{" + "capacidadMaxima=" + capacidadMaxima
+                + "u, cantidadActual=" + cantidadActual + "u}";
     }
 
 }
