@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    	<meta charset="UTF-8" />
+    	<link href="Imagenes/favicon.jpeg" rel="shortcut icon" />
+	<title>Formulario</title>
+</head>
+<body>
+
+	<h1>Formulario de entrada</h1>
+	
+	<form action="../index.html" method="get">
+	
+	<fieldset>
+		<legend>Datos Personales</legend>
+	
+		<label>Nombre:  </label>
+		<input type="text" name="nombre" id="nombre" />
+		
+		<br/>
+		
+		<label>Sexo:  </label>
+		<label>Hombre </label>
+		<input type="radio" name="hombre" id="hombre" checked/>
+		
+		<label>Mujer </label>
+		<input type="radio" name="mujer" id="mujer" />
+		
+		<br/>
+		
+		<label>Veh&iacute;culos:  </label>		
+		<input type="checkbox" name="Bici" id="mujer" />
+		<label>Bici: </label>
+		<input type="checkbox" name="Coche" id="mujer" />
+		<label>Coche: </label>
+		
+		<br/>
+		
+		<label>Bebida:  </label>
+		<select name="bebida" id="bebida">
+			<option name="Cerveza" id="Cerveza" >Cerveza</option>
+			<option name="Vino" id="Vino" />Vino</option>
+			<option name="Agua" id="Agua" />Agua</option>
+		</select>
+		
+		<br/>
+		
+		<label>Comentarios:</label>
+		<textarea name="comentario" id="comentario" >
+		
+		</textarea>
+		
+		<br/>
+		
+		<input type="submit" name="P&aacute;g Inicio" value="P&aacute;g Inicio" />
+	
+	</fieldset>		
+	
+	</form>
+
+</body>
+ 
+</html>
