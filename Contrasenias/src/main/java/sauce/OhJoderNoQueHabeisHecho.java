@@ -120,24 +120,24 @@ public class OhJoderNoQueHabeisHecho {
         switch (order) {//Según order, el orden de los carateres será distinto.
             case 0:
                 System.out.println("1ª variación:");
-                System.out.println("Su clave generara es: " + v + a + x
+                System.out.println("Su clave generada es: " + v + a + x
                         + b + w + z + y + c);
                 break;
             case 1:
                 System.out.println("2ª variación:");
-                System.out.println("Su clave generara es: " + c + w + y
+                System.out.println("Su clave generada es: " + c + w + y
                         + z + a + b + x + v);
                 break;
 
             case 2:
                 System.out.println("3ª variación:");
-                System.out.println("Su clave generara es: " + z + a + v
+                System.out.println("Su clave generada es: " + z + a + v
                         + x + w + c + y + b);
                 break;
 
             case 3:
                 System.out.println("4ª variación:");
-                System.out.println("Su clave generara es: " + w + a + z
+                System.out.println("Su clave generada es: " + w + a + z
                         + y + c + x + v + b);
                 break;
         }
