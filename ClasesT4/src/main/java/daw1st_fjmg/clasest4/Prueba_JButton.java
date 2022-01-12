@@ -44,7 +44,7 @@ public class Prueba_JButton extends JFrame{
 
       setTitle("Ejemplo 3: Eventos");
       setSize(240,390);
-      //setResizable(false);
+      setResizable(false);
       setLayout(null);
       getContentPane().setBackground(Color.BLACK);
       setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -75,9 +75,9 @@ public class Prueba_JButton extends JFrame{
         @Override
         public void keyPressed(KeyEvent e) {
           String ch = String.valueOf(e.getKeyChar());
-          if ("1".equals(ch) || "2".equals(ch) || "3".equals(ch)){
+          //if ("1".equals(ch) || "2".equals(ch) || "3".equals(ch)){
             display.setText(display.getText() + ch);  
-          }
+          //}
           if ("c".equals(ch)){
             display.setText("");
           }
