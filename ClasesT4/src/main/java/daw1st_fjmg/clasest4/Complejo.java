@@ -12,12 +12,16 @@ public class Complejo {
 
     private double a; //Parte real del nº complejo (z)
     private double b; //Parte imaginaria del nº complejo (z)
+    private static int contador; //Contador de instancias. 
+    //Indica la cantidad de clases creadas (y el nº se mantiene igual en todas 
+    //las clases).
 
     public Complejo(double a, double b) {
         //Constructor que recoge los parametros de a y b para darles su respectivo
         //valor:
         this.a = a;
         this.b = b;
+        contador++; //Aumenta el contador acordemente
         
     }
 
@@ -25,6 +29,7 @@ public class Complejo {
         //Constructor por defecto que pone los valores en 0
         a = 0;
         b = 0;
+        contador++; //Aumenta el contador acordemente
 
     }
 
@@ -128,6 +133,14 @@ public class Complejo {
             System.out.println("La parte imaginaria de la clase es mayor a"
                     + " la introducida");
         }
+        
+        
+        
+    }
+
+    public static int getContador() {
+        
+        return contador;
         
     }
 

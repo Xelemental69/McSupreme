@@ -55,6 +55,12 @@ public class LoComplejo {
         complejito12.division(complejito2.getA(), complejito2.getB());
         System.out.println(complejito12);
         
+        //Mostramos el contador de clases (da igual de que clase la cogemos
+        //, mostrado a continuación):
+        System.out.println("\n Nº de clases creadas: " + complejito1.getContador());
+        System.out.println("\n Nº de clases creadas: " + complejito2.getContador());
+        System.out.println("\n Nº de clases creadas: " + complejito12.getContador());
+        
     }
     
 }
