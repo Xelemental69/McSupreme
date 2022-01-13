@@ -1,0 +1,47 @@
+html{
+
+	box-sizing: border-box;
+
+}
+
+*{
+
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+
+}
+
+ul{
+
+	list-style: none;
+	border: 1px solid #7C7C7C;
+	width: 180px;
+	border-bottom: none;
+
+}
+
+li{
+
+	border-bottom: 1px solid #7C7C7C;
+	background: url("../images/flecha_inactiva.png") no-repeat #F4F4FA 0.2em center;
+
+}
+li a{
+
+	color: #333A3C;
+	text-decoration: none;
+	padding: 0.2em 0 0.2em 1.4em;
+	display: block;
+
+}
+li:hover{
+
+	background: url("../images/flecha_activa.png") no-repeat #54585B 0.2em center;
+
+}
+li a:hover{
+
+	color: #EAF5FF;
+
+}
