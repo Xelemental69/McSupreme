@@ -1,0 +1,69 @@
+div > ul{
+
+	border: 1px solid #CCC;
+	margin: 1em;
+	float: left;
+
+}
+
+#l1{
+
+	list-style-type: circle;
+
+
+}
+
+#l2{
+
+	list-style-type: square;
+
+}
+
+#l3{
+
+	list-style-type: hiragana;
+
+}
+
+#l4{
+
+	list-style-type: lower-hexadecimal;
+
+}
+
+#l5{
+
+	list-style-type: lower-roman;
+
+}
+
+#l6{
+
+	list-style-type: lower-norwegian;
+
+}
+
+#l7{
+
+	list-style-type: lower-latin;
+
+}
+
+#l8{
+
+	list-style-type: upper-alpha;
+
+}
+
+#l9{
+
+	list-style-type: urdu;
+
+}
+
+#l10{
+
+	list-style-type: armenian;
+
+}
+
