@@ -36,8 +36,14 @@ public class LoComplejo {
         //realizar operaciones:
         Complejo complejito12 = new Complejo(complejito1.getA(),complejito1.getB());
         
-        //Se muestra el valor original de complejito12:        
+        //Se muestra el valor original de complejito12, y se compara a complejito1:        
         System.out.println(complejito12);
+        //Método igualdad:
+        complejito12.igualdad(complejito1.getA(), complejito1.getB()); 
+        //Mostrando el boolean igual:
+        System.out.println("Iguales? ==> " 
+                + complejito12.igual(complejito1.getA(), complejito1.getB()));
+        System.out.println("");
         
         //A continuación, se realizan las siguientes operaciones, junto a sus
         //resultados:

@@ -137,6 +137,20 @@ public class Complejo {
         
         
     }
+    
+    public boolean igual(double x, double y) {
+
+        if (a == x && b == y) {
+
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+
+    }
 
     public static int getContador() {
         
