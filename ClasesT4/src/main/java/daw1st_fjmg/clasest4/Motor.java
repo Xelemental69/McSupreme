@@ -25,12 +25,21 @@ package daw1st_fjmg.clasest4;
 public class Motor {
     
     boolean enMarcha;
-    
-    public Motor(boolean enMarcha){
+    double cilindrada;
+
+    public Motor(boolean enMarcha, double cilindrada) {
         
         this.enMarcha = enMarcha;
+        this.cilindrada = cilindrada;
         
-    }
+    }        
+
+    public Motor() {
+        
+        enMarcha = false;
+        cilindrada = 0.0;
+        
+    }        
     
     public void arrancar() {
         
@@ -58,6 +67,11 @@ public class Motor {
         
         this.enMarcha = enMarcha;
         
+    }
+
+    @Override
+    public String toString() {
+        return "Motor{" + "enMarcha=" + enMarcha + ", cilindrada=" + cilindrada + '}';
     }
     
 }

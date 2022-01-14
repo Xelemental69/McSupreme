@@ -11,10 +11,17 @@ package daw1st_fjmg.clasest4;
 public class Rueda {
     
     boolean inflada;
-    
-    public Rueda(boolean inflada){
-        
+    double diametro;
+
+    public Rueda(boolean inflada, double diametro) {
         this.inflada = inflada;
+        this.diametro = diametro;
+    }
+    
+    public Rueda(){
+        
+        inflada = false;
+        diametro = 69;
         
     }
     
@@ -44,6 +51,11 @@ public class Rueda {
         
         this.inflada = enMarcha;
         
+    }
+
+    @Override
+    public String toString() {
+        return "Rueda{" + "inflada=" + inflada + ", diametro=" + diametro + '}';
     }
     
 }

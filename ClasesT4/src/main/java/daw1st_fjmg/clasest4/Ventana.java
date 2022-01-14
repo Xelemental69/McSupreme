@@ -11,11 +11,20 @@ package daw1st_fjmg.clasest4;
 public class Ventana {
     
     boolean abierta;
+    boolean tintada;
     
-    public Ventana(boolean abierta){
+    public Ventana(boolean abierta, boolean tintada){
         
         this.abierta = abierta;
+        this.tintada = tintada;
         
+    }
+
+    public Ventana() {
+    
+        abierta = false;
+        tintada = false;
+    
     }
     
     public void abrir() {
@@ -44,6 +53,11 @@ public class Ventana {
         
         this.abierta = abierta;
         
+    }
+
+    @Override
+    public String toString() {
+        return "Ventana{" + "abierta=" + abierta + ", tintada=" + tintada + '}';
     }
     
 }
