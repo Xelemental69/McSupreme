@@ -135,15 +135,59 @@ body{
 
 }
 
+#f12 > div {
+
+	width: 33.333333333%;
+	height: 14.28571428571429%;
+	float: right;
+	border: solid black 1px;
+	border-bottom: none;
+	border-left: none;
+
+}
+
 #f13{
 
 	background-color: blue;
 
 }
 
+#f21 > div {
+
+	height: 33.333333333%;
+	width: 14.28571428571429%;
+	float: right;
+	border: solid black 1px;
+	border-top: none;
+	border-right: none;
+
+}
+
+#f23 > div {
+
+	height: 33.333333333%;
+	width: 14.28571428571429%;
+	float: right;
+	border: solid black 1px;
+	border-top: none;
+	border-left: none;
+
+}
+
 #f31{
 
 	background-color: green;
+
+}
+
+#f32 > div {
+
+	width: 33.333333333%;
+	height: 14.28571428571429%;
+	float: right;
+	border: solid black 1px;
+	border-top: none;
+	border-left: none;
 
 }
 
