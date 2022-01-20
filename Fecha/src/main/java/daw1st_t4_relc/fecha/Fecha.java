@@ -4,7 +4,6 @@
  */
 package daw1st_t4_relc.fecha;
 import java.time.*;
-import java.time.temporal.ChronoUnit;
 
 /**
  *
@@ -222,7 +221,7 @@ public class Fecha {
                 break;
                 
             case 3:
-                weekDay = "MiÃ©rcoles";
+                weekDay = "Miércoles";
                 break;
             
             case 4:
@@ -233,7 +232,7 @@ public class Fecha {
                 break;
             
             case 6:
-                weekDay = "SÃ¡bado";
+                weekDay = "Sábado";
                 break;
             
             case 7:
@@ -268,7 +267,7 @@ public class Fecha {
         
         fec2 = fec.plusDays(1);
         
-        System.out.println("DÃ­a Siguiente " + fec2.getDayOfMonth() + "-" 
+        System.out.println("Día Siguiente " + fec2.getDayOfMonth() + "-" 
                 + fec2.getMonthValue() + "-" + fec2.getYear());
         
         this.dia = fec2.getDayOfMonth();
@@ -308,8 +307,8 @@ public class Fecha {
         LocalDate fParametro = LocalDate.of(y.getAno(), y.getMes(), y.getDia());
         LocalDate fCompuesta = LocalDate.of(ano, mes, dia);
         
-        return fCompuesta.isBefore(fParametro);
-        
     }
+    
+    
     
 }
