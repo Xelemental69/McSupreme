@@ -1,0 +1,27 @@
+a:link {
+
+	color: darkred;
+	text-decoration: overline underline blue;
+
+}
+
+a:visited {
+
+	color: darkolivegreen;
+	text-decoration: overline underline violet;
+
+}
+
+a:hover {
+
+	color: hotpink;
+	text-decoration: overline underline darkorange;
+
+}
+
+a:active {
+
+	color: cyan;
+	text-decoration: overline underline red;
+
+}
