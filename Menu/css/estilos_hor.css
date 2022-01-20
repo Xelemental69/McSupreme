@@ -9,6 +9,7 @@ html{
 	padding: 0;
 	margin: 0;
 	box-sizing: inherit;
+	font-family:sans-serif;
 
 }
 
@@ -44,8 +45,7 @@ background-image: url("../images/boton-menu.jpg");
 ul{
 
 	list-style: none;
-	margin: 0 auto;
-	width: 45%;
+	width: 100%;
 
 }
 
@@ -53,16 +53,20 @@ li{
 
 	background-image: url("../images/boton-menu.jpg");
 	float: left;
+	position: relative;
+	left: 31.5%;
 
 }
+
 li a{
 
-	color: white;
+	color: lightcyan;
 	text-decoration: none;
 	padding: 0.35em 3em 0.35em 3em;
 	display: block;
 
 }
+
 li:hover{
 
 	background-image: url("../images/boton-menu2.jpg");
@@ -71,7 +75,7 @@ li:hover{
 
 li:active{
 
-	background-image: url("../images/boton-menu2.jpg");
+	background-image: url("../images/boton-menu3.jpg");
 
 }
 
