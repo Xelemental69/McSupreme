@@ -228,3 +228,31 @@ alter table empleados
 	add constraint fk_empleados_deptos 
 		foreign key (numdepto) references deptos(numdepto) on delete no action
 			on update cascade;
+            
+alter table empleados
+	add column jubilacion date;
+    
+create table if not exists obrasmasbuscadas
+(
+
+codobramb int,
+nomobramb varchar(50),
+codartista int unsigned,
+valoradq decimal (10, 2),
+
+constraint pk_obrasmasbuscadas primary key (codobramb),
+
+constraint fk_obrasmasbuscadas_artistas foreign key (codartista) references artistas(codartista) 
+        on delete no action on update cascade,
+        
+constraint fk_obras_tipobras foreign key (codtipobra) references tipobras(codtipobra) 
+        on delete no action on update cascade,
+    
+constraint fk_obras_estilos  foreign key (codestilo) references estilos(codestilo) 
+        on delete no action on update cascade
+
+);
+
+
+
+drop table if exists obrasmasbuscadas;

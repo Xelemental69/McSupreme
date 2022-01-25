@@ -139,7 +139,7 @@ public class Ej_5 {
             
             if(rec[jj] > 0){
                 
-                totalP++;
+                totalP += rec[jj];
                 
             }
             
@@ -158,9 +158,9 @@ public class Ej_5 {
         
         for(int kk = 0; kk< rec.length; kk++){
             
-            if(rec[kk] > 0){
+            if(rec[kk] < 0){
                 
-                totalN++;
+                totalN += rec[kk];
                 
             }
             
@@ -175,7 +175,18 @@ public class Ej_5 {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        int [] pipo = new int[10];
         
+        insertarDatos(pipo);
+        
+        mostrarArray(pipo);
+        
+        System.out.println("Nºs positivos: " + contadorPos(pipo));
+        System.out.println("Nºs negativos: " + contadorNeg(pipo));
+        System.out.println("0s: " + contadorCeros(pipo));
+        
+        mediaPos(pipo);
+        mediaNeg(pipo);
         
     }
     
