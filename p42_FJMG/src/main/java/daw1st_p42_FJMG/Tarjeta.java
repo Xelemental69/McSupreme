@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package daw1st_t4p42_fj.p42_fjmg;
+package daw1st_p42_FJMG;
 
 /**
  *
@@ -24,7 +24,7 @@ public class Tarjeta {
     private String banco;
     private String cvv;
     private double saldo;
-    private boolean valido = true;
+    private boolean valido;
     private LocalDate caducidad;
     //Por último, estas dos clases determinan la cantidad mínima y máxima que 
     //puede haber de saldo:
@@ -35,16 +35,25 @@ public class Tarjeta {
             String apellido2, String banco, String cvv, double saldo, int mes,
             int ano) {//Constructor parametrizado
 
-        //Comprobamos que el número de la tarjeta y el nº secreto son válidos
-        if (validez(numTarjeta, cvv)) {//En caso afirmativo, ponemos los datos
-
+        //Comprobamos que el número de la tarjeta y el nº secreto son válidos               
+        if (validezNum(numTarjeta)){//En caso afirmativo, ponemos los datos
+            
             this.numTarjeta = numTarjeta;
-            this.cvv = cvv;
-        } else {//Si no, se pondrán datos por defecto, 
-            //y la tarjeta será inhabilitada:
-            System.out.println("Nº de tarjeta y/o Nº secreto introducido "
-                    + "no son válidos");
+            
+        }else{//Si no, se pondrán datos por defecto
+            
+            System.out.println("Nº de tarjeta introducido no es válido");
             this.numTarjeta = "0123456789012345";
+            
+        }
+        
+        if (validezCVV(cvv)) {//En caso afirmativo, ponemos los datos
+            
+            this.cvv = cvv;
+            
+        } else {//Si no, se pondrán datos por defecto
+            
+            System.out.println("Nº secreto introducido no es válido");
             this.cvv = "012";
         }
 
@@ -98,32 +107,57 @@ public class Tarjeta {
         /*PD: Los valores del nombre, apellidos y la fecha son relacionados a un
         meme (este: https://www.youtube.com/watch?v=huie2_3Pekg ) */
     }
-
-    public boolean validez(String nT, String cvv) {
+        
+    public boolean validezNum(String nT) {
 
         boolean v = true;
         char d;
 
-        if (nT.length() == 16 && cvv.length() == 3) {
+        //Comprueba si el número de tarjeta (nT) y el CVV tienen la longitud 
+        //exacta:
+        if (nT.length() == 16) {
 
-            for (int i = 0; i < 16; i++) {
+            for (int i = 0; i < 16; i++) {//Comprueba que cada parte del string
+                //es un nº
 
                 d = nT.charAt(i);
                 if (!(Character.isDigit(d))) {
-
+                    //Si hay un caracter no numérico, salta el mensaje de error
                     System.out.println("El nº de tarjeta es inválido "
                             + "(no es numérico)");
                     v = false;
 
                 }
 
-            }
+            }            
 
-            for (int j = 0; j < 3; j++) {
+        } else {//Si el número de tarjeta no es de 16 
+            //cifras...
+
+            System.out.println("El nº de tarjeta es inválido (fallo de longitud");
+            v = false;
+
+        }
+
+        return v;
+
+    }
+    
+    public boolean validezCVV(String cvv) {
+
+        boolean v = true;
+        char d;
+
+        //Comprueba si el número de tarjeta (nT) y el CVV tienen la longitud 
+        //exacta:
+        if (cvv.length() == 3) {
+
+            for (int j = 0; j < 3; j++) {//Comprueba que cada parte del string
+                //es un nº
 
                 d = cvv.charAt(j);
                 if (!(Character.isDigit(d))) {
-
+                    //Si hay un caracter no numérico, salta el mensaje de error
                     System.out.println("El CVV es inválido (no es numérico)");
                     v = false;
 
@@ -131,12 +165,7 @@ public class Tarjeta {
 
             }
 
-        } else if (nT.length() != 16) {
-
-            System.out.println("El nº de tarjeta es inválido (fallo de longitud");
-            v = false;
-
-        } else {
+        } else {//si el CVV no es de 3 cifras...
 
             System.out.println("El CVV es inválido (fallo de longitud)");
             v = false;
@@ -249,7 +278,7 @@ public class Tarjeta {
 
         if (saldo < 0 || this.caducado()) {
             this.valido = false;
-        } else if (validez(numTarjeta, cvv)) {
+        } else if (validezNum(numTarjeta) && validezCVV(cvv)) {
             this.valido = true;
         }
 
@@ -304,18 +333,14 @@ public class Tarjeta {
 
     }
 
-    public void copiar(Tarjeta c) {
+    public static Tarjeta copiar(Tarjeta c) {
 
-        numTarjeta = c.getNumTarjeta();
-        cvv = c.getCvv();
-        nombre = c.getNombre();
-        apellido1 = c.getApellido1();
-        apellido2 = c.getApellido2();
-        banco = c.getBanco();
-        saldo = c.getSaldo();
-        caducidad = c.getCaducidad();
-        valido = c.isValido();
+        Tarjeta aux = new Tarjeta(c.getNumTarjeta(), c.getNombre(), 
+                c.getApellido1(), c.getApellido2(), c.getBanco(), c.getCvv(),
+                c.getSaldo(), c.getCaducidad().getMonthValue(),
+                c.getCaducidad().getYear());
 
+                return aux;
     }
 
     @Override
