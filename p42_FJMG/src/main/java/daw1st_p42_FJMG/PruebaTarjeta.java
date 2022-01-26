@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package daw1st_t4p42_fj.p42_fjmg;
+package daw1st_p42_FJMG;
 
 /**
  *
