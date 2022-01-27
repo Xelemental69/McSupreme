@@ -1,0 +1,378 @@
+.buttonX1 {/* Solo se aplica a los botones de clase "buttonX1" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font: Saltfont;/* Fuente utilizada */
+	font-size: 24px;/* Tamaño de la misma */
+	background-color: #20D18E;/* Color de fondo */
+	border: 2px dotted #2F97CB;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	box-shadow: 0 8px #999;/* Determina la sombra del botón (no tiene porqué en este caso ya que está ajustada a 0) */
+	opacity: 1;/* Opacidad */
+}
+.buttonX1:hover {/* Al pasar por el cursor... */
+	background-color: #1F9065;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange;/* Le asignamos una animación */
+	animation-duration: 2s;/* Ajustamos la duración de ésta */
+}
+.buttonX1:active {/* Cuando se hace click en el botón */
+	box-shadow: 0 4px #777;/* Determina de nuevo la sombra del botón (no tiene porqué en este caso ya que está ajustada a 0 otra vez) */
+	transform: translateY(4px);/* Reposiciona el botón */
+	background-color: #A3CC3C;/* ...el color de fondo cambia a través de esta línea */
+	color: #2D68AF;/* Cambia el color del texto */
+}
+@keyframes colorchange {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #1F9065;}
+  to {background-color:  #266FBD;}
+}
+
+.buttonX21 {/* Solo se aplica a los botones de clase "buttonX21" */
+	padding: 8px 14px;/* La distancia de separación entre el borde y el texto es de 8px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 18px;/* Tamaño de la misma */
+	background-color: #20D18E;/* Color de fondo */
+	border: 2px dotted #2F97CB;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 12px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX21:hover {/* Al pasar por el cursor... */
+	background-color: #1F9065;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX21:active {/* Cuando se hace click en el botón */
+	background-color: #A3CC3C;/* ...el color de fondo cambia a través de esta línea */
+	color: #2D68AF;/* Cambia el color del texto */
+}
+
+.buttonX22 {/* Solo se aplica a los botones de clase "buttonX22" */
+	padding: 8px 14px;/* La distancia de separación entre el borde y el texto es de 8px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 18px;/* Tamaño de la misma */
+	background-color:  #E58738;/* Color de fondo */
+	border: 2px dotted #E55738;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color:  #4D38E5;/* Color del texto */
+	border-radius: 12px;/* Radio del borde */
+	opacity: 1;
+}
+.buttonX22:hover {/* Al pasar por el cursor... */
+	background-color: #B45D24;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange2;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX22:active {/* Cuando se hace click en el botón */
+	background-color:   #591EEC;/* ...el color de fondo cambia a través de esta línea */
+	color:  #3012AE;/* Cambia el color del texto */
+}
+@keyframes colorchange2 {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #C29631;}
+  to {background-color:  #B07A31;}
+}
+
+.buttonX3 {/* Solo se aplica a los botones de clase "buttonX3" */
+	padding: 8px 14px;/* La distancia de separación entre el borde y el texto es de 8px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 18px;/* Tamaño de la misma */
+	background-color: #2F97CB;/* Color de fondo */
+	border: 2px dotted #20D18E;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 8px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX3:hover {/* Al pasar por el cursor... */
+	background-color: #3C821A;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange3;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX3:active {/* Cuando se hace click en el botón */
+	background-color: #F13333;/* ...el color de fondo cambia a través de esta línea */
+	color: #B70037;/* Cambia el color del texto */
+}
+@keyframes colorchange3 {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #3C821A;}
+  to {background-color: #5B7413;}
+}
+.buttonX3F {/* Solo se aplica a los botones de clase "buttonX3F" */
+	padding: 8px 13px;/* La distancia de separación entre el borde y el texto es de 8px (por arriba y abajo) 
+	y 13px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 16px;/* Tamaño de la misma */
+	background-color: #2F97CB;/* Color de fondo */
+	border: 2px dotted #20D18E;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 8px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX3F:hover {/* Al pasar por el cursor... */
+	background-color: #3C821A;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange3;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX3F:active {/* Cuando se hace click en el botón */
+	background-color: #F13333;/* ...el color de fondo cambia a través de esta línea */
+	color: #B70037;/* Cambia el color del texto */
+}
+
+
+.buttonX4PDF {/* Solo se aplica a los botones de clase "buttonX4PDF" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 20px;/* Tamaño de la misma */
+	background-color: #2F97CB;/* Color de fondo */
+	border: 2px dotted #20D18E;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX4PDF:hover {/* Al pasar por el cursor... */
+	background-color: #3C821A;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange3;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX4PDF:active {/* Cuando se hace click en el botón */
+	background-color: #F13333;/* ...el color de fondo cambia a través de esta línea */
+	color: #B70037;/* Cambia el color del texto */
+}
+
+.buttonX4M {/* Solo se aplica a los botones de clase "buttonX4M" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 20px;/* Tamaño de la misma */
+	background-color: #d48417;/* Color de fondo */
+	border: 2px dotted #8A34F2;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #287E1D;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX4M:hover {/* Al pasar por el cursor... */
+	background-color: #B76E17;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchangeM;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX4M:active {/* Cuando se hace click en el botón */
+	background-color: #962BB6;/* ...el color de fondo cambia a través de esta línea */
+	border: 2px dotted #C2228A;
+	color: #C9CB26;/* Cambia el color del texto */
+}
+@keyframes colorchangeM {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #B76E17;}
+  to {background-color:  #7E511D;}
+}
+
+.buttonX4 {/* Solo se aplica a los botones de clase "buttonX4" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 20px;/* Tamaño de la misma */
+	background-color: #64747F;/* Color de fondo */
+	border: 2px dotted #9ED0F2;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX4:hover {/* Al pasar por el cursor... */
+	background-color: #2D3439;/* ...el color de fondo cambia a través de esta línea, no tiene tanto sentido en este caso porque... */
+	background-image: url("sno.png");/* ...Se utiliza una imagen como fondo del botón */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation: nieve 20s linear infinite;/* Se le asigna una animación que hará el efecto de nieve (que estableceremos más tarde) y 
+	estará loopeada la animación (infinite) y la animación mantiene su velocidad consistentemente (linear)*/
+}
+.buttonX4:active {/* Se activa una vez clickeado */
+	background-color: #B1C0CA;/* Cambia el color de fondo (pero el fondo sigue siendo la imagen, así que no importa en este caso) */
+	color: #131247;/* Y cambia el color del texto */
+}
+@keyframes nieve {/* Establecemos los parámetros de nuestra animación: */
+0% {background-position: 0px 0px;}/* Marcamos un punto de inicio del que moverse por la imagen */
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}/* Marcamos un punto final del por el cual se moverá
+diagonalmente la imagen */
+}
+
+.buttonX5 {/* Solo se aplica a los botones de clase "buttonX5" */
+	padding: 8px 12px;/* La distancia de separación entre el borde y el texto es de 8px (por arriba y abajo) 
+	y 12px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 17px;/* Tamaño de la misma */
+	background-color: #20D18E;/* Color de fondo */
+	border: 2px dotted #2F97CB;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #DAD541;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX5:hover {/* Al pasar por el cursor... */
+	background-color: #1F9065;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX5:active {/* Cuando se hace click en el botón */
+	background-color: #A3CC3C;/* ...el color de fondo cambia a través de esta línea */
+	color: #2D68AF;/* Cambia el color del texto */
+}
+@keyframes colorchange {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #1F9065;}
+  to {background-color: #108A96;}
+}
+.buttonX6 {/* Solo se aplica a los botones de clase "buttonX6" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 18px;/* Tamaño de la misma */
+	background-color: #FFF933;/* Color de fondo */
+	border: 2px dotted #6523AF;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #1D7C2D;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX6:hover {/* Al pasar por el cursor... */
+	background-color: #8A860E;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange6;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX6:active {/* Cuando se hace click en el botón */
+	background-color: #AF233E;/* ...el color de fondo cambia a través de esta línea */
+	color: #2D68AF;/* Cambia el color del texto */
+}
+.buttonX62 {/* Solo se aplica a los botones de clase "buttonX62" */
+	padding: 8px 8px;/* La distancia de separación entre el borde y el texto es de 8px (por arriba y abajo) 
+	y 8px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 12px;/* Tamaño de la misma */
+	background-color: #FFF933;/* Color de fondo */
+	border: 2px dotted #6523AF;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #1D7C2D;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX62:hover {/* Al pasar por el cursor... */
+	background-color: #8A860E;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange6;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX62:active {/* Cuando se hace click en el botón */
+	background-color: #AF233E;/* ...el color de fondo cambia a través de esta línea */
+	color: #2D68AF;/* Cambia el color del texto */
+}
+@keyframes colorchange6 {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #8A860E;}
+  to {background-color: #69AF23;}
+}
+.buttonX7 {/* Solo se aplica a los botones de clase "buttonX7" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 18px;/* Tamaño de la misma */
+	background-color: #1ACBB3;/* Color de fondo */
+	border: 2px dotted #CB421A;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #CB1ABD;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX7:hover {/* Al pasar por el cursor... */
+	background-color: #363C87;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange6;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX7:active {/* Cuando se hace click en el botón */
+	background-color: #B8860B;/* ...el color de fondo cambia a través de esta línea */
+	color: #0B71B8;/* Cambia el color del texto */
+}
+.buttonX72 {/* Solo se aplica a los botones de clase "buttonX72" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 15px;/* Tamaño de la misma */
+	background-color: #1ACBB3;/* Color de fondo */
+	border: 2px dotted #CB421A;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #CB1ABD;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX72:hover {/* Al pasar por el cursor... */
+	background-color: #363C87;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange6;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX72:active {/* Cuando se hace click en el botón */
+	background-color: #B8860B;/* ...el color de fondo cambia a través de esta línea */
+	color: #0B71B8;/* Cambia el color del texto */
+}
+@keyframes colorchange7 {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #363C87;}
+  to {background-color: #1C9652;}
+}
+
+.ripped{
+
+ background-image: url("../sauce/Salty.jpg");
+ background-repeat: no-repeat;
+ margin-right: 552px;
+
+}
+
+legend{
+
+background-color: powderblue;
+color: black;
+
+}
+
+
+
+.ripped2{
+
+ 	color: grey;
+	background-color: #2D3439;/* ...el color de fondo cambia a través de esta línea, no tiene tanto sentido en este caso porque... */
+	background-image: url("sno.png");/* ...Se utiliza una imagen como fondo del botón */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation: nieve 20s linear infinite;/* Se le asigna una animación que hará el efecto de nieve (que estableceremos más tarde) y 
+	estará loopeada la animación (infinite) y la animación mantiene su velocidad consistentemente (linear)*/
+ 	width: 90%;
+ 	float: left;
+
+}
+
+span{
+
+	color: red;
+	text-decoration: underline red;
+
+}
+
+@font-face{/* Aquí ajustamos el origen de la fuente Saltfont */
+	font-family: Saltfont;
+	src: url(yukont.ttf);
+}
+
+h2 {text-decoration: underline overline dotted #69AF23;}/* -->  text-decoration determina la decoración que se aplica al texto
+ (subrayado, tachado, puntitos, etc.) */
+
+h2 span{color: #B8860B}/* h2 span se aplica a los hijos de h2 que estén dentro de <span>...</span> */
+
+h2 a{text-decoration: underline overline dotted #69AF23;
+	color: #9ED0F2;}/* h2 a se aplica a los hijos de h2 dentro de a (<a ...>...</a>) */
+
+h2 > span{color: #363C87;}/* h2 > span se aplica SOLO a hijos directos de h2 que estén dentro de <span>...</span> */
