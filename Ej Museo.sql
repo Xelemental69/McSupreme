@@ -77,7 +77,7 @@ alter table obras add column codartista int unsigned,
 	add constraint fk_obras_artistas foreign key (codartista)
 		references artistas(codartista) 
         on delete no action on update cascade;
-
+       
 create table if not exists empleados
     (
     codemple int unsigned,
@@ -230,8 +230,8 @@ alter table empleados
 			on update cascade;
             
 alter table empleados
-	add column jubilacion date;
-    
+	add column jubilacion date default null after ape2emple;
+       
 create table if not exists obrasmasbuscadas
 (
 
@@ -239,20 +239,28 @@ codobramb int,
 nomobramb varchar(50),
 codartista int unsigned,
 valoradq decimal (10, 2),
+codtipobra int unsigned,
+codestilo int unsigned,
+
 
 constraint pk_obrasmasbuscadas primary key (codobramb),
 
 constraint fk_obrasmasbuscadas_artistas foreign key (codartista) references artistas(codartista) 
         on delete no action on update cascade,
         
-constraint fk_obras_tipobras foreign key (codtipobra) references tipobras(codtipobra) 
+constraint fk_obrasmasbuscadas_tipobras foreign key (codtipobra) references tipobras(codtipobra) 
         on delete no action on update cascade,
     
-constraint fk_obras_estilos  foreign key (codestilo) references estilos(codestilo) 
+constraint fk_obrasmasbuscadas_estilos  foreign key (codestilo) references estilos(codestilo) 
         on delete no action on update cascade
-
+       
 );
 
+show create table obrasmasbuscadas;
 
+alter table obrasmasbuscadas
+
+drop foreign key fk_obrasmasbuscadas_tipobras,
+drop foreign key fk_obrasmasbuscadas_estilos;
 
 drop table if exists obrasmasbuscadas;
