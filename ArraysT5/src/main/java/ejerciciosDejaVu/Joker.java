@@ -95,15 +95,17 @@ public class Joker {
     //Método para realizar el juego:
     public static void game(int[] trickster, int[] fool){
         boolean bonneChance = true;//Boolean que determina el precio bueno
-        int bet;//Variable auxiliar
+        int bet, target;//Variables auxiliares
         
         for(int i = 0; i < trickster.length; i++){//Realizamos un bucle para 
             //comprobar los nºs: 
             
-            //Preparamos la variable auxiliar:
+            //Preparamos la variables auxiliares:
             bet = fool[i];
+            target = Arrays.binarySearch(trickster, bet);
+            System.out.println("target: " + target);
             
-            if((Arrays.binarySearch(trickster, bet)) < 0){
+            if(target < 0){
                 //Si no coincide uno de los nºs, no hay premio 
                 
                 System.out.println("No hay premio, qué lástima...");
@@ -111,10 +113,11 @@ public class Joker {
                 bonneChance = false;//Rompemos las posibilidades de un premio.
                 break;//Y rompemos el bucle.
                 
-            }else if((Arrays.binarySearch(trickster, fool[i])) != i){
+            }else if(target != i && (trickster[target] != fool[i])){
                 //Si coinciden los nºs, pero no las posiciones, nuestro jugador
                 //se llevará un premio sorpresa... LA SORPRESA DE SU VIDA.
                 
+                System.out.println("i: " + i);
                 System.out.println("Felicidades, has ganado el joker...");
                 
                 try {//Pausa el programa por 1 segundo
