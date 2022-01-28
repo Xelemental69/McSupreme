@@ -110,15 +110,17 @@ public class Ej_5 {
     
     public static void mostrarArray(int [] rec){
         
-        System.out.printf("Array: { ");
+        System.out.printf("Array: { ");//Usamos printf para que se muestre el
+        //array sin saltar línea.
         
         for(int x = 0; x < rec.length; x++){
             
-            if(x < (rec.length - 1)){
+            if(x < (rec.length - 1)){//Mostramos cada nº del array y un punto y
+                //coma (excepto para el último nº del array)
                 
                 System.out.printf(rec[x] + "; ");
                 
-            }else{
+            }else{//Mostramos el último nº del array
                 
                 System.out.printf(rec[x] + "");
                 
@@ -126,7 +128,7 @@ public class Ej_5 {
             
         }
         
-        System.out.println("}");
+        System.out.println("}");//Cerramos la muestra del array
         
     }
     
