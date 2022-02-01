@@ -87,12 +87,14 @@ public class Ej_4and9 {
 
         for(int i = 0; i < sus.length; i++){
             
-            if(sus[i] == target)
+            if(sus[i] == target){
                 
                 System.out.println("El nº " + target + " se halla en la "
                         + "posición " + i );
                         found = true;
                         break;
+                        
+            }
             
         }
         
