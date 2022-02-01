@@ -96,11 +96,14 @@ public class Joker {
         int bet, target = -1;//Variables auxiliares
 
         for (int i = 0; i < trickster.length; i++) {//Realizamos un bucle para 
+            //comprobar el premio:
+            
             //Preparamos la variables auxiliares:
             bet = fool[i];
             System.out.println("bet = " + bet);
             System.out.println("trickster [i] = " + trickster[i]);
-            //comprobar los nºs: 
+            
+            //Comprobar los nºs de forma secuencial: 
             for (int j = 0; j < trickster.length; j++) {
 
                 if (trickster[j] == bet) {
