@@ -18,7 +18,8 @@ public class Coche {
     Rueda rueda3;
     Rueda rueda4;
 
-    public Coche(Motor motor, Puerta puerta1, Puerta puerta2, Rueda rueda1, Rueda rueda2, Rueda rueda3, Rueda rueda4) {
+    public Coche(Motor motor, Puerta puerta1, Puerta puerta2, Rueda rueda1, 
+            Rueda rueda2, Rueda rueda3, Rueda rueda4) {
         this.motor = motor;
         this.puerta1 = puerta1;
         this.puerta2 = puerta2;

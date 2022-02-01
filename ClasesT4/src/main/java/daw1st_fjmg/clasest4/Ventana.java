@@ -8,6 +8,8 @@ package daw1st_fjmg.clasest4;
  *
  * @author fco-j
  */
+import java.util.*;
+
 public class Ventana {
     
     boolean abierta;
@@ -21,9 +23,11 @@ public class Ventana {
     }
 
     public Ventana() {
+        
+        Random giveaway = new Random();
     
-        abierta = false;
-        tintada = false;
+        abierta = giveaway.nextBoolean();
+        tintada = giveaway.nextBoolean();
     
     }
     
@@ -57,7 +61,8 @@ public class Ventana {
 
     @Override
     public String toString() {
-        return "Ventana{" + "abierta=" + abierta + ", tintada=" + tintada + '}';
+        return "¿Está abierta? " + abierta + "; ¿Está tintada? "
+                + tintada;
     }
     
 }

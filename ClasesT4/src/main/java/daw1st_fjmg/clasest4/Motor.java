@@ -22,56 +22,61 @@ package daw1st_fjmg.clasest4;
  *
  * @author fco-j
  */
+import java.util.*;
+
 public class Motor {
-    
+
     boolean enMarcha;
     double cilindrada;
 
     public Motor(boolean enMarcha, double cilindrada) {
-        
+
         this.enMarcha = enMarcha;
         this.cilindrada = cilindrada;
-        
-    }        
+
+    }
 
     public Motor() {
-        
-        enMarcha = false;
-        cilindrada = 0.0;
-        
-    }        
-    
+
+        Random giveaway = new Random();
+
+        enMarcha = giveaway.nextBoolean();
+        cilindrada = giveaway.nextInt(100) + giveaway.nextDouble();
+
+    }
+
     public void arrancar() {
-        
+
         this.enMarcha = true;
-        
+
         System.out.println("Motor encendido");
-        
+
     }
-    
+
     public void apagar() {
-        
+
         this.enMarcha = false;
-        
+
         System.out.println("Motor apagado");
-        
+
     }
-    
-    public boolean getMotor(){
-        
+
+    public boolean getMotor() {
+
         return this.enMarcha;
-        
+
     }
-    
-    public void setMotor(boolean enMarcha){
-        
+
+    public void setMotor(boolean enMarcha) {
+
         this.enMarcha = enMarcha;
-        
+
     }
 
     @Override
     public String toString() {
-        return "Motor{" + "enMarcha=" + enMarcha + ", cilindrada=" + cilindrada + '}';
+        return "¿Está en marcha? " + enMarcha + "; Cilindrada: "
+                + cilindrada;
     }
-    
+
 }
