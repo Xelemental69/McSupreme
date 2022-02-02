@@ -11,142 +11,63 @@ import java.util.*;
  *
  * @author fco-j
  */
-public class CuentaBancaria {
+public enum CuentaBancariaEnum {//(puede fácilmente ser un enum)
+    
+    PIPO("6969696969696969696969696969696969696969", "01234567Z", "Pipo", "Firebank", 420.0);
 
-    private String numeroCuenta;
-    private String nif;
-    private String nombre;
-    private double saldo;
-    private double interes;
+    private final String NUMERO_CUENTA;
+    private final String NIF;
+    private final String NOMBRE;
+    private final String BANCO;
+    private final double SALDO;
 
-    public CuentaBancaria() {
+    private CuentaBancariaEnum(String nCuenta, String nif, String nombre, String banco, double saldo) {
         Random lol = new Random();
 
-        numeroCuenta = RandomStringUtils.randomNumeric(20).toUpperCase();
-        nif = RandomStringUtils.randomNumeric(8).toUpperCase()
-                + RandomStringUtils.randomAlphabetic(1).toUpperCase();
-        nombre = "Lorkshawn";
-        saldo = lol.nextInt(10000000);
-        interes = (double) (lol.nextInt(30) + 1) / 1000;
-
-    }
-
-    public CuentaBancaria(String nif, String nombre, double saldo,
-            double intereses) {
-        Random lol = new Random();
-
-        numeroCuenta = RandomStringUtils.randomNumeric(20).toUpperCase();
-        this.nif = nif;
-        this.nombre = nombre;
-        this.saldo = saldo;
-        if (intereses >= 0.1 && intereses <= 3) {
-            this.interes = (double) intereses / 100;
-        } else if (intereses >= 0.001 && intereses <= 0.03) {
-            this.interes = intereses;
-        } else {
-            interes = (double) (lol.nextInt(30) + 1) / 1000;
-        }
+        NUMERO_CUENTA = nCuenta;
+        this.NIF = nif;
+        this.BANCO = banco;
+        this.NOMBRE = nombre;
+        this.SALDO = saldo;
 
     }
 
     public String getNIF() {
 
-        return this.nif;
+        return this.NIF;
 
     }
 
     public String getNombre() {
 
-        return this.nombre;
+        return this.NOMBRE;
 
     }
 
     public String getNCuenta() {
 
-        return this.numeroCuenta;
+        return this.NUMERO_CUENTA;
 
     }
 
     public double getSaldo() {
 
-        return this.saldo;
+        return this.SALDO;
 
     }
 
-    public double getIntereses() {
-
-        return this.interes;
-
+    public String getBANCO() {
+        
+        return BANCO;
+        
     }
-
-    public void setNif(String nif) {
-
-        this.nif = nif;
-
-    }
-
-    public void setNombre(String nombre) {
-
-        this.nombre = nombre;
-
-    }
-
-    public void setSaldo(double saldo) {
-
-        this.saldo = saldo;
-
-    }
-
-    public void setInteres(double intereses) {
-        Random lol = new Random();
-
-        if (intereses >= 0.1 && intereses <= 3) {
-            this.interes = (double) intereses / 100;
-        } else if (intereses >= 0.001 && intereses <= 0.03) {
-            this.interes = intereses;
-        } else {
-            interes = (double) (lol.nextInt(30) + 1) / 1000;
-        }
-
-    }
-
-    public void ingresarIntereses() {
-
-        saldo = saldo + (interes * saldo);
-
-    }
-
-    public void ingresarDinero(double cantidad) {
-
-        saldo = saldo + cantidad;
-
-    }
-
-    public void retirarDinero(double cantidad) {
-
-        if (saldo >= cantidad) {
-
-            saldo = saldo - cantidad;
-            System.out.println("Ha retirado " + cantidad + "€"
-                    + " (o lo que sea)");
-
-        } else {
-
-            System.out.println("No hay saldo suficiente");
-            System.out.println("Ha retirado " + saldo + "€"
-                    + " (o lo que sea)");
-            saldo = 0;
-
-        }
-
-    }
-
+       
     @Override
     public String toString() {
-        return "CuentaBancaria{"
-                + "numeroCuenta=" + numeroCuenta
-                + ", nif=" + nif + ", nombre=" + nombre
-                + ", saldo=" + saldo + ", interes=" + interes + '}';
+        return "CuentaBancaria{\n"
+                + "Nº Cuenta: " + NUMERO_CUENTA
+                + "\nNIF: " + NIF + "\nNombre:" + NOMBRE
+                + "\nSaldo: " + SALDO + "\nBanco: " + BANCO + "\n" + '}';
     }
 
 }

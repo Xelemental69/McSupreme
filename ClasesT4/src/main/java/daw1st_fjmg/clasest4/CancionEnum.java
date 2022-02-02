@@ -19,47 +19,40 @@ package daw1st_fjmg.clasest4;
  * @author fco-j
  * 
  */
-public class Cancion {
+public enum CancionEnum {//Versión enum de la clase Canción
     
-    String titulo = "";
-    String autor = "";
+        LEFT_OUTSIDE_ALONE("Left Outside Alone", "Anastasia"),
+        IM_OUTTA_LOVE("I'm Outta Love", "Anastasia"),
+        ONE_DAY_IN_YOUR_LIFE("One Day In Your Life", "Anastasia"),
+        POKER_FACE("Poker Face", "Lady Gaga");
     
-    public Cancion(String titulo, String autor){
+        final private String TITULO;
+        final private String AUTOR;
+    
+    private CancionEnum(String titulo, String autor){
         
-        this.titulo = titulo;
-        this.autor = autor;
+        this.TITULO = titulo;
+        this.AUTOR = autor;
         
     }
     
     public String getTitle() {
         
-        return this.titulo;
+        return this.TITULO;
         
     }
     
     public String getAuthor() {
         
-        return this.autor;
+        return this.AUTOR;
         
     }
-    
-    public void setTitle(String titulo) {
-        
-        this.titulo = titulo;
-        
-    }
-    
-    public void setAuthor(String autor) {
-        
-        this.autor = autor;
-        
-    }
-    
+            
     @Override
     public String toString(){
         
-        return "Autor de la canción: " + this.autor + "\n" + "Título de la "
-                + "canción: " + this.titulo;
+        return "Autor de la canción: " + this.AUTOR + "\n" + "Título de la "
+                + "canción: " + this.TITULO;
         
     }
     
