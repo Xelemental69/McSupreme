@@ -1,3 +1,23 @@
+html{
+
+box-sizing: border-box;
+
+}
+
+*{
+
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+
+}
+
+body{
+
+	padding: 0.5em;
+
+}
+
 .buttonX1 {/* Solo se aplica a los botones de clase "buttonX1" */
 	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
 	y 14px (por derecha e izquierda) */
@@ -340,18 +360,22 @@ color: black;
 
 }
 
+.container{
 
+padding: 1em;
+margin: 0 auto;
+
+}
 
 .ripped2{
 
  	color: grey;
+ 	padding: 0.5em;
 	background-color: #2D3439;/* ...el color de fondo cambia a través de esta línea, no tiene tanto sentido en este caso porque... */
 	background-image: url("sno.png");/* ...Se utiliza una imagen como fondo del botón */
-	opacity: 0.8;/* Se reajusta la opacidad */
 	animation: nieve 20s linear infinite;/* Se le asigna una animación que hará el efecto de nieve (que estableceremos más tarde) y 
 	estará loopeada la animación (infinite) y la animación mantiene su velocidad consistentemente (linear)*/
- 	width: 90%;
- 	float: left;
+ 	width: 100%;
 
 }
 
@@ -376,3 +400,86 @@ h2 a{text-decoration: underline overline dotted #69AF23;
 	color: #9ED0F2;}/* h2 a se aplica a los hijos de h2 dentro de a (<a ...>...</a>) */
 
 h2 > span{color: #363C87;}/* h2 > span se aplica SOLO a hijos directos de h2 que estén dentro de <span>...</span> */
+
+.head{
+
+	color: grey;
+	margin-bottom: 0.5em;
+	text-align: center;
+	background-color: #2D3439;/* ...el color de fondo cambia a través de esta línea, no tiene tanto sentido en este caso porque... */
+	background-image: url("sno.png");/* ...Se utiliza una imagen como fondo del botón */
+	animation: nieve 20s linear infinite;/* Se le asigna una animación que hará el efecto de nieve (que estableceremos más tarde) y 
+	estará loopeada la animación (infinite) y la animación mantiene su velocidad consistentemente (linear)*/
+	width: 100%;
+}
+
+.ext{
+
+	width: 50%;
+	float: left;
+
+}
+
+.ext > div{
+
+	margin-top: 1.5em;
+
+}
+
+.ext div{
+
+	overflow: hidden;
+
+}
+
+label {
+
+	display: block;
+	width: 100%;
+
+}
+
+.prim{
+
+	width: 60%;
+	float: left;
+
+}
+
+.sec{
+
+	width: 40%;
+	float: left;
+
+}
+
+#domi1{
+
+	margin-top: 0;
+	float: left;
+	width: 15%;
+
+}
+
+#domi2{
+
+	margin-top: 0;
+	float: left;
+	width: 85%;
+	
+}
+
+#esp{
+
+	float: left;
+	width: 100%;
+
+}
+
+#Butt {
+
+	clear: both;
+	position: relative;
+	left: 50%;
+
+}

@@ -1,75 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 	<meta charset="utf-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Ejemplo formulario 2 columnas</title>
+
 	<link rel="stylesheet" type="text/css" href="Automu/main/XButton.css">
+
 	<link rel="shortcut icon" href="falcon.png">	
+
 </head>
+
 <body>
 
-	<form action="Formulario (columnas a duales).html" method="get">
+	
 
-		<fieldset class = "ripped2">
+		<div class = "head">
+		<h1>Ejercicio de Formulario</h1>
+		</div>
 
-			<legend>Alta en el servicio</legend>
+	<div class = "container">
 
+		<form action="FormularioCSS.html" method="get">
 
+			<fieldset class = "ripped2">
 
-			<label for = "ap"><span>A</span>pellidos: </label> <br/>
-			<input type = "text" name = "ap" id = "ap" size = "50">
+				<legend>Alta en el servicio</legend>
 
-			<br/>
+				<div class = "ext">
+
+					<div class = "prim">
+
+					<label for = "ap"><span>A</span>pellidos: </label> 
+					<input type = "text" name = "ap" id = "ap" size = "50">
+
+					</div>
+
+					<div class = "sec">
+					
+					<label for="name">N<span>o</span>mbre: </label> 
+					<input type = "text" name = "name" id = "name">
+
+					</div>
+
+					
+
+					<div  class = "prim">
+
+					<label for="lugarNacimiento"><span>N</span>acido en: </label> 
+					<input type = "text" name = "lugarNacimiento" id = "lugarNacimiento" size = "40">
+
+					</div>
+
+					<div class = "sec">
+
+					<label for="provinciaN">Provincia: </label>
+					<select id="provinciaN" name="provinciaN">
+							<option id="valencia" name="valencia">Valencia</option>
+							<option id="null" name="null">Murcia</option>
+							<option id="magala" name="magala">Málaga</option>
+							<option id="olorcitoRico" name="olorcitoRico">Huelva</option>
+							<option id="dramitaSinSolucion" name="dramitaSinSolucion">Barcelona</option>
+					</select>
+
+					</div>	
+
+												
+
+					<div id="esp"><label for="domicilio">Domicilio: </label></div>
+					
+					<div id = "domi1">
+
+					<select id="domicilio" name="domicilio">
+							<option id="valencia" name="valencia">Valencia</option>
+							<option id="null" name="null">Murcia</option>
+							<option id="magala" name="magala">Málaga</option>
+							<option id="olorcitoRico" name="olorcitoRico">Huelva</option>
+							<option id="dramitaSinSolucion" name="dramitaSinSolucion">Barcelona</option>
+					</select>			
+
+					</div>
+
+					<div  id = "domi2">
+
+					<input type = "text" name = "domicilioT" id = "domicilioT" size = "70">
+
+					</div>				
+
+					<div  class = "prim">
+
+						<label for="localidad"><span>L</span>ocalidad: </label>
+						<input type = "text" name = "localidad" id = "localidad" size = "40">
+
+					</div>
+
+					<div class = "sec">
+
+						<label for="provinciaL">Provincia: </label>
+						<select id="provinciaL" name="provinciaL">
+								<option id="valencia" name="valencia">Valencia</option>
+								<option id="null" name="null">Murcia</option>
+								<option id="magala" name="magala">Málaga</option>
+								<option id="olorcitoRico" name="olorcitoRico">Huelva</option>
+								<option id="dramitaSinSolucion" name="dramitaSinSolucion">Barcelona</option>
+						</select>
+
+					</div>
+								
+				</div>
+
+				<div class = "ext">
+
+					<div>
+
+					<label for = "dni"><span>D</span>NI: </label>
+					<input type = "text" name = "dni" id = "dni" size="15">
+
+					</div>
+					
+					<div>
+
+					<label for="fechaNacimiento"><span>F</span>echa Nacimiento (dd/mm/aaaa): </label>
+					<input type = "text" name = "fechaNacimiento" id = "fechaNacimiento" size = "15">
+
+					</div>
+					
+					<div>
+
+					<label for = "cPostal"><span>C</span>ódigo Postal: </label>
+					<input type = "text" name = "cPostal" id = "cPostal" size="10">
+
+					</div>
+					
+					<div>
+
+					<label for = "tlf"><span>T</span>eléfono: </label>
+					<input type = "text" name = "tlf" id = "tlf" size="10">
+
+					</div>
+
+					<div id="Butt">
+
+					<input type="submit" name="Send it" class="buttonX4PDF" value="Comprobar">
+					<input type="reset" name="Delete Dis" class="buttonX4PDF" value="Delete Dis">
+
+					</div>
+
+				</div>
+
+			</fieldset>
 			
-			<label for="name">N<span>o</span>mbre: </label> <br/>
-			<input type = "text" name = "name" id = "name">
+		</form>
 
-			<br/>
-
-			<label for = "dni"><span>D</span>NI: </label> <br/>
-			<input type = "text" name = "dni" id = "dni" size="15">
-
-			<br/>
-
-			<label for="lugarNacimiento"><span>N</span>acido en: </label> <br/>
-			<input type = "text" name = "lugarNacimiento" id = "lugarNacimiento" size = "40">
-
-			<br/>
-
-			<label for="provincia">Provincia: </label> <br/>
-			<select id="provincia" name="provincia">
-					<option id="valencia" name="valencia">Valencia</option>
-					<option id="null" name="null">Murcia</option>
-					<option id="magala" name="magala">Málaga</option>
-					<option id="olorcitoRico" name="olorcitoRico">Huelva</option>
-					<option id="dramitaSinSolucion" name="dramitaSinSolucion">Barcelona</option>
-			</select>
-
-			<br/>
-
-			<label for="fechaNacimiento"><span>F</span>echa Nacimiento (dd/mm/aaaa): </label> <br/>
-			<input type = "text" name = "fechaNacimiento" id = "fechaNacimiento" size = "15">
-
-			<br/>
-
-			<label for="domic">Provincia: </label> <br/>
-			<select id="domic" name="domic">					
-					<option id="Murcia" name="Murcia"> </option>
-					<option id="magala" name="magala">Málaga</option>
-					<option id="olorcitoRico" name="olorcitoRico">Huelva</option>
-					<option id="dramitaSinSolucion" name="dramitaSinSolucion">Barcelona</option>
-			</select>
-
-			<br/>
-
-			<label for="lugarNacimiento"><span>N</span>acido en: </label> <br/>
-			<input type = "text" name = "lugarNacimiento" id = "lugarNacimiento" size = "40">
-			
-
-		</fieldset>
-		
-	</form>
+	</div>
 
 </body>
 </html>
