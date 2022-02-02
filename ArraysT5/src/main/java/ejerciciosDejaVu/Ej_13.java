@@ -30,8 +30,8 @@ public class Ej_13 {
         int[] x = new int [MAX];
         //Y un array de strings que almacenará las veces que se ha introducido 
         //un nº del 1 al 20:
-        String[] z = {"1: ", "2: ", "3: ", "4: ", "5: ", "6: ", "7: ", "8: ",
-            "9: ", "10: ", "11: ", "12: ", "13: ", "14: ", "15: ", "16: ",
+        String[] z = {"1:  ", "2:  ", "3:  ", "4:  ", "5:  ", "6:  ", "7:  ", "8:  ",
+            "9:  ", "10: ", "11: ", "12: ", "13: ", "14: ", "15: ", "16: ",
              "17: ", "18: ", "19: ", "20: "};
         //Declaramos tambiés estas variables auxiliares:
         int cin = 0; //Una pequeña referencia a como es el "scanner" en C++
@@ -45,14 +45,18 @@ public class Ej_13 {
                 cin = ultraDejaVu.nextInt();
 
                 //Si es un nº dentro de dicho rango, se le es asignado al array
-                if(cin > 1 && cin < 21){
+                if(cin > 0 && cin < 21){
 
                     x[y] = cin;
                     y++;//Y se avanza la posición del array
 
+                }else if (cin == 0){
+                  
+                    System.out.println("(Terminando entrada de datos...)\n");
+                    
                 }else{//Si no, se muestra este mensaje de error:
                     
-                    System.out.println("Nº inválido (fuera de rango");
+                    System.out.println("Nº inválido (fuera de rango)");
                     
                 }
                 
