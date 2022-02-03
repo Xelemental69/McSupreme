@@ -46,11 +46,11 @@ public class Ej_22 {
                 
                 System.out.printf("; " + x);
 
-                if(x % 2 == 0){
+                if(x % 2 == 0){//Si es par, añadimos a la suma de pares
                     
                     sumaPares += x;
                     
-                }else{
+                }else{//Sino, aumentamos en 1 el contador de impares:
                     
                     contadorImpares++;
                     
