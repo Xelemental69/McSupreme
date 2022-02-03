@@ -10,7 +10,7 @@ package ejerciciosDejaVu;
  */
 import java.util.*;
 
-public class Ej_15 {
+public class Ej_16 {
 
     /**
      * @param args the command line arguments
@@ -19,21 +19,42 @@ public class Ej_15 {
      public static void main(String[] args) {
          // TODO code application logic here
         
-         final int MAX = 1000;
+         int max;
+         boolean repeat;
          Random lanzarMonedas = new Random();
+         Scanner entry = new Scanner(System.in);
+         
+         do{
+         
+             try{
+             
+                System.out.println("¿Cuántas veces desea probar suerte?");
+                max = entry.nextInt();
+                repeat = false;
+                
+             }catch(InputMismatchException ime){
+                 
+                 repeat = true;
+                 max = 0;
+                 System.out.println("TIENE QUE INTRODUCIR UN Nº");
+                 entry.nextLine();
+                 
+             }
+         
+         }while(repeat);
         
-         boolean[] cara = new boolean[MAX];
+         boolean[] cara = new boolean[max];
         
          int vecesCara = 0;
          int vecesCruz = 0;
          
-         for(int i = 0; i < MAX; i++){
+         for(int i = 0; i < max; i++){
              
              cara[i] = lanzarMonedas.nextBoolean();
              
          }
          
-         for(int j = 0; j < MAX; j++){
+         for(int j = 0; j < max; j++){
              
                 if(cara[j]){
                  
