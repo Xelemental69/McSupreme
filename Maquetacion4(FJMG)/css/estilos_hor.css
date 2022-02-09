@@ -1,0 +1,223 @@
+html{
+
+	box-sizing: border-box;
+
+}
+
+*{
+
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	font-family:sans-serif;
+
+}
+
+body{
+
+	padding: 0;
+
+}
+
+.buttonX7 {/* Solo se aplica a los botones de clase "buttonX7" */
+	padding: 10px 14px;/* La distancia de separación entre el borde y el texto es de 10px (por arriba y abajo) 
+	y 14px (por derecha e izquierda) */
+	font-family: Saltfont;/* Fuente utilizada */
+	font-size: 18px;/* Tamaño de la misma */
+	background-color: #1ACBB3;/* Color de fondo */
+	border: 2px dotted #CB421A;/* Borde (dotted --> Borde de puntos) y el color del mismo */
+	color: #CB1ABD;/* Color del texto */
+	border-radius: 10px;/* Radio del borde */
+	opacity: 1;/* Opacidad */
+}
+.buttonX7:hover {/* Al pasar por el cursor... */
+	background-color: #363C87;/* ...el color de fondo cambia a través de esta línea */
+	opacity: 0.8;/* Se reajusta la opacidad */
+	animation-name: colorchange7;/* Le asignamos una animación */
+	animation-duration: 0.25s;/* Ajustamos la duración de ésta */
+}
+.buttonX7:active {/* Cuando se hace click en el botón */
+	background-color: #B8860B;/* ...el color de fondo cambia a través de esta línea */
+	color: #0B71B8;/* Cambia el color del texto */
+}
+@keyframes colorchange7 {/* Ajustamos los parámetros de la animación asignada, siendo en este caso recorrer 
+de un color (from) a otro (to) */
+  from {background-color: #363C87;}
+  to {background-color: #1C9652;}
+}
+
+@font-face{/* Aquí ajustamos el origen de la fuente Saltfont */
+	font-family: Saltfont;
+	src: url(yukont.ttf);
+}
+
+#all{
+
+	overflow: hidden;
+
+}
+
+#pie{
+
+	background-color: black;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+
+}
+
+#cab{
+
+	box-sizing: border-box;
+	margin-top: -1em;
+	margin-right: -1em;
+	margin-left: -1em;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+	text-align: center;
+	color: white;
+	background-image: url(../images/fondo1.jpg);
+
+}
+
+#but{
+
+	box-sizing: border-box;
+	width: 100%;
+	height: 2em;
+	background-image: url("../images/boton-menu.jpg");
+
+}
+
+a {
+
+	text-decoration: none;
+	color: cadetblue;
+
+}
+
+a:visited{
+
+	color: royalblue;
+
+}
+
+a:active{
+
+	color: darkgoldenrod;
+
+}
+
+a:hover{
+
+	color: darkblue;
+
+}
+
+#new {
+
+	background-color: lightgrey;
+
+}
+
+#noti{
+
+	width: 16%;
+	float: left;
+	text-align: justify;
+	padding: 1em;
+
+}
+
+#formu{
+
+	width: 84%;
+	overflow: hidden;
+	padding: 1em;
+	background-color: white;
+	border-left: 3px solid slategrey;
+
+}
+
+form > div{
+	
+	padding: 0.5em;
+	border-top: 1px solid lightgrey;
+	overflow: hidden;
+	width: 100%;
+
+}
+
+#c1 {
+
+	float: left;
+	border: none;
+	width: 40%;
+	text-align: right;
+	padding-right: 1em;
+
+
+}
+
+#c2 {
+
+	float: left;
+	border: none;
+	align-content: left;
+	text-align: left;
+
+}
+
+#c3 {
+
+	clear: left;
+	border: none;
+	align-content: left;
+	text-align: left;
+	padding-left: 40%;
+
+}
+
+ul{
+
+	list-style: none;
+	width: 100%;
+
+}
+
+li{
+
+	background-image: url("../images/boton-menu.jpg");
+	float: left;
+	position: relative;
+	left: 31.5%;
+
+}
+
+li a{
+
+	color: lightcyan;
+	text-decoration: none;
+	padding: 0.35em 3em 0.35em 3em;
+	display: block;
+
+}
+
+li:hover{
+
+	background-image: url("../images/boton-menu2.jpg");
+
+}
+
+li:active{
+
+	background-image: url("../images/boton-menu3.jpg");
+
+}
+
+li a:hover{
+
+	color: black;
+
+}
