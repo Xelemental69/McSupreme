@@ -12,7 +12,9 @@
  * métodos get, set y toString.
  *
  */
-package daw1st_fjmg.clasest4;
+package ejerciciosDejaVu;
+
+import java.util.Objects;
 
 /**
  *
@@ -54,6 +56,47 @@ public class Cancion {
         this.autor = autor;
         
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 29 * hash + Objects.hashCode(this.titulo);
+        hash = 29 * hash + Objects.hashCode(this.autor);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        
+        if (this == obj) {
+            
+            return true;
+            
+        }
+        
+        if (obj == null) {
+            
+            return false;
+            
+        }
+        
+        if (getClass() != obj.getClass()) {
+            
+            return false;
+            
+        }
+        
+        final Cancion other = (Cancion) obj;
+        
+        if (!Objects.equals(this.titulo, other.titulo)) {
+            
+            return false;
+            
+        }
+        
+        return Objects.equals(this.autor, other.autor);
+        
+    }       
     
     @Override
     public String toString(){
