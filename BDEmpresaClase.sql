@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `empresaclase` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `empresaclase`;
+CREATE DATABASE  IF NOT EXISTS `empresaclase2021` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `empresaclase2021`;
 -- MySQL dump 10.13  Distrib 5.5.28, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: empresa_clase
