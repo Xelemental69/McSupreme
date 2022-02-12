@@ -1,6 +1,6 @@
-drop database if exists BDMuseo;
-create database if not exists BDMuseo;
-use BDMuseo;
+drop database if exists bdmuseo;
+create database if not exists bdmuseo;
+use bdmuseo;
 
 /* CREAMOS LAS TABLAS ==> EL ORDEN ES IMPORTANTE (INTEGRIDAD REFERENCIAL) */
 /************************************/
