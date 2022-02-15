@@ -13,7 +13,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import java.lang.Character;
 import java.util.*;
 
-public class Libro {
+public class Libro implements Comparable<Libro>{
 
     //Para que no se tenga acceso externo, sin métodos, a las variables,
     //se las declara como private
@@ -142,6 +142,13 @@ public class Libro {
         return "Libro{" + "ISBN: " + isbn + "; Título: " + titulo
                 + "\nEditorial: " + editorial + "; Páginas: "
                 + paginasT + "; Precio: " + precio + '}';
+    }
+
+    @Override
+    public int compareTo(Libro t) {
+        
+        return this.isbn.compareTo(t.isbn);
+        
     }
 
 }
