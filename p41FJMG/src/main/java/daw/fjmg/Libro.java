@@ -144,6 +144,9 @@ public class Libro implements Comparable<Libro>{
                 + paginasT + "; Precio: " + precio + '}';
     }
 
+    // El método compareTo devuelve <0 si this es anterior
+    // =0 si this y libro t son iguales
+    // >0 si this es posterior
     @Override
     public int compareTo(Libro t) {
         
