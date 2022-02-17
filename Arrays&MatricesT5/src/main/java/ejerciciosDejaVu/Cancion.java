@@ -21,7 +21,7 @@ import java.util.Objects;
  * @author fco-j
  * 
  */
-public class Cancion {
+public class Cancion  implements Comparable<Cancion>{
     
     String titulo = "";
     String autor = "";
@@ -97,6 +97,13 @@ public class Cancion {
         return Objects.equals(this.autor, other.autor);
         
     }       
+    
+    @Override
+    public int compareTo(Cancion c) {//Se compara por título
+        
+        return this.titulo.compareTo(c.titulo);
+        
+    }
     
     @Override
     public String toString(){
