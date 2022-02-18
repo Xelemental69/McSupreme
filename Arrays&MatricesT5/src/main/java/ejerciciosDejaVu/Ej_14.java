@@ -40,16 +40,86 @@ public class Ej_14 {
         //Declaramos el Random
         Random lucky = new Random();        
                                                               
-                for(int m = 0; m < rec.length; m++){
-                    
-                    for(int n = 0; n < rec[m].length; n++){//Bucles dentro de bucles, sí
-                    //Introducimos los nºs al azar (rango: entre 1 y 100)
-                        
-                    rec[m][n] = lucky.nextInt(100) + 1;
-                    
-                    }
+            for(int m = 0; m < rec.length; m++){
+
+                for(int n = 0; n < rec[m].length; n++){//Bucles dentro de bucles, sí
+                //Introducimos los nºs al azar (rango: entre 1 y 100)
+
+                rec[m][n] = lucky.nextInt(100) + 1;
 
                 }
+
+            }
+        
+    }
+    
+    public static double media (int [] [] rec){
+        
+        int total = 0,
+            contador = 0;
+        double media;
+        
+        for(int m = 0; m < rec.length; m++){
+                    
+            for(int n = 0; n < rec[m].length; n++){//Bucles dentro de bucles, sí
+            //Añadimos el nº al total y sumamos 1 al contador:
+
+                total += rec[m][n];
+                contador++;
+
+            }
+
+        }
+                        
+        media = (double) total / contador;
+        
+        return media;
+        
+    }
+    
+    public static int min (int [] [] rec){
+        
+        int min = 101;
+        
+        for(int m = 0; m < rec.length; m++){
+                    
+            for(int n = 0; n < rec[m].length; n++){//Bucles dentro de bucles, sí
+            //Añadimos el nº al total y sumamos 1 al contador:
+
+                if(rec[m][n] < min){
+                    
+                    min = rec[m][n];
+                    
+                }
+
+            }
+
+        }                                
+        
+        return min;
+        
+    }
+    
+    public static int max (int [] [] rec){
+        
+        int max = 0;
+        
+        for(int m = 0; m < rec.length; m++){
+                    
+            for(int n = 0; n < rec[m].length; n++){//Bucles dentro de bucles, sí
+            //Añadimos el nº al total y sumamos 1 al contador:
+
+                if(rec[m][n] > max){
+                    
+                    max = rec[m][n];
+                    
+                }
+
+            }
+
+        }                                
+        
+        return max;
         
     }
     
@@ -60,6 +130,10 @@ public class Ej_14 {
         insertarDatosAzar(inception);
         
         mostrarEnPantalla(inception);
+        
+        System.out.println("Valor mínimo: " + min(inception));
+        System.out.println("Valor máximo: " + max(inception));
+        System.out.println("Media = " + media(inception));
         
     }
     

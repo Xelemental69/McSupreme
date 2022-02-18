@@ -15,6 +15,26 @@ public class Ej_19 {
     /**
      * @param args the command line arguments
      */
+    
+    public static void insertarDatosAzar(boolean [][] rec){
+    //Método para introducir datos en el array;
+        
+        //Declaramos el Random
+        Random lucky = new Random();        
+                                                              
+            for(int m = 0; m < rec.length; m++){
+
+                for(int n = 0; n < rec[m].length; n++){//Bucles dentro de bucles, sí
+                //Introducimos los valores al azar (true/false)
+
+                rec[m][n] = lucky.nextBoolean();
+
+                }
+
+            }
+        
+    }
+    
     public static void mostrarDisponibles(boolean[][] matrix) {
         //Recorre la matriz para mostrar los asientos disponibles:
 
@@ -97,7 +117,7 @@ public class Ej_19 {
 
     public static void mostrarMenu() {//Muestra el menú de opciones:
 
-        System.out.println("Elige una opción: ");
+        System.out.println("Bienvenid@ a Aerolíneas AirPingas.\nElige una opción: ");
         System.out.println("1: Reservar Asiento");
         System.out.println("2: Cancelar Reserva");
         System.out.println("3: Mostrar Asientos Disponibles");
@@ -111,8 +131,10 @@ public class Ej_19 {
         //qué asiento estará disponible o no y dos int,
         //uno para las filas y otro para los asientos:
         int fila, asiento;
-        boolean[][] disponibles = new boolean[25][4];
-
+        boolean[][] disponibles = new boolean[25][4];        
+        insertarDatosAzar(disponibles);//Será declarada la 
+        //disponibilidad de los asientos al azar. 
+                
         //Además, declaramos un escáner para escoger opciones,
         //un int para la opción escogida y nuestro clásico 
         //boolean para los do while con try catch:
