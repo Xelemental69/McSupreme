@@ -94,16 +94,20 @@ public class EjClase1 {
         System.out.println("Valores de las vecinas de matriz "
                 + "[" + x + "] [" + y + "]: ");
 
-        for (int m = x - 1; m <= (x + 1); m++) {
+        for (int m = x - 1; m <= (x + 1); m++) {//Inicia los bucles:
 
             for (int n = y - 1; n <= (y + 1); n++) {
                 
+                //Ejecuta una condición para mostrar SOLO los valores
+                //vecinos que estén en el rango:
                 if (m >= 0 && n >= 0 && m < matrix.length
                         && n < matrix[0].length && !(m == x && n == y)) {
 
                     System.out.printf(matrix[m][n] + " ");
 
-                } else if (m == x && n == y) {
+                } else if (m == x && n == y) {//Cualquiera que se
+                    //salga de la condición no será buscado, sino que
+                    //será sustituido por espacios
 
                     System.out.printf("   ");
 
