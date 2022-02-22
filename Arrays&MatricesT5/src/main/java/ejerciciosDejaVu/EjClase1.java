@@ -33,23 +33,23 @@ public class EjClase1 {
         }
 
     }
-    
-    public static void mostrarEntera(int[][] matrix){
-        
+
+    public static void mostrarEntera(int[][] matrix) {
+
         System.out.println("La matriz resultante es la siguiente:");
-        
-        for (int m = 0; m < matrix.length; m++){
-            
-            for (int n = 0; n < matrix[m].length;n++){
-                
+
+        for (int m = 0; m < matrix.length; m++) {
+
+            for (int n = 0; n < matrix[m].length; n++) {
+
                 System.out.printf(matrix[m][n] + " ");
-                
+
             }
-            
+
             System.out.println("");
-            
+
         }
-        
+
     }
 
     public static void mostrarMenu() {//Muestra el menú de opciones:
@@ -94,74 +94,23 @@ public class EjClase1 {
         System.out.println("Valores de las vecinas de matriz "
                 + "[" + x + "] [" + y + "]: ");
 
-        //Para que no se salga de la matriz al coger los nºs vecinos 
-        //a mostrar, se pondrá condiciones en cada println para evitar un
-        //Out Of Bounds:
-        
-        if (x > 0 && y > 0) {//Si los parámetros no se ubican en la 1ª fila y
-            //columna de la matriz, se mostrará
+        for (int m = x - 1; m <= (x + 1); m++) {
 
-            System.out.println("Matriz [" + (x - 1) + "] [" + (y - 1) + "]: "
-                    + matrix[x - 1][y - 1]);
+            for (int n = y - 1; n <= (y + 1); n++) {
+                if (m >= 0 && n >= 0 && m < matrix.length
+                        && n < matrix[0].length && !(m == x && n == y)) {
 
-        }
-        
-        if (x > 0) {//Si los parámetros no se ubican en la 1ª fila
-            //de la matriz, se mostrará
+                    System.out.printf(matrix[m][n] + " ");
 
-            System.out.println("Matriz [" + (x - 1) + "] [" + y + "]: "
-                    + matrix[x - 1][y]);
+                }else if (m == x && n == y){
+                    
+                    System.out.printf("   ");
+                    
+                }
 
-        }
-        
-        if (x > 0 && y < (matrix[x].length - 1)) {
-            //Si los parámetros no se ubican en la 1ª fila
-            //y en la última columna de la matriz, se mostrará
+            }
 
-            System.out.println("Matriz [" + (x - 1) + "] [" + (y + 1) + "]: "
-                    + matrix[x - 1][y + 1]);
-
-        }                    
-
-        if (y > 0) {//Si los parámetros no se ubican en la 1ª
-            //columna de la matriz, se mostrará
-
-            System.out.println("Matriz [" + x + "] [" + (y - 1) + "]: "
-                    + matrix[x][y - 1]);
-
-        }        
-
-        if (y < (matrix[x].length - 1)) {//Si los parámetros no se 
-            //ubican en la última fila de la matriz, se mostrará
-
-            System.out.println("Matriz [" + x + "] [" + (y + 1) + "]: "
-                    + matrix[x][y + 1]);
-
-        }
-        
-        if (x < (matrix.length - 1) && y > 0) {
-            //Si los parámetros no se ubican en la última fila
-            // y en la 1ª columna de la matriz, se mostrará
-
-            System.out.println("Matriz [" + (x + 1) + "] [" + (y - 1) + "]: "
-                    + matrix[x + 1][y - 1]);
-
-        } 
-
-        if (x < (matrix.length - 1)) {//Si los parámetros no se 
-            //ubican en la última columna de la matriz, se mostrará
-
-            System.out.println("Matriz [" + (x + 1) + "] [" + y + "]: "
-                    + matrix[x + 1][y]);
-
-        }
-
-        if (x < (matrix.length - 1) && y < (matrix[x].length - 1)) {
-            //Si los parámetros no se ubican en la 
-            //última fila y columna de la matriz, se mostrará
-
-            System.out.println("Matriz [" + (x + 1) + "] [" + (y + 1) + "]: "
-                    + matrix[x + 1][y + 1]);
+            System.out.println("");
 
         }
 
@@ -256,10 +205,10 @@ public class EjClase1 {
                         }
 
                         break;
-                        
+
                     case 4:
                         //Mostrará la matriz entera usando el método mostrarEntera:
-                        
+
                         mostrarEntera(ejemplo);
                         break;
 
