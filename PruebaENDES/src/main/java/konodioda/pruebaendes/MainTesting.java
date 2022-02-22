@@ -24,7 +24,7 @@ public class MainTesting {
         Scanner in = new Scanner(System.in);
         String talla;
         double precio = 0;
-        boolean permitemeQueInsista;
+        boolean repetir;
         
         do{
             
@@ -38,17 +38,17 @@ public class MainTesting {
                 System.out.println();
                 System.out.println("La talla es: "+ met.Tallas(talla));
                 System.out.println("El precio final es: " + met.iva(precio));
-                permitemeQueInsista = false;
+                repetir = false;
                 
             }catch(InputMismatchException ime){
 
                 System.out.println("ERROR: CARACTER NO NUMÉRICO INTRODUCIDO");
                 in.nextLine();
-                permitemeQueInsista = true;
+                repetir = true;
 
             }
             
-        }while(permitemeQueInsista);
+        }while(repetir);
     }    
         
 }

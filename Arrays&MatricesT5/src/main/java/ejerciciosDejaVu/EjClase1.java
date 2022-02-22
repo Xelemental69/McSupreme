@@ -97,7 +97,7 @@ public class EjClase1 {
         for (int m = x - 1; m <= (x + 1); m++) {
 
             for (int n = y - 1; n <= (y + 1); n++) {
-
+                
                 if (m >= 0 && n >= 0 && m < matrix.length
                         && n < matrix[0].length && !(m == x && n == y)) {
 
