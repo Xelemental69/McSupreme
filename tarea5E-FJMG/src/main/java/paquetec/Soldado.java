@@ -2,9 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package setOrdenado;
+package paquetec;
 
-import set_sinOrdenar.*;
 import java.util.Objects;
 
 /**
