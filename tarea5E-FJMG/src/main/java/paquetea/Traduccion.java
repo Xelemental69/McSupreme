@@ -14,29 +14,7 @@ import java.util.Objects;
 import java.util.*;
 
 public class Traduccion {
-    
-<<<<<<< HEAD
-    private Map<String, String> traduccion;
-
-    public Traduccion() {
-        //Creamos el map (y la clase):
-        
-        traduccion = new HashMap<>();
-        
-    }
-
-    public void guardarEntrada(String wrdEng, String palEsp){
-        //Método para almacenar una entrada de traducción:
-        
-        traduccion.put(wrdEng, palEsp);
-        
-    }
-    
-    public void borrarEntrada(String wrdEng, String palEsp){
-        //Método para borrar una entrada de traducción:
-        
-        traduccion.remove(wrdEng, palEsp);
-=======
+       
     private Map<String, String> traductor;
 
     public Traduccion() {
@@ -51,7 +29,7 @@ public class Traduccion {
         
     }
     
-    public void insertarValores (String english, String espagnolo){
+    public void guardarEntrada (String english, String espagnolo){
         
         traductor.put(english, espagnolo);
         
@@ -82,7 +60,6 @@ public class Traduccion {
         ArrayList <String> espLista = new ArrayList <String> (traductor.values());
         
         return espLista;
->>>>>>> Terminado
         
     }
     
@@ -90,7 +67,7 @@ public class Traduccion {
         //Método para editar una entrada de traducción,
         //reemplazando una existente:
         
-        traduccion.replace(wrdEng, palEsp);
+        traductor.replace(wrdEng, palEsp);
         
     }
     
@@ -98,7 +75,7 @@ public class Traduccion {
         //Crea un ArrayList con cada palabra inglesa:
         
         ArrayList <String> list = new ArrayList <String>
-         (traduccion.keySet());
+         (traductor.keySet());
 
         return list;
         
@@ -108,7 +85,7 @@ public class Traduccion {
         //Crea un ArrayList con cada traducción al español:
         
         ArrayList <String> list = new ArrayList <String>
-         (traduccion.values());
+         (traductor.values());
 
         return list;
         
