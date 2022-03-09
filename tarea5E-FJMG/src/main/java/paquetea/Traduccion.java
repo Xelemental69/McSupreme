@@ -15,6 +15,7 @@ import java.util.*;
 
 public class Traduccion {
     
+<<<<<<< HEAD
     private Map<String, String> traduccion;
 
     public Traduccion() {
@@ -35,6 +36,53 @@ public class Traduccion {
         //Método para borrar una entrada de traducción:
         
         traduccion.remove(wrdEng, palEsp);
+=======
+    private Map<String, String> traductor;
+
+    public Traduccion() {
+        
+        traductor = new TreeMap<>();
+        
+    }
+
+    public Traduccion(Map<String, String> traductor) {
+        
+        this.traductor = traductor;
+        
+    }
+    
+    public void insertarValores (String english, String espagnolo){
+        
+        traductor.put(english, espagnolo);
+        
+    }
+    
+    public void borrarValores(String english, String espagnolo){
+        
+        traductor.remove(english, espagnolo);
+        
+    }
+    
+    public void editarValores(String english, String espagnolo){
+        
+        traductor.replace(english, espagnolo);
+        
+    }
+    
+    public ArrayList<String> listaEngWords(){
+        
+        ArrayList <String> engList = new ArrayList <String> (traductor.keySet());
+        
+        return engList;
+        
+    }
+    
+    public ArrayList<String> listaEspPalabras(){
+        
+        ArrayList <String> espLista = new ArrayList <String> (traductor.values());
+        
+        return espLista;
+>>>>>>> Terminado
         
     }
     
