@@ -19,21 +19,26 @@ public class Trabajador implements Comparable<Trabajador> {
     private String apellidos;
     private LocalDate fechaNacimiento;
     private CategoriaEmpleado categoria;
+    public static final double SUELDO_MIN = 1707;
 
     public Trabajador(String nombre, String apellidos,
             LocalDate fechaNacimiento, CategoriaEmpleado categoria) {
         //Constructor parametrizado:
         
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.fechaNacimiento = fechaNacimiento;
-        this.categoria = categoria;
+        
 
         if (!comprobarEdad(fechaNacimiento)) {
             //Si la comprobación da falso (edad < 16), lanza una excepción:
 
             throw new IllegalArgumentException("ERROR. No posee la edad suficiente.");
 
+        }else{
+            
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.fechaNacimiento = fechaNacimiento;
+            this.categoria = categoria;
+            
         }
 
     }
@@ -48,7 +53,7 @@ public class Trabajador implements Comparable<Trabajador> {
 
     }
 
-    public boolean comprobarEdad(LocalDate fecNac) {
+    private boolean comprobarEdad(LocalDate fecNac) {
         //Método que comprueba la edad:
 
         boolean edadMin16 = false;
@@ -117,16 +122,14 @@ public class Trabajador implements Comparable<Trabajador> {
 
     public double calcularSueldo() {
         //Método que calcula la suma del sueldo base y el extra por categoría: 
-
-        double sueldoMin = 1707;
-
-        double sueldo = sueldoMin + categoria.getCOMPLEMENTO();
+        
+        double sueldo = SUELDO_MIN + categoria.getCOMPLEMENTO();
 
         return sueldo;
 
     }
 
-    public LocalDate fechaJubilacion(Trabajador trabajador) {
+    public static LocalDate fechaJubilacion(Trabajador trabajador) {
         //Método que devuelve la fecha de jubilación:
         
         LocalDate jubilacion = trabajador.getFechaNacimiento().plusYears(66);

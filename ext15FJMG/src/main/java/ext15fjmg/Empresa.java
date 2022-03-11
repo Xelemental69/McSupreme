@@ -84,21 +84,23 @@ public class Empresa {
         
     }        
     
-    public ArrayList<Integer> buscarTodosNombre(String nombre){
-        ArrayList <Integer> posiciones = new ArrayList<>();
+    public int[] buscarTodosNombre(String nombre){
+        int[] posiciones = new int[trabajadores.size()];
+        int j = 0;
         
         for(int i = 0; i < trabajadores.size(); i++){
             
             if(trabajadores.get(i).getNombre().equals(nombre)){
                 
-                posiciones.add(i);
+                posiciones[j] = i;
+                j++;
                 
             }
             
         }
         
-        if(posiciones.size() > 0){
-            
+        if(posiciones.length > 0){
+                      
             return posiciones;
             
         }else{
@@ -111,6 +113,8 @@ public class Empresa {
     
     public void ordenarNombre(){
         
+        Comparator <Trabajador> criterioNombre = (nombre1, nombre2)
+                -> nombre1.getNombre().compareTo(nombre2.getNombre());
         Collections.sort(this.trabajadores);
         
     }

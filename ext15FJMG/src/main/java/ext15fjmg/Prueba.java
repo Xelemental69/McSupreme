@@ -39,6 +39,9 @@ public class Prueba {
         Trabajador t5 = new Trabajador("Han", "Solo Fanservice", 
                 LocalDate.of(1977, 11, 7), CategoriaEmpleado.AVANZADA);
         
+        Trabajador t7 = new Trabajador("Obi-wan", "Kenobiii", 
+                LocalDate.of(2003, 3, 9), CategoriaEmpleado.INICIAL);
+        
         Trabajador t6 = new Trabajador(t3);
         
         empresaA.contratar(t1);
@@ -53,6 +56,7 @@ public class Prueba {
         
         empresaB.despedir(t5);
         empresaA.contratar(t5);
+        empresaA.contratar(t7);
         
         empresaA.ordenarNombre();
         empresaB.ordenarNombre();
@@ -61,6 +65,9 @@ public class Prueba {
         
         System.out.println("Posición de Obi-wan en " + empresaA.getNombre()
                 + ": " + empresaA.buscarNombre(t3));
+        
+        System.out.println("Posiciones de Obi-wan en " + empresaA.getNombre()
+                + ": " + empresaA.buscarTodosNombre("Obi-wan"));
         
         System.out.println("Posición de Obi-wan en " + empresaB.getNombre()
                 + ": " + empresaB.buscarNombre(t6));

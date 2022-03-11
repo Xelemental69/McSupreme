@@ -31,7 +31,7 @@ public class Teatro {
             
             for(int n = 0; n < y; n++){
                 
-                if((m % 2 != 0) && (n % 2 != 0)){
+                if(((m + 1) % 2 != 0) && ((n + 1) % 2 != 0)){
                     
                     //Asiento libre si la fila y/o la columna es par.
                     matriz [m] [n] = 'L';

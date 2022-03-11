@@ -16,9 +16,9 @@ public enum CategoriaEmpleado {
     AVANZADA ("Categoría Avanzada", 100);
     
     private final String NOMBRE_CAT;
-    private final int COMPLEMENTO;
+    private final double COMPLEMENTO;
 
-    private CategoriaEmpleado(String nombreCat, int complemento) {
+    private CategoriaEmpleado(String nombreCat, double complemento) {
         //Constructor parametrizado
         this.NOMBRE_CAT = nombreCat;
         this.COMPLEMENTO = complemento;
@@ -33,7 +33,7 @@ public enum CategoriaEmpleado {
         
     }
 
-    public int getCOMPLEMENTO() {
+    public double getCOMPLEMENTO() {
         
         return COMPLEMENTO;
         

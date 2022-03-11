@@ -61,26 +61,26 @@ public class TeatroMain {
                     case 2:
                         //Pide fila y columna para ir al método de reserva:
                         
-                        System.out.println("Escoja fila: ");
+                        System.out.println("Escoja fila (rango: 1-5): ");
                         fila = select.nextInt();
                         
-                        System.out.println("Escoja columna: ");
+                        System.out.println("Escoja columna (rango: 1-7): ");
                         columna = select.nextInt();
 
-                        teatro5x7.reservar(fila, columna);
+                        teatro5x7.reservar((fila - 1), (columna - 1));
                         
                         break;
 
                     case 3:
                         //Pide fila y columna para ir al método de cancelación:
                         
-                        System.out.println("Escoja fila: ");
+                        System.out.println("Escoja fila (rango: 1-5): ");
                         fila = select.nextInt();
                         
-                        System.out.println("Escoja columna: ");
+                        System.out.println("Escoja columna (rango: 1-7): ");
                         columna = select.nextInt();
 
-                        teatro5x7.cancelar(fila, columna);
+                        teatro5x7.cancelar((fila - 1), (columna - 1));
                         
                         break;                    
 
