@@ -18,7 +18,9 @@ public class Turismo extends Vehiculo{
             String marca, String modelo, String color, double tarifa,
             boolean disponible) {
         
-        // Primera línea de código de un constructor clase hija es llamar al constructor padre
+        // Primera línea de código de un constructor
+        //clase hija es llamar al constructor padre
+        //(para ello usamos super, que referencia al padre):
         
         super(bastidor, matricula, marca, modelo, color, tarifa, disponible);
         
@@ -28,8 +30,7 @@ public class Turismo extends Vehiculo{
         
     }
     
-    // Sobrescribir el método toString
-
+    // Sobrescribimos el método getAtributos del padre para esta clase:
     @Override
     public String getAtributos() {
         return super.getAtributos() + "\n\tTurismo{" + 
@@ -41,7 +42,8 @@ public class Turismo extends Vehiculo{
         
         // Llama al constructor por defecto de Vehiculo
         super();
-        this.numeroPuertas = 5;
+        this.numeroPuertas = 5;//Valor por defecto del atributo propio
+        //del Gran Turismo.
         
     }
 

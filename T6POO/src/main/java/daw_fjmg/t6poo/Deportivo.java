@@ -10,7 +10,7 @@ package daw_fjmg.t6poo;
  */
 public class Deportivo extends Vehiculo {
 
-    private int cilindrada; // Atributo específico para Deportivo
+    private int cilindrada; // Atributo específico de Deportivo
 
     public Deportivo(int cilindrada, Long bastidor, String matricula,
             String marca, String modelo, String color, double tarifa,
