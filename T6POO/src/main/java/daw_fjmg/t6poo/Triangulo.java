@@ -13,14 +13,14 @@ public class Triangulo extends Figuras{
     public Triangulo(double base, double altura) {
         
         super(base, altura);
-        
+                
     }
     
 
     @Override
     public String calcularArea() {
         
-        return "Área del Triángulo = " + (baseXaltura()/2) + "cm²";
+        return "Área del Triángulo = " + (area()/2) + "cm²";
     
     }
                 

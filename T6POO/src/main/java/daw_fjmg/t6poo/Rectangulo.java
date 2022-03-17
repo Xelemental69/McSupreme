@@ -18,7 +18,7 @@ public class Rectangulo extends Figuras{
     
     public String calcularArea(){
         
-        return "Área del Rectángulo = " + baseXaltura() + "cm²";
+        return "Área del Rectángulo = " + area() + "cm²";
         
     }
     

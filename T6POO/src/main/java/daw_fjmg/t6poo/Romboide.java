@@ -19,7 +19,7 @@ public class Romboide extends Figuras{
     @Override
     public String calcularArea(){
         
-        return "Área del Romboide = " + baseXaltura() + "cm²";
+        return "Área del Romboide = " + area() + "cm²";
         
     }
     
