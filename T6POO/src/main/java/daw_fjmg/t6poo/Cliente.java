@@ -124,5 +124,13 @@ public class Cliente {
         
         return true;
     }	
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "\nNombre: " + nombre + "\nDNI: "
+                    + dni + "\nEdad: " + edad  + "\n" + '}';
+    }
+    
+    
     
 }
