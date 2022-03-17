@@ -8,7 +8,7 @@ package daw_fjmg.t6poo;
  *
  * @author fco-j
  */
-public class Trabajador extends Persona{
+public abstract class Trabajador extends Persona{
     
     private double salario;
 
@@ -63,10 +63,6 @@ public class Trabajador extends Persona{
         
     }
     
-    public void cotizar(){
-        
-        System.out.println("Cotizando como empleado");
-        
-    }
+    public abstract void cotizar();
     
 }
