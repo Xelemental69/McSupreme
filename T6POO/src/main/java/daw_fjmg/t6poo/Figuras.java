@@ -44,15 +44,15 @@ public class Figuras {
         
     }
     
-    public double baseXaltura(){
+    protected double area(){
     
         return base * altura;
     
-    }
+    }   
     
     public String calcularArea(){
         
-        return "Área de la figura = " + baseXaltura() + "cm²";
+        return "Área de la figura = " + area() + "cm²";
         
     }
 
