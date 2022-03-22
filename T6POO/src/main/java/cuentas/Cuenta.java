@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package daw_fjmg.t6poo;
+package cuentas;
+import daw_fjmg.t6poo.*;
 import org.apache.commons.lang3.RandomStringUtils;
 import java.util.*;
 
@@ -42,6 +43,12 @@ public abstract class Cuenta {
         
         return saldo;
     
+    }
+
+    public void setSaldo(double saldo) {
+        
+        this.saldo = saldo;
+        
     }
 
     public Cliente getCliente() {

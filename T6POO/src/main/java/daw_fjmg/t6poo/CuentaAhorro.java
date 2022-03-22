@@ -67,10 +67,22 @@ public class CuentaAhorro extends Cuenta{
     
     }
 
+    public double getSaldo() {
+        
+        return saldo;
+        
+    }
+
+    public void setSaldo(double saldo) {
+        
+        this.saldo = saldo;
+        
+    }
+        
     @Override
     public String toString() {
-        return super.toString() + "CuentaAhorro{" + "\nInteres: " + interes + "\nComisión Anual: "
-                + comisionAnual + '}';
+        return super.toString() + "Cuenta Ahorro{" + "\nInterés: " + interes
+                + "\nComisión Anual: " + comisionAnual + '}';
     }
     
     

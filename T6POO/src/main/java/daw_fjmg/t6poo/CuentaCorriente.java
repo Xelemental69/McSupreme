@@ -17,9 +17,22 @@ public class CuentaCorriente extends Cuenta{
         
         super(cliente);
         this.saldoMin = sueldoMin;
+        this.saldo = sueldoMin;
         
     }
 
+    public double getSaldo() {
+        
+        return saldo;
+        
+    }
+
+    public void setSaldo(double saldo) {
+        
+        this.saldo = saldo;
+        
+    }
+        
     @Override
     public void actualizarSaldo() {
         
@@ -49,5 +62,15 @@ public class CuentaCorriente extends Cuenta{
         }
     
     }
+
+    @Override
+    public String toString() {
+        
+        return super.toString() + "\nCuenta Corriente{\n" + "Saldo Mínimo: "
+                + saldoMin + '}';
+        
+    }
+    
+    
             
 }

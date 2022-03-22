@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package daw_fjmg.t6poo;
+package cuentas;
+
+import daw_fjmg.t6poo.*;
 
 /**
  *
@@ -17,9 +19,22 @@ public class CuentaCorriente extends Cuenta{
         
         super(cliente);
         this.saldoMin = sueldoMin;
+        this.saldo = sueldoMin;
         
     }
 
+    public double getSaldo() {
+        
+        return saldo;
+        
+    }
+
+    public void setSaldo(double saldo) {
+        
+        this.saldo = saldo;
+        
+    }
+        
     @Override
     public void actualizarSaldo() {
         
@@ -49,5 +64,15 @@ public class CuentaCorriente extends Cuenta{
         }
     
     }
+
+    @Override
+    public String toString() {
+        
+        return super.toString() + "\nCuenta Corriente{\n" + "Saldo Mínimo: "
+                + saldoMin + '}';
+        
+    }
+    
+    
             
 }
