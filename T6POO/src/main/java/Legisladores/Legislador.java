@@ -51,6 +51,6 @@ public abstract class Legislador {
         
     }
     
-    
+    public abstract String getCamara();
     
 }
