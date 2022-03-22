@@ -14,12 +14,29 @@ import java.util.*;
  */
 
 
-public abstract class Cuenta {
+public abstract class Cuenta {//Clase abstracta
     
+    //Atributos de la clase:
     protected String numeroCuenta;
     protected double saldo;
     protected Cliente cliente;
-    public static final ArrayList <String> NUM_TOMADO = new ArrayList <>();
+    public static final ArrayList <String> NUM_TOMADO = new ArrayList <>();//Sirve para almacenar cada número de cuenta generado
+    
+    private String generarNumCuenta(){//Método para generar el número de cuenta
+        
+        String numero = "";
+        
+        do{//Bucle que se repetirá si el número de cuenta generado se halla en otra clase:
+            
+            numero = RandomStringUtils.randomNumeric(20).toUpperCase();
+            
+        }while(NUM_TOMADO.contains(numero));
+        
+        NUM_TOMADO.add(numero);//Una vez generado un nº de cuenta único, éste se almacena en el ArrayList
+        
+        return numero;
+        
+    }
 
     public Cuenta(Cliente cliente) {
         
@@ -29,10 +46,20 @@ public abstract class Cuenta {
         
     }
     
-    public abstract void actualizarSaldo();
+    public Cuenta() {
+        
+        numeroCuenta = generarNumCuenta();
+        saldo = 0;
+        cliente = new Cliente();
+        
+    }
     
-    public abstract void retirar(double entry);
+    public abstract void actualizarSaldo();//Método abstacto
+    
+    public abstract void retirar(double entry);//Método abstracto
 
+    //GETTERS Y SETTERS:
+    
     public String getNumeroCuenta() {
         
         return numeroCuenta;
@@ -56,27 +83,11 @@ public abstract class Cuenta {
         return cliente;
         
     }
-    
-    private String generarNumCuenta(){
         
-        String numero = "";
-        
-        do{
-            
-            numero = RandomStringUtils.randomNumeric(20).toUpperCase();
-            
-        }while(NUM_TOMADO.contains(numero));
-        
-        NUM_TOMADO.add(numero);
-        
-        return numero;
-        
-    }
-
     @Override
     public String toString() {
         return "Cuenta{" + "\nNumeroCuenta: " + numeroCuenta
-                + "\nSaldo: " + saldo + "\nCliente: " + cliente + '}';
+                + "\nSaldo: " + saldo + '€' + "\nCliente: " + cliente + '}';
     }
     
     

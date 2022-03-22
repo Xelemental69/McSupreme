@@ -15,14 +15,23 @@ public class CuentaCorriente extends Cuenta{
     public static final double INTERES = 1.5;
     private double saldoMin;
 
-    public CuentaCorriente(double sueldoMin, Cliente cliente) {
+    public CuentaCorriente(double saldoMin, Cliente cliente) {
         
         super(cliente);
-        this.saldoMin = sueldoMin;
-        this.saldo = sueldoMin;
+        this.saldoMin = saldoMin;
+        this.saldo = saldoMin;
         
     }
+    
+    public CuentaCorriente(){
+        
+        super();
+        saldoMin = 225;
+                
+    }
 
+    //GETTERS Y SETTERS:
+    
     public double getSaldo() {
         
         return saldo;
@@ -34,15 +43,53 @@ public class CuentaCorriente extends Cuenta{
         this.saldo = saldo;
         
     }
+
+    public double getSaldoMin() {
         
+        return saldoMin;
+        
+    }
+
+    public void setSaldoMin(double saldoMin) {
+        
+        this.saldoMin = saldoMin;
+        
+    }
+
+    public String getNumeroCuenta() {
+                
+        return numeroCuenta;
+        
+    }
+
+    public void setNumeroCuenta(String numeroCuenta) {
+        
+        this.numeroCuenta = numeroCuenta;
+        
+    }
+
+    public cuentas.Cliente getCliente() {
+        
+        return cliente;
+        
+    }
+
+    public void setCliente(cuentas.Cliente cliente) {
+        
+        this.cliente = cliente;
+        
+    }
+                
+    //Métodos heredados:
+    
     @Override
     public void actualizarSaldo() {
         
-        if (saldoMin > 1000){
+        if (saldoMin > 1000){//Si el saldo mínimo es mayor a 1000:
             
             saldo = saldo + (saldoMin * INTERES / 100);
             
-        }else{
+        }else{//Si el saldo mínimo es menor a 1000:
             
             saldo = saldo + (saldo * INTERES / 100);
             
@@ -53,11 +100,12 @@ public class CuentaCorriente extends Cuenta{
     @Override
     public void retirar(double entry) {
         
-        if((saldo - entry) >= saldoMin){
+        if((saldo - entry) >= saldoMin){//Si el resultado de la extracción es mayor al mínimo,
+            //se realizará la operación:
             
             saldo -= entry;
             
-        }else{
+        }else{//Si no se cumple la condición, salta error:
             
             System.out.println("Error. No se puede retirar tanto dinero");
             
@@ -69,7 +117,7 @@ public class CuentaCorriente extends Cuenta{
     public String toString() {
         
         return super.toString() + "\nCuenta Corriente{\n" + "Saldo Mínimo: "
-                + saldoMin + '}';
+                + saldoMin + '€' + '}';
         
     }
     

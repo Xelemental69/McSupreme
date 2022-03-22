@@ -12,17 +12,28 @@ import daw_fjmg.t6poo.*;
  */
 public class CuentaAhorro extends Cuenta{
     
+    //Atributos exclusivos de la clase hija
     private double interes;
     private double comisionAnual;
 
     public CuentaAhorro(Cliente cliente, double interes, double comisionAnual) {
+        //Constructor parametrizado:
         
         super(cliente);
         this.interes = interes;
         this.comisionAnual = comisionAnual;
         
     }
+    
+    public CuentaAhorro(){//Constructor por defecto:
+        
+        super();
+        interes = 1.5;
+        comisionAnual = 100.50;
+        
+    }
 
+    //Métodos heredados:
     @Override
     public void actualizarSaldo() {
         
@@ -33,17 +44,20 @@ public class CuentaAhorro extends Cuenta{
     @Override
     public void retirar(double entry) {
         
-        if (saldo >= entry){
+        if (saldo >= entry){//Si hay suficiente dinero, para retirar,
+            //se realiza la operación:
             
             saldo -= entry;
             
-        }else{
+        }else{//Sino, salta error:
             
             System.out.println("Error. No se puede retirar tanto dinero");
             
         }
     
     }
+    
+    //GETTERS Y SETTERS:
 
     public double getInteres() {
         

@@ -17,7 +17,7 @@ public class Cliente {
     private String dni;
     private int edad;
 
-    // NO se omiten constructores, getters, setters
+    //Constructor parametrizado:
 
     public Cliente(String nombre, String dni, int edad) {
         
@@ -27,13 +27,15 @@ public class Cliente {
         
     }
 
-    public Cliente() {
+    public Cliente() {//Constructor por defecto:
         
         nombre = "Lethi";
         dni = "04082874L";
         edad = 19;
         
     }
+    
+    //GEETERS y SETTERS:
     
     public String getNombre() {
         
