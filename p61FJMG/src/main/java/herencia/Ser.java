@@ -10,13 +10,13 @@ import java.util.Objects;
  *
  * @author fco-j
  */
-public abstract class Humano implements Comparable<Humano> {//CLASE A
+public abstract class Ser implements Comparable<Ser> {//CLASE A
     
     //Atributos de la clase:
     protected String nombre;
     protected String apellidos;
 
-    public Humano(String nombre, String apellidos) {
+    public Ser(String nombre, String apellidos) {
         //Constructor parametrizado
         
         this.nombre = nombre;
@@ -24,7 +24,7 @@ public abstract class Humano implements Comparable<Humano> {//CLASE A
         
     }
 
-    public Humano() {
+    public Ser() {
         
         nombre = "Xora";
         apellidos = "Reditus";
@@ -78,14 +78,14 @@ public abstract class Humano implements Comparable<Humano> {//CLASE A
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Humano other = (Humano) obj;
+        final Ser other = (Ser) obj;
         if (!Objects.equals(this.nombre, other.nombre)) {
             return false;
         }
         return Objects.equals(this.apellidos, other.apellidos);
     }
     
-    public int compareTo(Humano h) {
+    public int compareTo(Ser h) {
 
         return this.nombre.compareTo(h.nombre);
 
