@@ -2,21 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package herencia;
+package hospital;
 
 import java.util.Objects;
+import java.time.*;
 
 /**
  *
  * @author fco-j
  */
-public abstract class Humano implements Comparable<Humano> {//CLASE A
+public abstract class Persona implements Comparable<Persona> {//CLASE A
     
     //Atributos de la clase:
     protected String nombre;
     protected String apellidos;
+    protected NIF dni;
 
-    public Humano(String nombre, String apellidos) {
+    public Persona(String nombre, String apellidos) {
         //Constructor parametrizado
         
         this.nombre = nombre;
@@ -24,14 +26,18 @@ public abstract class Humano implements Comparable<Humano> {//CLASE A
         
     }
 
-    public Humano() {
+    public Persona() {
         
         nombre = "Xora";
         apellidos = "Reditus";
         
     }
     
-    public abstract void esUsuarioPersonas();//Método abstracto A
+    public void renovarDNI(LocalDate fechaNueva){
+        
+        dni.renovarCaducidad(fechaNueva);
+        
+    }
     
     //GETTERS Y SETTERS:
         
@@ -78,14 +84,14 @@ public abstract class Humano implements Comparable<Humano> {//CLASE A
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Humano other = (Humano) obj;
+        final Persona other = (Persona) obj;
         if (!Objects.equals(this.nombre, other.nombre)) {
             return false;
         }
         return Objects.equals(this.apellidos, other.apellidos);
     }
     
-    public int compareTo(Humano h) {
+    public int compareTo(Persona h) {
 
         return this.nombre.compareTo(h.nombre);
 
@@ -95,7 +101,7 @@ public abstract class Humano implements Comparable<Humano> {//CLASE A
     public String toString() {
         
         return "El nombre y apellidos de este sujeto son "
-                + nombre + " " + apellidos;
+                + nombre + " " + apellidos + "\n" + dni;
         
     }
     
