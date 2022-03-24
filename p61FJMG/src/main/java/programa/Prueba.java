@@ -16,7 +16,7 @@ public class Prueba {
     public static void main(String[] args) {
         
         //Creamos una lista donde poner las clases hijas de la Clase A:
-        ArrayList <Humano> gente = new ArrayList <>();
+        ArrayList <Ser> gente = new ArrayList <>();
         
         //Creamos tres clases que usaremos más adelante fuera de la lista:
         Persona starterP4 = new Persona(false, "Izanagi", "El Loco", "P4-001",
@@ -35,7 +35,7 @@ public class Prueba {
         gente.add(protaP3);
         gente.add(transeunte);
         
-        for (Humano h : gente){//Se muestra cada clase antes de ordenar la lista
+        for (Ser h : gente){//Se muestra cada clase antes de ordenar la lista
             
             System.out.println(h);
             
@@ -43,7 +43,7 @@ public class Prueba {
         
         Collections.sort(gente);//Se ordena la lista
         
-        for (Humano h : gente){//Se muestra cada clase tras ordenar la lista
+        for (Ser h : gente){//Se muestra cada clase tras ordenar la lista
             
             System.out.println(h);
             h.esUsuarioPersonas();//Y se ejecuta el método A en cada elemento

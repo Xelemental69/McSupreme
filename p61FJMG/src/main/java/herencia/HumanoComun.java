@@ -8,7 +8,7 @@ package herencia;
  *
  * @author fco-j
  */
-public class HumanoComun extends Humano{
+public class HumanoComun extends Ser{
     
     private String dni;
 
