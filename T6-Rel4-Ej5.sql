@@ -15,7 +15,7 @@ begin
 select comisem, concat(nomem, ' ', ape1em, ' ', ifnull(ape2em, '')), salarem
 from empleados
 where numhiem > numhij and comisem is not null
-order by comisem, numem desc;
+order by comisem, ape1em, ape2em, nomem;
 
 end $$
 
