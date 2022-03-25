@@ -12,57 +12,67 @@ import java.time.*;
  * @author fco-j
  */
 public abstract class Persona implements Comparable<Persona> {//CLASE A
-    
+
     //Atributos de la clase:
     protected String nombre;
     protected String apellidos;
     protected NIF dni;
 
-    public Persona(String nombre, String apellidos) {
-        //Constructor parametrizado
-        
+    public Persona(String nombre, String apellidos, String numDNI, LocalDate fecCad) {
+        //Constructor parametrizado (incluido parámetros de NIF)
+
         this.nombre = nombre;
         this.apellidos = apellidos;
-        
+        dni = new NIF(numDNI, fecCad);
+
+    }
+
+    public Persona(String nombre, String apellidos) {
+        //Constructor parametrizado
+
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        dni = new NIF();
+
     }
 
     public Persona() {
-        
-        nombre = "Xora";
-        apellidos = "Reditus";
-        
+
+        nombre = "César";
+        apellidos = "Carballo";
+        dni = new NIF();
+
     }
-    
-    public void renovarDNI(LocalDate fechaNueva){
-        
+
+    public void renovarDNI(LocalDate fechaNueva) {
+
         dni.renovarCaducidad(fechaNueva);
-        
+
     }
-    
+
     //GETTERS Y SETTERS:
-        
     public String getNombre() {
-        
+
         return nombre;
-        
+
     }
 
     public void setNombre(String nombre) {
-        
+
         this.nombre = nombre;
-        
+
     }
 
     public String getApellidos() {
-        
+
         return apellidos;
-        
+
     }
 
     public void setApellidos(String apellidos) {
-        
+
         this.apellidos = apellidos;
-        
+
     }
 
     @Override
@@ -90,21 +100,19 @@ public abstract class Persona implements Comparable<Persona> {//CLASE A
         }
         return Objects.equals(this.apellidos, other.apellidos);
     }
-    
+
     public int compareTo(Persona h) {
 
         return this.nombre.compareTo(h.nombre);
 
     }
-        
+
     @Override
     public String toString() {
-        
+
         return "El nombre y apellidos de este sujeto son "
                 + nombre + " " + apellidos + "\n" + dni;
-        
+
     }
-    
-    
-    
+
 }

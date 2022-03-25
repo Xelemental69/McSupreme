@@ -5,82 +5,75 @@
 package hospital;
 
 import java.time.LocalDate;
-import java.util.*;
 
 /**
  *
  * @author fco-j
  */
-public class Administrativo extends Empleado {
+public class Medico extends Empleado {
 
-    private Grupo grupo;
+    private String especialidad;
 
-    public Administrativo(Grupo grupo, String numSegSocial,
+    public Medico(String especialidad, String numSegSocial,
             double salario, String nombre, String apellidos) {
 
         super(numSegSocial, salario, nombre, apellidos);
-        this.grupo = grupo;
+        this.especialidad = especialidad;
 
     }
 
-    public Administrativo(Grupo grupo, String numSegSocial,
+    public Medico(String especialidad, String numSegSocial,
             double salario, String nombre, String apellidos,
             String numDNI, LocalDate fecCad) {
 
         super(numSegSocial, salario, nombre, apellidos, numDNI, fecCad);
-        this.grupo = grupo;
+        this.especialidad = especialidad;
 
     }
 
-    public Administrativo() {
+    public Medico() {
 
         super();
 
-        Random rng = new Random();
+        especialidad = "Pediatra";
 
-        switch (rng.nextInt(3)) {
+    }
 
-            case 0:
-                grupo = Grupo.C;
-                break;
+    @Override
+    public double calcularIRPF() {
 
-            case 1:
-                grupo = Grupo.D;
-                break;
+        if (especialidad.equalsIgnoreCase("Cirujano")
+                || especialidad.equalsIgnoreCase("Cirujía")) {
 
-            case 2:
-                grupo = Grupo.E;
-                break;
+            return salario * 25 / 100;
+
+        } else {
+
+            return salario * 23.5 / 100;
 
         }
 
     }
 
-    @Override
-    public double calcularIRPF() {//Método Abstracto
+    public void tratar(Paciente paciente, String medicina) {
 
-        return salario * grupo.getIRPF() / 100;
+        System.out.println("El médico " + nombre + " trata "
+                + "a " + paciente.getNombre() + " con la medicina " + medicina);
 
-    }
-
-    public void registrarDoc(String nomDoc) {
-
-        System.out.printf("El administrativo " + nombre + apellidos);
-        System.out.println(" ha registrado el documento " + nomDoc);
-        System.out.println("HashCode: " + nomDoc.hashCode());
+        paciente.tomarMedicina(medicina);
 
     }
 
     //GETTERS Y SETTERS:
-    public Grupo getGrupo() {
+    public String getEspecialidad() {
 
-        return grupo;
+        return especialidad;
 
     }
 
-    public void setGrupo(Grupo grupo) {
+    public void setEspecialidad(String especialidad) {
 
-        this.grupo = grupo;
+        this.especialidad = especialidad;
 
     }
 
@@ -135,6 +128,13 @@ public class Administrativo extends Empleado {
     public NIF getDni() {
 
         return dni;
+
+    }
+
+    @Override
+    public String toString() {
+
+        return super.toString() + "Su especialidad como médico es " + especialidad;
 
     }
 
