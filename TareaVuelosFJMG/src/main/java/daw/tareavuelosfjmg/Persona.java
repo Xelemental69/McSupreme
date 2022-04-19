@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package hospital;
+package daw.tareavuelosfjmg;
 
 import java.util.Objects;
 import java.time.*;
@@ -11,7 +11,7 @@ import java.time.*;
  *
  * @author fco-j
  */
-public abstract class Persona implements Comparable<Persona> {//CLASE A
+public class Persona implements Comparable<Persona> {//CLASE A
 
     //Atributos de la clase:
     protected String nombre;
@@ -23,7 +23,7 @@ public abstract class Persona implements Comparable<Persona> {//CLASE A
 
         this.nombre = nombre;
         this.apellidos = apellidos;
-        dni = new NIF(numDNI, fecCad);
+        dni = new NIF(numDNI);
 
     }
 
@@ -41,12 +41,6 @@ public abstract class Persona implements Comparable<Persona> {//CLASE A
         nombre = "César";
         apellidos = "Carballo";
         dni = new NIF();
-
-    }
-
-    public void renovarDNI(LocalDate fechaNueva) {
-
-        dni.renovarCaducidad(fechaNueva);
 
     }
 
