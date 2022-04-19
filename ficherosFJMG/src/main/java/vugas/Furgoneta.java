@@ -58,8 +58,8 @@ public class Furgoneta extends Vehiculo {
     @Override
     public String getAtributos() {
         
-        return super.getAtributos() + "\n\tFurgoneta{" + "\n\tCarga: "
-                + carga + "\n\tVolumen: " + volumen + '}';
+        return super.getAtributos() + ":Furgoneta{" + "Carga -> "
+                + carga + ":Volumen -> " + volumen + '}';
         
     }   
     

@@ -204,11 +204,11 @@ public class Vehiculo {
     
     public String getAtributos() {
         
-        return "Vehiculo{" + "\nBastidor: " + bastidor
-                + "\nMatricula: " + matricula + "\nMarca: "
-                + marca + "\nModelo: " + modelo
-                + "\nColor: " + color + "\nTarifa: "
-                + tarifa + "\nDisponible: " + disponible + '}';
+        return "Vehiculo{" + "Bastidor -> " + bastidor
+                + ":Matricula -> " + matricula + ":Marca -> "
+                + marca + ":Modelo -> " + modelo
+                + ":Color -> " + color + ":Tarifa -> "
+                + tarifa + ":Disponible -> " + disponible + '}';
         
     }
 

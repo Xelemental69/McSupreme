@@ -44,7 +44,7 @@ public class Deportivo extends Vehiculo {
     @Override
     public String getAtributos() {
         
-        return super.getAtributos() + "\n\tDeportivo{" + "\n\tCilindrada: "
+        return super.getAtributos() + ":Deportivo{" + "Cilindrada -> "
                 + cilindrada + '}';
         
     }

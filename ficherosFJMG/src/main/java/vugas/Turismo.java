@@ -33,8 +33,8 @@ public class Turismo extends Vehiculo{
     // Sobrescribimos el método getAtributos del padre para esta clase:
     @Override
     public String getAtributos() {
-        return super.getAtributos() + "\n\tTurismo{" + 
-                "\n\tNumeroPuertas: " + numeroPuertas + '}';
+        return super.getAtributos() + ":Turismo{" + 
+                "NumeroPuertas -> " + numeroPuertas + '}';
     }
     
    
