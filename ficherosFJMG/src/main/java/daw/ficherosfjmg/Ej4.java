@@ -23,6 +23,7 @@ public class Ej4 {
         // Fichero a crear. Ruta relativa a la carpeta raíz del proyecto
         String idfichero = "ej4.txt";//Archivo de texto a crear        
         ArrayList <Vehiculo> vugas = new ArrayList<>();
+        int numCat = 8;
         
         vugas.add(new Furgoneta());
         vugas.add(new Turismo());
@@ -59,8 +60,22 @@ public class Ej4 {
 
             for(Vehiculo v : vugas){
                 
+                if(v instanceof Turismo){
+                    
+                    numCat = 0;
+                    
+                }else if (v instanceof Deportivo){
+                    
+                    numCat = 1;
+                    
+                }else if (v instanceof Furgoneta){
+                    
+                    numCat = 2;
+                    
+                }
+                
                 //Escribe el valor de linea:
-                flujo.write(v.getAtributos());
+                flujo.write(numCat + " - " + v.getAtributos());
                 // Metodo newLine() añade línea en blanco
                 flujo.newLine();
                 
