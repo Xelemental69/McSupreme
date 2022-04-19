@@ -241,7 +241,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-INSERT INTO `clientes` VALUES (1,'Ángeles','Ruiz','Nieto','19087678q','678000000','angelesruiz@gmail.com',NULL,'Estepona','Málaga','29680'),(2,'Juan','Toro','Toro','00000123A','666000000','juanito99@hotmail.com','C/ Vigia nº 10','Marbella','Málaga','29600'),(3,'Ángeles','Ruiz','Nieto','19087678q','678000000','angelesruiz@gmail.com',NULL,'Estepona','Málaga','29680');
+INSERT INTO `clientes` VALUES (1,'Ángeles','Ruiz','Nieto','19087678q','678000000','angelesruiz@gmail.com',NULL,'Estepona','Málaga','29009'),(2,'Juan','Toro','Toro','00000123A','666000000','juanito99@hotmail.com','C/ Vigia nº 10','Marbella','Málaga','29018'),(3,'Ángeles','Ruiz','Nieto','19087678q','678000000','angelesruiz@gmail.com',NULL,'Estepona','Málaga','29020');
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 
