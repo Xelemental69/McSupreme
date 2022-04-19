@@ -1,0 +1,30 @@
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
+2 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Furgoneta{Carga -> 1000:Volumen -> 8}
+0 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Turismo{NumeroPuertas -> 5}
+1 - Vehiculo{Bastidor -> 1:Matricula -> 0000 AAA:Marca -> Sin marca:Modelo -> Sin modelo:Color -> Sin color:Tarifa -> 0.0:Disponible -> false}:Deportivo{Cilindrada -> 4}
