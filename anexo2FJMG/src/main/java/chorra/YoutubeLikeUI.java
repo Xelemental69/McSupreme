@@ -32,7 +32,7 @@ public class YoutubeLikeUI {
         videos.setLayout(layout);
         // Here we are adding the individual videos to the so called "list"
         // You can change the JPanel "video" to an JScrollPanel and make the video list scrollable
-        videos.add(new Video("Why not choose the shark slayer \nways?", 4975742, "Showing Slap Tech 24/7",
+        videos.add(new Video("Why not choose the shark slayer ways?", 4975742, "Showing Slap Tech 24/7",
                 "https://images.indianexpress.com/2022/03/will-smith-slap-memes.jpg"));
         videos.add(new Video("This medal SLAPS", 9284573, "Showing Slap Tech 24/7",
                 "https://analyticsinsight.b-cdn.net/wp-content/uploads/2022/03/Will-Smith-Slap-Token-Another-Meme-Currency-Over-Controversy.jpg"));
@@ -141,12 +141,12 @@ public class YoutubeLikeUI {
 
             JLabel titleLabel = new JLabel(makeWebSafe(title));
             titleLabel.setForeground(Color.black);
-            titleLabel.setFont(new Font("Arial", Font.BOLD, 16));
+            titleLabel.setFont(new Font("Arial", Font.BOLD, 14));
             titleLabel.setToolTipText(title);
             info.add(titleLabel);
             JLabel authorLabel = new JLabel(makeWebSafe(author));
             authorLabel.setForeground(Color.gray);
-            authorLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+            authorLabel.setFont(new Font("Arial", Font.PLAIN, 13));
             info.add(authorLabel);
             JLabel viewsTitle = new JLabel(makeWebSafe(NumberFormat.getNumberInstance(Locale.US).format(views)+" views"));
             viewsTitle.setForeground(new Color(64, 128, 64));
