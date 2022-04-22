@@ -75,13 +75,13 @@ public class ProfFicheroCSV {
                         //el contenido de string en el atributo correspondiente:
                         
                         case 0:
+                            plantilla.setApellidos(string);
+                            //System.out.println("apellidos recibido");
+                            break;
+
+                        case 1:
                             plantilla.setNombre(string);
                             //System.out.println("nombre recibido");
-                            break;
-                        
-                        case 1:
-                            plantilla.setApellidos(string);
-                            //System.out.println("apellido recibido");
                             break;
                         
                         case 2:
@@ -244,6 +244,8 @@ public class ProfFicheroCSV {
             System.out.println(e.getMessage());
             
         }
+        
+        
         
     }
 }
