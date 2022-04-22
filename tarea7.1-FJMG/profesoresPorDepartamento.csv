@@ -1,0 +1,71 @@
+Empleado/a	DNI/Pasaporte	Puesto	Fecha de toma de posesión	Fecha de cese	Teléfono	Evaluador	Coordinador
+ Carmen Isabel"	"Carrillo Moreno	"75006921B"	"Administración de Empresas P.E.S."	"01/10/1992"	""	"692176980"	true	false
+ María Dolores"	"Girón Vega	"29077348N"	"Administración de Empresas P.E.S."	"01/10/1992"	""	"952794470"	true	false
+ Claudia"	"Baena Escaño	"75563185C"	"Administración de Empresas P.E.S."	"21/09/2020"	"30/06/2021"	""	true	false
+ Concepción"	"Báez Ruiz	"22723547F"	"Administración de Empresas P.E.S."	"01/10/1991"	""	""	true	false
+ Mario"	"Álvarez Bermudo	"08921749A"	"Area Científico-Tecnolog. (Apoyo Covid)"	"16/09/2020"	"30/06/2021"	"626427174"	true	false
+ María del Carmen"	"González Juliá	"78988638Z"	"Area de Lengua y CC. Soc. (Apoyo Covid)"	"16/09/2020"	"30/06/2021"	"685031987"	true	false
+ Pablo"	"Berenguel Álvarez	"52571560T"	"Biología y Geología P.E.S."	"01/09/2005"	""	"952800769"	true	true
+ Emilia"	"Gijón Mateo	"25931941Q"	"Biología y Geología P.E.S."	"03/04/2020"	"02/04/2025"	"952782069"	true	false
+ María"	"González Chamizo	"45714123J"	"Biología y Geología P.E.S."	"01/09/2020"	"30/06/2021"	"953718296"	true	false
+ Álvaro"	"González Garzón	"74934666E"	"Biología y Geología P.E.S."	"01/09/2020"	"30/06/2021"	"687654302"	true	false
+ Cristina"	"Álvarez Chamizo	"33353948S"	"Contr. Lab. Religión (Sec-Ere) 05 Horas"	"01/09/2020"	"31/08/2021"	"651429273"	true	false
+ Rosa"	"Escalona González	"27340284T"	"Contr. Lab. Religión (Sec-Ere) 06 Horas"	"01/09/2020"	"31/08/2021"	"639177088"	true	false
+ Jean Paul"	"Arroyo Pretel	"25679044G"	"Contr. Lab. Religión (Sec-Ere) 06 Horas"	"15/01/2021"	"14/02/2021"	"676050580"	true	false
+ Javier"	"Hidalgo Villa	"08922573E"	"Contr. Lab.Evangelic. (Sec-Ere) 04 Horas"	"01/09/2020"	"31/08/2021"	"606748632"	true	false
+ Laura"	"Carmona Serrano	"06572131L"	"Dibujo P.E.S."	"01/09/2020"	"30/06/2021"	"616534693"	true	false
+ Melania"	"Cocinero Molinero	"74906891P"	"Dibujo P.E.S."	"01/09/2020"	"30/06/2021"	"618640089"	true	false
+ José Antonio"	"Durán Blanco	"74696158R"	"Dibujo P.E.S."	"01/09/2020"	"31/08/2021"	"958292195"	true	false
+ Elisa María"	"Maza Jurado	"77330277E"	"Economía P.E.S."	"01/09/2020"	"30/06/2021"	"639839086"	true	false
+ Laura"	"Cárdenas Díaz	"26800485B"	"Educación Física P.E.S."	"01/09/2010"	""	"617704193"	true	false
+ Julen"	"Domínguez Tamayo	"44756577A"	"Educación Física P.E.S."	"01/09/2016"	""	"647582371"	true	false
+ Cristina"	"Fernández Ramírez	"76748408F"	"Educación Física P.E.S."	"16/09/2020"	"30/06/2021"	"658402109"	true	false
+ Guillermo"	"Lincoln Romero	"34843485A"	"Educación Física P.E.S."	"01/02/2021"	"31/03/2021"	""	true	false
+ Francisco Javier"	"Díaz Puerto	"50602307F"	"Filosofía P.E.S."	"01/09/2012"	""	"655526696"	true	false
+ Inmaculada Concepción"	"Martín Fernández	"70909878G"	"Filosofía P.E.S."	"01/09/2020"	"30/06/2021"	"658036793"	true	false
+ Carmen Isabel"	"Carrillo Moreno	"52555297K"	"Formación y Orientación Laboral P.E.S."	"01/09/2018"	""	"630753403"	true	false
+ Pastora"	"Fortea Molina	"77455412Z"	"Francés P.E.S."	"01/09/2009"	""	"656491528"	true	true
+ Virginia"	"Escudero Hernández	"30787489B"	"Física y Química P.E.S."	"01/09/2019"	""	"951576056"	true	false
+ María"	"Giráldez Cuevas	"07986998H"	"Física y Química P.E.S."	"01/09/2012"	""	"636443041"	true	false
+ David"	"Manuel Coronado	"80133984Y"	"Física y Química P.E.S."	"01/09/2004"	""	"952805430"	true	true
+ Rosa María"	"De la Fe Fernández	"75115004V"	"Geografía e Historia P.E.S."	"01/09/2020"	""	"606648952"	true	false
+ Cristina"	"Álvarez Chamizo	"33347173W"	"Geografía e Historia P.E.S."	"01/09/2020"	"30/06/2021"	"636244624"	true	false
+ Amparo"	"Jiménez Jiménez	"77455402G"	"Geografía e Historia P.E.S."	"01/09/2019"	""	"649446973"	true	true
+ Marta"	"López Córdoba	"75128842D"	"Geografía e Historia P.E.S."	"01/09/2020"	""	"615348684"	true	true
+ Inmaculada del Mar"	"Mesa Rivera	"23275278Z"	"Geografía e Historia P.E.S."	"01/09/2020"	"30/06/2021"	"660843	false	false
+ Beatriz"	"Avilés Jiménez	"28614411L"	"Geografía e Historia P.E.S."	"01/09/2016"	""	""	true	false
+ Rodrigo"	"Fernández Luzón	"74663933E"	"Informática P.E.S."	"01/09/2010"	""	"717121280"	true	true
+ María"	"Giráldez Cuevas	"34843289Z"	"Informática P.E.S."	"01/09/2020"	"30/06/2021"	"661954911"	true	false
+ Verónica"	"González Astilleros	"25565241M"	"Informática P.E.S."	"22/06/2009"	"24/01/2021"	"952795965"	true	false
+ María Luisa"	"León Sánchez	"75710637L"	"Informática P.E.S."	"01/09/2020"	"30/06/2021"	"670557617"	true	false
+ Mercedes"	"Malmesat Rodríguez	"25713795W"	"Informática P.E.S."	"01/09/2020"	"30/06/2021"	"619160218"	true	false
+ Juan José"	"Baena Valero	"27347150N"	"Informática P.E.S."	"01/09/2013"	""	"952869739"	true	false
+ Laura"	"Baraza Zamorano	"26966400G"	"Inglés P.E.S."	"01/09/2020"	""	"638310087"	true	false
+ Julen"	"Domínguez Tamayo	"03888739Z"	"Inglés P.E.S."	"01/09/2012"	""	"951249955"	true	false
+ Cora Ángeles"	"García Beneite	"77455262W"	"Inglés P.E.S."	"01/09/2020"	"30/06/2021"	"952795942"	true	false
+ Cora Ángeles"	"García Beneite	"75158773V"	"Inglés P.E.S."	"16/09/2020"	"02/10/2020"	""	true	false
+ Ana"	"García Del Valle	"24228342G"	"Inglés P.E.S."	"01/09/2003"	""	"670031576"	true	true
+ Remedios"	"Hernández Lozano	"26485849S"	"Inglés P.E.S."	"01/09/2008"	""	"952807303"	true	false
+ Inés"	"Martínez Fernández	"53682231R"	"Inglés P.E.S."	"01/09/2009"	""	"952805153"	true	false
+ Diego"	"Bain Antonyak	"45711491A"	"Lengua Castellana y Literatura P.E.S."	"01/09/2020"	"30/06/2021"	"600453894"	true	false
+ Rosa María"	"De la Fe Fernández	"31018171A"	"Lengua Castellana y Literatura P.E.S."	"05/11/2020"	"09/12/2020"	"672785425"	true	false
+ Luís María"	"Escobar Márquez	"25661407P"	"Lengua Castellana y Literatura P.E.S."	"01/09/2019"	""	"952806165"	true	false
+ Ana"	"Lirola Oliva	"74868422H"	"Lengua Castellana y Literatura P.E.S."	"01/09/2008"	""	"665475984"	true	false
+ Jean Paul"	"Arroyo Pretel	"75818111Z"	"Lengua Castellana y Literatura P.E.S."	"01/09/2020"	"30/06/2021"	"658504596"	true	false
+ Francisco Javier"	"Díaz Puerto	"24263559P"	"Matemáticas P.E.S."	"01/09/2020"	"31/08/2021"	"958443348"	true	false
+ Pastora"	"Fortea Molina	"28840307D"	"Matemáticas P.E.S."	"02/12/2020"	"23/12/2020"	"666083282"	true	false
+ Almudena"	"García Pascual	"25718794X"	"Matemáticas P.E.S."	"01/09/2020"	"30/06/2021"	"655198361"	true	true
+ Cristina"	"Garrocho González	"33397284L"	"Matemáticas P.E.S."	"01/09/2011"	""	""	true	false
+ Rachel"	"Lara Orive	"78961479H"	"Matemáticas P.E.S."	"01/09/2004"	""	"952800329"	true	false
+ Magdalena"	"Macías Laynez	"25583669X"	"Matemáticas P.E.S."	"01/09/2010"	""	"951965362"	true	true
+ Dolores M."	"Alhambra Bullón	"24198392T"	"Matemáticas P.E.S."	"01/09/2019"	""	"958261885"	true	false
+ Jessica"	"González Ramírez	"79055309P"	"Orientación Educativa P.E.S."	"01/09/2020"	"30/06/2021"	"640656461"	true	false
+ Jacqueline Cristina"	"Márquez Pineda	"74867075M"	"Orientación Educativa P.E.S."	"01/09/2008"	""	"952340738"	true	false
+ María del Carmen"	"Horno Cabrera	"74831388Z"	"Proc. Gestión Administrativa P.T.F.P."	"01/09/2020"	"30/06/2021"	""	true	false
+ Humberto"	"Martínez Arriaza	"80125358M"	"Proc. Gestión Administrativa P.T.F.P."	"01/10/1987"	"05/04/2021"	"952800450"	true	false
+ Inés"	"Martínez Fernández	"75729511X"	"Proc. Gestión Administrativa P.T.F.P."	"01/09/2020"	"30/06/2021"	"667069980"	true	false
+ María Isabel"	"Barroso Jiménez	"53151310N"	"Sistemas Electrónicos P.E.S."	"01/09/2003"	""	"952806165"	true	false
+ Emilia"	"Fagundo García	"12731426Y"	"Tecnología P.E.S."	"01/09/2012"	""	"689100483"	true	false
+ Pedro José"	"Fernández López	"26974925L"	"Tecnología P.E.S."	"01/09/2020"	"30/06/2021"	"620089634"	true	false
+ Luis Miguel"	"Fernández Mangano	"44263282N"	"Tecnología P.E.S."	"01/09/2020"	"30/06/2021"	"600039589"	true	false
+ Cristina"	"Álvarez Chamizo	"08914265V"	"Tecnología P.E.S."	"01/09/2006"	""	"952896014"	true	false
