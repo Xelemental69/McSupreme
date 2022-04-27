@@ -14,104 +14,129 @@ public class Vehiculo {
 
     private Long bastidor;
     private String matricula;
+    private double kilometros;
     private String marca;
     private String modelo;
-    private String color;
     private double tarifa;
     private boolean disponible;
+    private boolean marchaAutomatica;
+    private int numeroPuertas;
 
-    public Vehiculo(Long bastidor, String matricula,
-            String marca, String modelo, String color,
-            double tarifa, boolean disponible) {
+    public Vehiculo(Long bastidor, String matricula, double kilometros,
+            String marca, String modelo,
+            double tarifa, boolean disponible, boolean marchaAutomatica,
+            int numeroPuertas) {
 
         this.bastidor = bastidor;
         this.matricula = matricula;
+        this.kilometros = kilometros;
         this.marca = marca;
         this.modelo = modelo;
-        this.color = color;
         this.tarifa = tarifa;
         this.disponible = disponible;
+        this.marchaAutomatica = marchaAutomatica;
 
     }
-    
-    public Vehiculo(){
+
+    public Vehiculo() {
         
+        Random r = new Random();
+
         this.bastidor = 1L;
         this.matricula = "0000 AAA";
+        kilometros = 1600;
         this.marca = "Sin marca";
         this.modelo = "Sin modelo";
-        this.color = "Sin color";   
-        
+        marchaAutomatica = r.nextBoolean();
+        disponible = r.nextBoolean();
+        this.numeroPuertas = 5;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 41 * hash + Objects.hashCode(this.bastidor);
+        hash = 41 * hash + Objects.hashCode(this.matricula);
+        hash = 41 * hash + (int) (Double.doubleToLongBits(this.kilometros) ^ (Double.doubleToLongBits(this.kilometros) >>> 32));
+        hash = 41 * hash + Objects.hashCode(this.marca);
+        hash = 41 * hash + Objects.hashCode(this.modelo);
+        hash = 41 * hash + (int) (Double.doubleToLongBits(this.tarifa) ^ (Double.doubleToLongBits(this.tarifa) >>> 32));
+        hash = 41 * hash + (this.disponible ? 1 : 0);
+        hash = 41 * hash + (this.marchaAutomatica ? 1 : 0);
+        hash = 41 * hash + this.numeroPuertas;
+        return hash;
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
-            
             return true;
-            
         }
-        
         if (obj == null) {
-            
             return false;
-            
         }
-        
         if (getClass() != obj.getClass()) {
-            
             return false;
-            
         }
-        
         final Vehiculo other = (Vehiculo) obj;
-                
+        if (Double.doubleToLongBits(this.kilometros) != Double.doubleToLongBits(other.kilometros)) {
+            return false;
+        }
         if (Double.doubleToLongBits(this.tarifa) != Double.doubleToLongBits(other.tarifa)) {
-            
             return false;
-            
         }
-        
         if (this.disponible != other.disponible) {
-                        
             return false;
-            
         }
-        
+        if (this.marchaAutomatica != other.marchaAutomatica) {
+            return false;
+        }
+        if (this.numeroPuertas != other.numeroPuertas) {
+            return false;
+        }
         if (!Objects.equals(this.matricula, other.matricula)) {
-            
             return false;
-            
         }
-        
         if (!Objects.equals(this.marca, other.marca)) {
-            
             return false;
-            
         }
-        
         if (!Objects.equals(this.modelo, other.modelo)) {
-            
             return false;
-            
         }
-        
-        if (!Objects.equals(this.color, other.color)) {
-            
-            return false;
-            
-        }
-        
-        if (!Objects.equals(this.bastidor, other.bastidor)) {
-            
-            return false;
-            
-        }
-        
-        return true;
-        
+        return Objects.equals(this.bastidor, other.bastidor);
+    }
+
+    
+
+    public int getNumeroPuertas() {
+
+        return numeroPuertas;
+
+    }
+
+    public void setNumeroPuertas(int numeroPuertas) {
+
+        this.numeroPuertas = numeroPuertas;
+
     }
     
+    public double getKilometros() {
+        return kilometros;
+    }
+
+    public void setKilometros(double kilometros) {
+        this.kilometros = kilometros;
+    }
+
+    public boolean isMarchaAutomatica() {
+        return marchaAutomatica;
+    }
+
+    public void setMarchaAutomatica(boolean marchaAutomatica) {
+        this.marchaAutomatica = marchaAutomatica;
+    }
+
     public Long getBastidor() {
 
         return bastidor;
@@ -160,18 +185,6 @@ public class Vehiculo {
 
     }
 
-    public String getColor() {
-
-        return color;
-
-    }
-
-    public void setColor(String color) {
-
-        this.color = color;
-
-    }
-
     public double getTarifa() {
 
         return tarifa;
@@ -196,20 +209,34 @@ public class Vehiculo {
 
     }
 
-     public void metodoVehiculo(){
-         
+    public void metodoVehiculo() {
+
         System.out.println("Método de vehículo");
-        
+
+    }
+
+    public String getAtributos() {
+
+        return matricula + ':' + ':' + kilometros + ':'
+                + bastidor + ':'
+                + marca + ':' + numeroPuertas + ':' 
+                + marchaAutomatica;
+
     }
     
-    public String getAtributos() {
-        
-        return "Vehiculo{" + "Bastidor -> " + bastidor
-                + ":Matricula -> " + matricula + ":Marca -> "
-                + marca + ":Modelo -> " + modelo
-                + ":Color -> " + color + ":Tarifa -> "
-                + tarifa + ":Disponible -> " + disponible + '}';
-        
-    }
+    /*
+    
+    private Long bastidor;
+    private String matricula;
+    private double kilometros;
+    private String marca;
+    private String modelo;
+    private String color;
+    private double tarifa;
+    private boolean disponible;
+    private boolean marchaAutomatica;
+    private int numeroPuertas;
+    
+    */
 
 }

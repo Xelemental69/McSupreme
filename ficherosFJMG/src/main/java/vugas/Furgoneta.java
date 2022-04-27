@@ -14,10 +14,12 @@ public class Furgoneta extends Vehiculo {
     private int volumen; // En m3
 
     public Furgoneta(int carga, int volumen, Long bastidor,
-            String matricula, String marca, String modelo,
-            String color, double tarifa, boolean disponible) {
+            String matricula, double kilometros, String marca, String modelo,
+             double tarifa, boolean disponible
+            , boolean marchaAutomatica, int numeroPuertas) {
         
-        super(bastidor, matricula, marca, modelo, color, tarifa, disponible);
+        super(bastidor, matricula, kilometros, marca, modelo, tarifa,
+                disponible, marchaAutomatica, numeroPuertas);
         this.carga = carga;
         this.volumen = volumen;
         
@@ -58,8 +60,7 @@ public class Furgoneta extends Vehiculo {
     @Override
     public String getAtributos() {
         
-        return super.getAtributos() + ":Furgoneta{" + "Carga -> "
-                + carga + ":Volumen -> " + volumen + '}';
+        return super.getAtributos() + ":" + carga + ":" + volumen;
         
     }   
     
@@ -67,6 +68,12 @@ public class Furgoneta extends Vehiculo {
         
         System.out.println("Este método es de la clase Furgoneta");
         
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Furgoneta{" + "carga=" + carga
+                + ", volumen=" + volumen + '}';
     }
     
 }
