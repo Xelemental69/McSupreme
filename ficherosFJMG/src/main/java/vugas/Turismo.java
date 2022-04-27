@@ -15,8 +15,7 @@ public class Turismo extends Vehiculo {
     // Constructor con parámetros de tanto esta clase como la clase padre
     public Turismo(String color, int numeroPuertas, Long bastidor, String matricula,
             double kilometros, String marca, String modelo,
-            double tarifa, boolean disponible, boolean marchaAutomatica,
-            int numeropuertas) {
+            double tarifa, boolean disponible, boolean marchaAutomatica) {
 
         // Primera línea de código de un constructor
         //clase hija es llamar al constructor padre
@@ -54,10 +53,12 @@ public class Turismo extends Vehiculo {
     }
     
     @Override
-    public String toString() {
+    public String getAtributos() {
 
-        return super.toString() + ":" + color;
+        return super.getAtributos() + ":" + color;
 
     }
+
+    
 
 }

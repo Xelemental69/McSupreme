@@ -217,19 +217,18 @@ public class Vehiculo {
 
     public String getAtributos() {
 
-        return matricula + ':' + ':' + kilometros + ':'
-                + bastidor + ':'
-                + marca + ':' + numeroPuertas + ':' 
-                + marchaAutomatica;
+        return matricula + ':'  + kilometros + ':'
+                + bastidor + ':' + marca + ':' + modelo
+                + ':' + numeroPuertas + ':' + marchaAutomatica
+                + ':' + tarifa + ':' + disponible;
 
     }
     
+    
+    
     /*
     
-    private Long bastidor;
-    private String matricula;
-    private double kilometros;
-    private String marca;
+    
     private String modelo;
     private String color;
     private double tarifa;
@@ -238,5 +237,7 @@ public class Vehiculo {
     private int numeroPuertas;
     
     */
+
+    
 
 }

@@ -21,7 +21,7 @@ public class Ej4_1 {
         String route = "vehiculos.txt";
 
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(route))) {
-            Concecionario concecionario = new Concecionario();
+            Concesionario concecionario = new Concesionario();
             for(Vehiculo vehiculo : concecionario.getVehiculos()){
                 String numero = "";
                 if(vehiculo instanceof Turismo){
@@ -32,7 +32,7 @@ public class Ej4_1 {
                     numero="2";
                 }
 
-                bw.write(numero+"-"+vehiculo.toString());
+                bw.write(numero+"-"+vehiculo.getAtributos());
                 bw.newLine();
             }
             bw.flush();

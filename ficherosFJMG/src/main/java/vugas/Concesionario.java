@@ -20,13 +20,24 @@ public class Concesionario {
             String[] marcas = {"Renault", "Seat", "Opel", "Mercedes", "Citroen"};
             Vehiculo vehiculo = null;
             if (i <=10) {
-                vehiculo = new Turismo("1231a", 123.4, "21312", marcas[rd.nextInt(marcas.length)], 4, false, "Blanco");
+                vehiculo = new Turismo("Blanco", 4, 21312l, "1231a", 123.4, marcas[rd.nextInt(marcas.length)], "Miami", 8.67, false, true);
             } else if (i <= 20 && i > 10) {
-                vehiculo = new Deportivo("1231a", 123.4, "21312", marcas[rd.nextInt(marcas.length)], 4, false, "Duros");
+                vehiculo = new Deportivo(7, 21312l, "1231a", 123.4, marcas[rd.nextInt(marcas.length)], "Runner", 8.67, false, true, 4);
             } else if (i <= 30 && i>20) {
-                vehiculo = new Furgoneta("1231a", 123.4, "21312", marcas[rd.nextInt(marcas.length)], 4, false);
+                vehiculo = new Furgoneta(55, 679, 21312l, "1231a", 123.4, marcas[rd.nextInt(marcas.length)], "FreeCandy", 8.67, false, true, 4);
             }
             vehiculos.add(vehiculo);
+            
+            /*
+            
+            (String matricula, double kilometros, String numeroBastidor, String marca)
+            
+            int carga, int volumen, Long bastidor,
+            String matricula, double kilometros, String marca, String modelo,
+             double tarifa, boolean disponible
+            , boolean marchaAutomatica, int numeroPuertas
+            
+            */
 
         }
     }

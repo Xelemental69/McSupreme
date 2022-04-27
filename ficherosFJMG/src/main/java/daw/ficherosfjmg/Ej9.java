@@ -81,40 +81,51 @@ public class Ej9 {
                 String linea = sc.nextLine();
                 String[] parts = linea.substring(2).split(":");
 
-                if (linea.charAt(0) == '0') { //Turismo
+                if(linea.charAt(0)=='0'){ //Turismo
+                                                            
                     Turismo turismo = new Turismo();
                     turismo.setMatricula(parts[0]);
                     turismo.setKilometros(Double.parseDouble(parts[1]));
                     turismo.setBastidor(Long.parseLong(parts[2]));
                     turismo.setMarca(parts[3]);
-                    turismo.setNumeroPuertas(Integer.parseInt(parts[4]));
-                    turismo.setMarchaAutomatica(Boolean.parseBoolean(parts[5]));
-                    turismo.setColor(parts[6]);
+                    turismo.setModelo(parts[4]);
+                    turismo.setTarifa(Double.parseDouble(parts[7]));
+                    turismo.setNumeroPuertas(Integer.parseInt(parts[5]));
+                    turismo.setDisponible(Boolean.parseBoolean(parts[8]));
+                    turismo.setMarchaAutomatica(Boolean.parseBoolean(parts[6]));
+                    turismo.setColor(parts[9]);
                     vehiculos.add(turismo);
 
-                } else if (linea.charAt(0) == '1') {//Deportivo
+                }else if(linea.charAt(0)=='1'){//Deportivo
                     
                     Deportivo deportivo = new Deportivo();
                     deportivo.setMatricula(parts[0]);
                     deportivo.setKilometros(Double.parseDouble(parts[1]));
                     deportivo.setBastidor(Long.parseLong(parts[2]));
                     deportivo.setMarca(parts[3]);
-                    deportivo.setNumeroPuertas(Integer.parseInt(parts[4]));
-                    deportivo.setMarchaAutomatica(Boolean.parseBoolean(parts[5]));
-                    deportivo.setCilindrada(Integer.parseInt(parts[6]));
+                    deportivo.setModelo(parts[4]);
+                    deportivo.setTarifa(Double.parseDouble(parts[7]));
+                    deportivo.setNumeroPuertas(Integer.parseInt(parts[5]));
+                    deportivo.setDisponible(Boolean.parseBoolean(parts[8]));
+                    deportivo.setMarchaAutomatica(Boolean.parseBoolean(parts[6]));
+                    deportivo.setCilindrada(Integer.parseInt(parts[9]));
                     vehiculos.add(deportivo);
                     
-                } else {//Furgoneta
-                    
+                }else{//Furgoneta
+                                        
                     Furgoneta furgoneta = new Furgoneta();
                     furgoneta.setMatricula(parts[0]);
                     furgoneta.setKilometros(Double.parseDouble(parts[1]));
                     furgoneta.setBastidor(Long.parseLong(parts[2]));
                     furgoneta.setMarca(parts[3]);
-                    furgoneta.setNumeroPuertas(Integer.parseInt(parts[4]));
-                    furgoneta.setMarchaAutomatica(Boolean.parseBoolean(parts[5]));
+                    furgoneta.setModelo(parts[4]);
+                    furgoneta.setTarifa(Double.parseDouble(parts[7]));
+                    furgoneta.setNumeroPuertas(Integer.parseInt(parts[5]));
+                    furgoneta.setDisponible(Boolean.parseBoolean(parts[8]));
+                    furgoneta.setMarchaAutomatica(Boolean.parseBoolean(parts[6]));
+                    furgoneta.setCarga(Integer.parseInt(parts[9]));
+                    furgoneta.setVolumen(Integer.parseInt(parts[10]));
                     vehiculos.add(furgoneta);
-                    
                 }
             }
 
