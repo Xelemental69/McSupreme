@@ -12,83 +12,33 @@ import vugas.*;
  *
  * @author fcoj
  */
-public class Ej4 {
+public class Ej4_1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        // Fichero a crear. Ruta relativa a la carpeta raíz del proyecto
-        String idfichero = "ej4.txt";//Archivo de texto a crear        
-        ArrayList <Vehiculo> vugas = new ArrayList<>();
-        int numCat = 8;
-        
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        vugas.add(new Furgoneta());
-        vugas.add(new Turismo());
-        vugas.add(new Deportivo());
-        
-        try ( BufferedWriter flujo = new BufferedWriter(new FileWriter(idfichero))) {
+        String route = "vehiculos.txt";
 
-            for(Vehiculo v : vugas){
-                
-                if(v instanceof Turismo){
-                    
-                    numCat = 0;
-                    
-                }else if (v instanceof Deportivo){
-                    
-                    numCat = 1;
-                    
-                }else if (v instanceof Furgoneta){
-                    
-                    numCat = 2;
-                    
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(route))) {
+            Concecionario concecionario = new Concecionario();
+            for(Vehiculo vehiculo : concecionario.getVehiculos()){
+                String numero = "";
+                if(vehiculo instanceof Turismo){
+                    numero="0";
+                }else if(vehiculo instanceof Deportivo){
+                    numero ="1";
+                } else if(vehiculo instanceof Furgoneta){
+                    numero="2";
                 }
-                
-                //Escribe el valor de linea:
-                flujo.write(numCat + " - " + v.getAtributos());
-                // Metodo newLine() añade línea en blanco
-                flujo.newLine();
-                
-            }
-            // Metodo flush() guarda cambios en disco 
-            flujo.flush();
 
+                bw.write(numero+"-"+vehiculo.toString());
+                bw.newLine();
+            }
+            bw.flush();
         } catch (IOException e) {
-            
-            System.out.println(e.getMessage());
-            
+            e.printStackTrace();
         }
-        
     }
     
 }

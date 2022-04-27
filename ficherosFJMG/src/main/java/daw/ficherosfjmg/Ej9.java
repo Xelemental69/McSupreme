@@ -1,34 +1,87 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package daw.ficherosfjmg;
-
-import java.io.*;
-import java.util.*;
-import vugas.*;
 
 /**
  *
  * @author fcoj
  */
-public class Ej7 {
+import java.util.*;
+import vugas.*;
+import java.io.*;
 
-    // Método que se encarga de abrir el fichero de ruta "idFichero"
-    // y carga los objetos Vehiculo en una lista, que devuelve
+public class Ej9 {
+
     public static void main(String[] args) {
+
+        ArrayList<Vehiculo> vehiculos = lectura();
+
+        escritura(vehiculos);
+
+    }
+
+    public static void escritura(ArrayList<Vehiculo> vehiculos) {
+        ArrayList<Vehiculo> turismos = new ArrayList<>();
+        ArrayList<Vehiculo> furgonetas = new ArrayList<>();
+        ArrayList<Vehiculo> deportivos = new ArrayList<>();
+
+        vehiculos.forEach(vehiculo -> {
+            
+            if (vehiculo instanceof Turismo) {
+                
+                turismos.add((Turismo) vehiculo);
+                
+            } else if (vehiculo instanceof Deportivo) {
+                
+                deportivos.add((Deportivo) vehiculo);
+                
+            } else if (vehiculo instanceof Furgoneta) {
+                
+                furgonetas.add((Furgoneta) vehiculo);
+                
+            }
+        });
+
+        escribirFile(turismos, "Turismos.txt");
+        escribirFile(furgonetas, "Furgonetas.txt");
+        escribirFile(deportivos, "Deportivos.txt");
+    }
+
+    private static void escribirFile(ArrayList<Vehiculo> vehiculos, String nombre) {
+        try ( BufferedWriter bw = new BufferedWriter(new FileWriter(nombre))) {
+            
+            for (Vehiculo vehiculo : vehiculos) {
+                
+                bw.write(vehiculo.toString());
+                bw.newLine();
+                
+            }
+            bw.flush();
+            
+        } catch (IOException e) {
+            
+            throw new RuntimeException(e);
+            
+        }
+    }
+
+    public static ArrayList<Vehiculo> lectura() {
         ArrayList<Vehiculo> vehiculos = new ArrayList<>();
 
         //Ruta
         String ruta = "vehiculos.txt";
 
         //Lectura
-        try(Scanner sc = new Scanner(new FileReader(ruta))){
-            while(sc.hasNextLine()){
+        try ( Scanner sc = new Scanner(new FileReader(ruta))) {
+            
+            while (sc.hasNextLine()) {
+                
                 String linea = sc.nextLine();
                 String[] parts = linea.substring(2).split(":");
 
-                if(linea.charAt(0)=='0'){ //Turismo
+                if (linea.charAt(0) == '0') { //Turismo
                     Turismo turismo = new Turismo();
                     turismo.setMatricula(parts[0]);
                     turismo.setKilometros(Double.parseDouble(parts[1]));
@@ -39,7 +92,8 @@ public class Ej7 {
                     turismo.setColor(parts[6]);
                     vehiculos.add(turismo);
 
-                }else if(linea.charAt(0)=='1'){//Deportivo
+                } else if (linea.charAt(0) == '1') {//Deportivo
+                    
                     Deportivo deportivo = new Deportivo();
                     deportivo.setMatricula(parts[0]);
                     deportivo.setKilometros(Double.parseDouble(parts[1]));
@@ -49,7 +103,9 @@ public class Ej7 {
                     deportivo.setMarchaAutomatica(Boolean.parseBoolean(parts[5]));
                     deportivo.setCilindrada(Integer.parseInt(parts[6]));
                     vehiculos.add(deportivo);
-                }else{//Furgoneta
+                    
+                } else {//Furgoneta
+                    
                     Furgoneta furgoneta = new Furgoneta();
                     furgoneta.setMatricula(parts[0]);
                     furgoneta.setKilometros(Double.parseDouble(parts[1]));
@@ -58,19 +114,17 @@ public class Ej7 {
                     furgoneta.setNumeroPuertas(Integer.parseInt(parts[4]));
                     furgoneta.setMarchaAutomatica(Boolean.parseBoolean(parts[5]));
                     vehiculos.add(furgoneta);
+                    
                 }
             }
 
         } catch (FileNotFoundException e) {
+            
             e.printStackTrace();
+            
         }
 
-        //ORDENAR POR MARCA
-        Comparator<Vehiculo> criterioMarca = (v1, v2) -> v1.getMarca().compareTo(v2.getMarca());
-        vehiculos.sort(criterioMarca);
-        vehiculos.forEach(coche->{
-            System.out.println(coche);
-        });
+        return vehiculos;
     }
-    
+
 }
