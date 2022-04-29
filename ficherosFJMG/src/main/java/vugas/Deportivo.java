@@ -13,11 +13,11 @@ public class Deportivo extends Vehiculo {
     private int cilindrada; // Atributo específico de Deportivo
 
     public Deportivo(int cilindrada, Long bastidor, String matricula,
-            double kilometros, String marca, String modelo,
+            double kilometros, String marca, String modelo, String color,
             double tarifa, boolean disponible, boolean marchaAutomatica,
             int numeroPuertas) {
 
-        super(bastidor, matricula, kilometros, marca, modelo, tarifa,
+        super(bastidor, matricula, kilometros, marca, modelo, color, tarifa,
                 disponible, marchaAutomatica, numeroPuertas);
 
         this.cilindrada = cilindrada;
