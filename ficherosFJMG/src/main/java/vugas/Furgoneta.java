@@ -15,10 +15,10 @@ public class Furgoneta extends Vehiculo {
 
     public Furgoneta(int carga, int volumen, Long bastidor,
             String matricula, double kilometros, String marca, String modelo,
-             double tarifa, boolean disponible
+            String color, double tarifa, boolean disponible
             , boolean marchaAutomatica, int numeroPuertas) {
         
-        super(bastidor, matricula, kilometros, marca, modelo, tarifa,
+        super(bastidor, matricula, kilometros, marca, modelo, color, tarifa,
                 disponible, marchaAutomatica, numeroPuertas);
         this.carga = carga;
         this.volumen = volumen;

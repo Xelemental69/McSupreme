@@ -10,20 +10,20 @@ package vugas;
  */
 public class Turismo extends Vehiculo {
 
-    private String color;
+    private String colorChapa;
 
     // Constructor con parámetros de tanto esta clase como la clase padre
-    public Turismo(String color, int numeroPuertas, Long bastidor, String matricula,
-            double kilometros, String marca, String modelo,
+    public Turismo(String colorChapa, int numeroPuertas, Long bastidor, String matricula,
+            double kilometros, String marca, String modelo, String color,
             double tarifa, boolean disponible, boolean marchaAutomatica) {
 
         // Primera línea de código de un constructor
         //clase hija es llamar al constructor padre
         //(para ello usamos super, que referencia al padre):
-        super(bastidor, matricula, kilometros, marca, modelo, tarifa,
+        super(bastidor, matricula, kilometros, marca, modelo, color, tarifa,
                 disponible, marchaAutomatica, numeroPuertas);
         
-        this.color = color;
+        this.colorChapa = colorChapa;
         
     }
 
@@ -33,19 +33,19 @@ public class Turismo extends Vehiculo {
 
         // Llama al constructor por defecto de Vehiculo
         super();
-        color = "Blanco";
+        colorChapa = "Blanco";
 
     }
     
-    public String getColor() {
+    public String getColorChapa() {
 
-        return color;
+        return colorChapa;
 
     }
 
     // Métodos propios de turismo
-    public void setColor(String color) {
-        this.color = color;
+    public void setColorChapa(String colorChapa) {
+        this.colorChapa = colorChapa;
     }
 
     public void metodoTurismo() {
@@ -55,7 +55,7 @@ public class Turismo extends Vehiculo {
     @Override
     public String getAtributos() {
 
-        return super.getAtributos() + ":" + color;
+        return super.getAtributos() + ":" + colorChapa;
 
     }
 

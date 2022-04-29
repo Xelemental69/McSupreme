@@ -21,9 +21,10 @@ public class Vehiculo {
     private boolean disponible;
     private boolean marchaAutomatica;
     private int numeroPuertas;
-
+    protected String color;
+    
     public Vehiculo(Long bastidor, String matricula, double kilometros,
-            String marca, String modelo,
+            String marca, String modelo, String color,
             double tarifa, boolean disponible, boolean marchaAutomatica,
             int numeroPuertas) {
 
@@ -32,6 +33,7 @@ public class Vehiculo {
         this.kilometros = kilometros;
         this.marca = marca;
         this.modelo = modelo;
+        this.color = color;
         this.tarifa = tarifa;
         this.disponible = disponible;
         this.marchaAutomatica = marchaAutomatica;
@@ -129,6 +131,14 @@ public class Vehiculo {
         this.kilometros = kilometros;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
     public boolean isMarchaAutomatica() {
         return marchaAutomatica;
     }
@@ -218,7 +228,7 @@ public class Vehiculo {
     public String getAtributos() {
 
         return matricula + ':'  + kilometros + ':'
-                + bastidor + ':' + marca + ':' + modelo
+                + bastidor + ':' + marca + ':' + modelo + ':' + color
                 + ':' + numeroPuertas + ':' + marchaAutomatica
                 + ':' + tarifa + ':' + disponible;
 
