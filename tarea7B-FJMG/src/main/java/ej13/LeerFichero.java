@@ -19,7 +19,7 @@ public class LeerFichero {
     public static ArrayList<App> leerArchivoJSON(String nombre) {
 
         //Creamos un ArrayList donde almacenar las apps y un ObjectMapper que
-        //ayudar· a extraer los datos:
+        //ayudar√° a extraer los datos:
         ArrayList<App> apps = new ArrayList<>();
         ObjectMapper mapeador = new ObjectMapper();
 

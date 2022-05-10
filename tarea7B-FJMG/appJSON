@@ -1,0 +1,301 @@
+[ {
+  "codigo" : 0,
+  "nombre" : "app0w",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 817.2783456408989,
+  "numeroDescargas" : 36010
+}, {
+  "codigo" : 1,
+  "nombre" : "app1h",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 442.7789689073115,
+  "numeroDescargas" : 30036
+}, {
+  "codigo" : 2,
+  "nombre" : "app2p",
+  "descripcion" : "App para reproducir musica",
+  "sizeKB" : 935.2222177038915,
+  "numeroDescargas" : 35674
+}, {
+  "codigo" : 3,
+  "nombre" : "app3h",
+  "descripcion" : "App de gestión de archivos",
+  "sizeKB" : 839.9330735708464,
+  "numeroDescargas" : 27243
+}, {
+  "codigo" : 4,
+  "nombre" : "app4b",
+  "descripcion" : "App para ver videos en streaming",
+  "sizeKB" : 713.4005553377243,
+  "numeroDescargas" : 34246
+}, {
+  "codigo" : 5,
+  "nombre" : "app5f",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 318.6417332237478,
+  "numeroDescargas" : 7853
+}, {
+  "codigo" : 6,
+  "nombre" : "app6s",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 533.9196796014257,
+  "numeroDescargas" : 46520
+}, {
+  "codigo" : 7,
+  "nombre" : "app7i",
+  "descripcion" : "App que actúa como una red social",
+  "sizeKB" : 286.0649926830105,
+  "numeroDescargas" : 26870
+}, {
+  "codigo" : 8,
+  "nombre" : "app8g",
+  "descripcion" : "App para ver videos en streaming",
+  "sizeKB" : 679.7214274150722,
+  "numeroDescargas" : 28911
+}, {
+  "codigo" : 9,
+  "nombre" : "app9t",
+  "descripcion" : "App para jugar",
+  "sizeKB" : 599.6304234292691,
+  "numeroDescargas" : 49268
+}, {
+  "codigo" : 10,
+  "nombre" : "app10e",
+  "descripcion" : "App para jugar",
+  "sizeKB" : 1006.7414183810102,
+  "numeroDescargas" : 38904
+}, {
+  "codigo" : 11,
+  "nombre" : "app11a",
+  "descripcion" : "App para reproducir musica",
+  "sizeKB" : 914.0722243727142,
+  "numeroDescargas" : 46376
+}, {
+  "codigo" : 12,
+  "nombre" : "app12a",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 104.8763260000067,
+  "numeroDescargas" : 45253
+}, {
+  "codigo" : 13,
+  "nombre" : "app13y",
+  "descripcion" : "App que actúa como una red social",
+  "sizeKB" : 755.2641190303813,
+  "numeroDescargas" : 21123
+}, {
+  "codigo" : 14,
+  "nombre" : "app14l",
+  "descripcion" : "App para jugar",
+  "sizeKB" : 1017.8772558989463,
+  "numeroDescargas" : 14890
+}, {
+  "codigo" : 15,
+  "nombre" : "app15p",
+  "descripcion" : "App para reproducir musica",
+  "sizeKB" : 175.86758008784142,
+  "numeroDescargas" : 1721
+}, {
+  "codigo" : 16,
+  "nombre" : "app16y",
+  "descripcion" : "App para reproducir musica",
+  "sizeKB" : 361.0636672849863,
+  "numeroDescargas" : 26826
+}, {
+  "codigo" : 17,
+  "nombre" : "app17w",
+  "descripcion" : "App para llevar las operaciones contabilidad de una empresa",
+  "sizeKB" : 582.0313322110267,
+  "numeroDescargas" : 10208
+}, {
+  "codigo" : 18,
+  "nombre" : "app18k",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 566.4046095907272,
+  "numeroDescargas" : 47422
+}, {
+  "codigo" : 19,
+  "nombre" : "app19k",
+  "descripcion" : "App para jugar",
+  "sizeKB" : 542.4683803287035,
+  "numeroDescargas" : 39249
+}, {
+  "codigo" : 20,
+  "nombre" : "app20w",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 757.0411638771939,
+  "numeroDescargas" : 20125
+}, {
+  "codigo" : 21,
+  "nombre" : "app21v",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 897.20152394365,
+  "numeroDescargas" : 29382
+}, {
+  "codigo" : 22,
+  "nombre" : "app22o",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 871.7269795100814,
+  "numeroDescargas" : 27781
+}, {
+  "codigo" : 23,
+  "nombre" : "app23r",
+  "descripcion" : "App de gestión de archivos",
+  "sizeKB" : 581.1077099556744,
+  "numeroDescargas" : 14106
+}, {
+  "codigo" : 24,
+  "nombre" : "app24u",
+  "descripcion" : "App para jugar",
+  "sizeKB" : 443.9400924092893,
+  "numeroDescargas" : 46896
+}, {
+  "codigo" : 25,
+  "nombre" : "app25s",
+  "descripcion" : "App para jugar",
+  "sizeKB" : 311.10728546430994,
+  "numeroDescargas" : 31756
+}, {
+  "codigo" : 26,
+  "nombre" : "app26n",
+  "descripcion" : "App para ver videos en streaming",
+  "sizeKB" : 410.5727534013836,
+  "numeroDescargas" : 23407
+}, {
+  "codigo" : 27,
+  "nombre" : "app27a",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 751.4332915673456,
+  "numeroDescargas" : 37227
+}, {
+  "codigo" : 28,
+  "nombre" : "app28l",
+  "descripcion" : "App de gestión de archivos",
+  "sizeKB" : 589.1321713738482,
+  "numeroDescargas" : 47986
+}, {
+  "codigo" : 29,
+  "nombre" : "app29m",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 468.88108794315895,
+  "numeroDescargas" : 22010
+}, {
+  "codigo" : 30,
+  "nombre" : "app30k",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 940.2885949249682,
+  "numeroDescargas" : 973
+}, {
+  "codigo" : 31,
+  "nombre" : "app31o",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 391.278466670214,
+  "numeroDescargas" : 25789
+}, {
+  "codigo" : 32,
+  "nombre" : "app32v",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 440.38322652573464,
+  "numeroDescargas" : 12053
+}, {
+  "codigo" : 33,
+  "nombre" : "app33a",
+  "descripcion" : "App de gestión de archivos",
+  "sizeKB" : 967.6313602815159,
+  "numeroDescargas" : 12202
+}, {
+  "codigo" : 34,
+  "nombre" : "app34v",
+  "descripcion" : "App que actúa como una red social",
+  "sizeKB" : 614.1620553512201,
+  "numeroDescargas" : 41440
+}, {
+  "codigo" : 35,
+  "nombre" : "app35x",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 477.48951619829813,
+  "numeroDescargas" : 44025
+}, {
+  "codigo" : 36,
+  "nombre" : "app36x",
+  "descripcion" : "App para reproducir musica",
+  "sizeKB" : 537.5280862436059,
+  "numeroDescargas" : 33064
+}, {
+  "codigo" : 37,
+  "nombre" : "app37d",
+  "descripcion" : "App para ver videos en streaming",
+  "sizeKB" : 498.04230042342135,
+  "numeroDescargas" : 12676
+}, {
+  "codigo" : 38,
+  "nombre" : "app38d",
+  "descripcion" : "App de gestión de archivos",
+  "sizeKB" : 497.50737781651003,
+  "numeroDescargas" : 34056
+}, {
+  "codigo" : 39,
+  "nombre" : "app39o",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 182.2937206073231,
+  "numeroDescargas" : 40983
+}, {
+  "codigo" : 40,
+  "nombre" : "app40o",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 687.9011802212655,
+  "numeroDescargas" : 19965
+}, {
+  "codigo" : 41,
+  "nombre" : "app41w",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 662.3813195708357,
+  "numeroDescargas" : 3888
+}, {
+  "codigo" : 42,
+  "nombre" : "app42i",
+  "descripcion" : "App para ver videos en streaming",
+  "sizeKB" : 204.2493478712774,
+  "numeroDescargas" : 15029
+}, {
+  "codigo" : 43,
+  "nombre" : "app43z",
+  "descripcion" : "App dedicada a la grabación de audio",
+  "sizeKB" : 424.69267335966356,
+  "numeroDescargas" : 19631
+}, {
+  "codigo" : 44,
+  "nombre" : "app44y",
+  "descripcion" : "App hecha para grabar la pantalla del dispositivo",
+  "sizeKB" : 880.7570016222669,
+  "numeroDescargas" : 20371
+}, {
+  "codigo" : 45,
+  "nombre" : "app45m",
+  "descripcion" : "App para reproducir musica",
+  "sizeKB" : 835.8991098589721,
+  "numeroDescargas" : 16855
+}, {
+  "codigo" : 46,
+  "nombre" : "app46r",
+  "descripcion" : "App para llevar las operaciones contabilidad de una empresa",
+  "sizeKB" : 184.73912499164788,
+  "numeroDescargas" : 10472
+}, {
+  "codigo" : 47,
+  "nombre" : "app47z",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 127.36493822954368,
+  "numeroDescargas" : 28155
+}, {
+  "codigo" : 48,
+  "nombre" : "app48x",
+  "descripcion" : "App que comprueba la hora dorada",
+  "sizeKB" : 610.9150093335318,
+  "numeroDescargas" : 46443
+}, {
+  "codigo" : 49,
+  "nombre" : "app49g",
+  "descripcion" : "App para llevar las operaciones contabilidad de una empresa",
+  "sizeKB" : 389.6062968399542,
+  "numeroDescargas" : 44449
+} ]

@@ -20,7 +20,7 @@ public class MainEj13 {
      */
     public static void main(String[] args) {
         
-        //Cogemos las App del fichero JSON del ejercicio 11, poniéndolas en
+        //Cogemos las App del fichero JSON del ejercicio 11, poniÃ©ndolas en
         //un ArrayList:
         ArrayList<App> appList = LeerFichero.leerArchivoJSON("appJSON");
         

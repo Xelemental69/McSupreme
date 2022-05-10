@@ -30,7 +30,7 @@ public class Main_B {
         String linea;
 
         //Estructura try-with-resources para leer el fichero:
-        try (Scanner datosFichero = new Scanner(new FileReader(idFichero))) {
+        try ( Scanner datosFichero = new Scanner(new FileReader(idFichero))) {
 
             while (datosFichero.hasNextLine()) {
 
@@ -72,7 +72,7 @@ public class Main_B {
                 .filter(hor -> hor.getCurso().equals("1ESOA"))//Nota: Se pueden poner ambos filtros en un .filter().
                 .filter(hor -> !hor.getAsignatura().equals("MUS"))
                 .collect(Collectors.toList());
-        
+
         System.out.println("A: Obtener todos los registros de 1ESOA que no son de Música"); //¿No son de música? SACRILEGIO
         a.forEach(System.out::println);
         System.out.println("---------------------------------------------------------------------------");
@@ -81,7 +81,7 @@ public class Main_B {
         long b = listaHorario.stream()
                 .filter(hor -> hor.getAsignatura().equals("PROGR"))
                 .count();//Para contar
-        
+
         System.out.println("B: Contar las horas que se imparten de Programación");
         System.out.println(b);
         System.out.println("---------------------------------------------------------------------------");
@@ -93,7 +93,7 @@ public class Main_B {
                 .map(hor -> hor.getInicialesProf())//Se ordenan alfabéticamente...
                 .sorted(Comparator.reverseOrder())//...para invertir el orden con esta línea.
                 .collect(Collectors.toList());
-        
+
         System.out.println("C: Obtener una lista con las iniciales del profesorado que imparte Religión,"
                 + " ordenadas en orden inverso al alfabético");
         c.forEach(System.out::println);
@@ -104,7 +104,7 @@ public class Main_B {
                 .filter(hor -> hor.getInicialesProf().equals("JFV"))
                 .map(hor -> hor.getAula())
                 .collect(Collectors.toList());
-        
+
         System.out.println("D: Obtener en una lista las aulas donde imparte clase Vico");
         d.forEach(System.out::println);
         System.out.println("---------------------------------------------------------------------------");
@@ -114,7 +114,7 @@ public class Main_B {
                 .map(hor -> hor.getAsignatura())
                 .distinct()
                 .count();
-        
+
         System.out.println("E: Contar el número de asignaturas distintas existentes");
         System.out.println(e);
         System.out.println("---------------------------------------------------------------------------");
@@ -123,7 +123,7 @@ public class Main_B {
         long f = listaHorario.stream()
                 .filter(hor -> hor.getHora() == 7)
                 .count();
-        
+
         System.out.println("F: Contar el total de horas impartidas a última hora de la mañana.");
         System.out.println(f);
         System.out.println("---------------------------------------------------------------------------");
@@ -134,7 +134,7 @@ public class Main_B {
                 .map(hor -> hor.getInicialesProf())
                 .distinct()
                 .collect(Collectors.toList());
-        
+
         System.out.println("G: Mostrar por consola los profesores que tienen clase a 1ª hora de la mañana.");
         g.forEach(System.out::println);
 

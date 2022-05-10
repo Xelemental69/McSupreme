@@ -15,8 +15,8 @@ public class MainEj11 {
 
     public static void main(String[] args) {
 
-        //Crea 50 aplicaciones por defecto, guard·ndolas en una lista
-        //y mostr·ndolas por pantalla.
+        //Crea 50 aplicaciones por defecto, guard√°ndolas en una lista
+        //y mostr√°ndolas por pantalla.
         List<App> listaApp = new ArrayList<>();
 
         for (int i = 0; i < 50; i++) {
@@ -27,13 +27,13 @@ public class MainEj11 {
 
         listaApp.forEach(System.out::println);
 
-        //Guarda los datos de todas las clases App de la lista, en un fichero de texto llamado aplicacionestxt.txt, dentro del directorio ì./appstxtî.
+        //Guarda los datos de todas las clases App de la lista, en un fichero de texto llamado aplicacionestxt.txt, dentro del directorio "./appstxt".
         EscribirFichero.escribirFichero("appstxt", listaApp);
         
-        //Guarda los datos de todas las clases App de la lista, en un fichero JSON llamado aplicacionesxml.json, dentro del directorio ì./appsjsonî.
+        //Guarda los datos de todas las clases App de la lista, en un fichero JSON llamado aplicacionesxml.json, dentro del directorio "./appsjson".
         EscribirFichero.escribirFicheroJSON("appJSON", listaApp);
 
-        //Guarda los datos de todas las clases App de la lista, en un fichero XML llamado aplicacionesxml.xml, dentro del directorio ì./appsxmlî.
+        //Guarda los datos de todas las clases App de la lista, en un fichero XML llamado aplicacionesxml.xml, dentro del directorio "./appsxml".
         EscribirFichero.escribirFicheroXML("appXML", listaApp);
     }
 }

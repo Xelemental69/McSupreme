@@ -33,7 +33,7 @@ public class Main_A {
         String linea;
 
         //Estructura try-with-resources para leer el fichero:
-        try (Scanner datosFichero = new Scanner(new FileReader(idFichero))) {
+        try ( Scanner datosFichero = new Scanner(new FileReader(idFichero))) {
 
             while (datosFichero.hasNextLine()) {
 
@@ -126,7 +126,9 @@ public class Main_A {
                 case 0:
 
                     //Conversión explícita de Object a String.
-                    opcion = (String) JOptionPane.showInputDialog(null, "Elija a un profesor: ", "ELEGIR", JOptionPane.QUESTION_MESSAGE, null, arrayInicialesProfesor, null);
+                    opcion = (String) JOptionPane.showInputDialog(null, "Elija a un profesor: ",
+                            "ELEGIR", JOptionPane.QUESTION_MESSAGE, null,
+                            arrayInicialesProfesor, null);
                     System.out.println("El profesor elegido es: " + opcion);
 
                     //Se declara la variable en la que almacenaré la ruta del fichero JSON, con las iniciales del profesor.
@@ -184,7 +186,8 @@ public class Main_A {
                         }
 
                     }   //Escribimos en un fichero CSV el objeto String seleccionado en el JOptionPane
-                    try (BufferedWriter flujo = new BufferedWriter(new FileWriter(idFicheroCSV))) {
+                    try ( BufferedWriter flujo
+                            = new BufferedWriter(new FileWriter(idFicheroCSV))) {
 
                         for (Horario h : guardarEnCSV) {
 
@@ -199,7 +202,8 @@ public class Main_A {
 
                         System.out.println(e.getMessage());
                     }
-                    System.out.println("Fichero " + idFicheroCSV + " creado correctamente.");
+                    System.out.println("Fichero " + idFicheroCSV
+                            + " creado correctamente.");
                     //Fin del bucle.
 
                     aux = false;

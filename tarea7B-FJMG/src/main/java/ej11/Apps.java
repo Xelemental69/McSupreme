@@ -12,12 +12,12 @@ package ej11;
 import javax.xml.bind.annotation.*;
 import java.util.*;
 
-//Ajustamos las anotaciones que tendr· la lista en XML:
+//Ajustamos las anotaciones que tendr√° la lista en XML:
 @XmlRootElement(name = "apps")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Apps {//Lista de aplicaciones
     
-    //Ajustamos las anotaciones que tendr· cada app en XML:
+    //Ajustamos las anotaciones que tendr√° cada app en XML:
     @XmlElement(name = "app",type = App.class)
     private List<App> appList = new ArrayList<>();
 

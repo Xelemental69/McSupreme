@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<apps>
+    <app>
+        <codigo>0</codigo>
+        <nombre>app0w</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>817.2783456408989</sizeKB>
+        <numDescargas>36010</numDescargas>
+    </app>
+    <app>
+        <codigo>1</codigo>
+        <nombre>app1h</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>442.7789689073115</sizeKB>
+        <numDescargas>30036</numDescargas>
+    </app>
+    <app>
+        <codigo>2</codigo>
+        <nombre>app2p</nombre>
+        <descripcion>App para reproducir musica</descripcion>
+        <sizeKB>935.2222177038915</sizeKB>
+        <numDescargas>35674</numDescargas>
+    </app>
+    <app>
+        <codigo>3</codigo>
+        <nombre>app3h</nombre>
+        <descripcion>App de gestión de archivos</descripcion>
+        <sizeKB>839.9330735708464</sizeKB>
+        <numDescargas>27243</numDescargas>
+    </app>
+    <app>
+        <codigo>4</codigo>
+        <nombre>app4b</nombre>
+        <descripcion>App para ver videos en streaming</descripcion>
+        <sizeKB>713.4005553377243</sizeKB>
+        <numDescargas>34246</numDescargas>
+    </app>
+    <app>
+        <codigo>5</codigo>
+        <nombre>app5f</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>318.6417332237478</sizeKB>
+        <numDescargas>7853</numDescargas>
+    </app>
+    <app>
+        <codigo>6</codigo>
+        <nombre>app6s</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>533.9196796014257</sizeKB>
+        <numDescargas>46520</numDescargas>
+    </app>
+    <app>
+        <codigo>7</codigo>
+        <nombre>app7i</nombre>
+        <descripcion>App que actúa como una red social</descripcion>
+        <sizeKB>286.0649926830105</sizeKB>
+        <numDescargas>26870</numDescargas>
+    </app>
+    <app>
+        <codigo>8</codigo>
+        <nombre>app8g</nombre>
+        <descripcion>App para ver videos en streaming</descripcion>
+        <sizeKB>679.7214274150722</sizeKB>
+        <numDescargas>28911</numDescargas>
+    </app>
+    <app>
+        <codigo>9</codigo>
+        <nombre>app9t</nombre>
+        <descripcion>App para jugar</descripcion>
+        <sizeKB>599.6304234292691</sizeKB>
+        <numDescargas>49268</numDescargas>
+    </app>
+    <app>
+        <codigo>10</codigo>
+        <nombre>app10e</nombre>
+        <descripcion>App para jugar</descripcion>
+        <sizeKB>1006.7414183810102</sizeKB>
+        <numDescargas>38904</numDescargas>
+    </app>
+    <app>
+        <codigo>11</codigo>
+        <nombre>app11a</nombre>
+        <descripcion>App para reproducir musica</descripcion>
+        <sizeKB>914.0722243727142</sizeKB>
+        <numDescargas>46376</numDescargas>
+    </app>
+    <app>
+        <codigo>12</codigo>
+        <nombre>app12a</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>104.8763260000067</sizeKB>
+        <numDescargas>45253</numDescargas>
+    </app>
+    <app>
+        <codigo>13</codigo>
+        <nombre>app13y</nombre>
+        <descripcion>App que actúa como una red social</descripcion>
+        <sizeKB>755.2641190303813</sizeKB>
+        <numDescargas>21123</numDescargas>
+    </app>
+    <app>
+        <codigo>14</codigo>
+        <nombre>app14l</nombre>
+        <descripcion>App para jugar</descripcion>
+        <sizeKB>1017.8772558989463</sizeKB>
+        <numDescargas>14890</numDescargas>
+    </app>
+    <app>
+        <codigo>15</codigo>
+        <nombre>app15p</nombre>
+        <descripcion>App para reproducir musica</descripcion>
+        <sizeKB>175.86758008784142</sizeKB>
+        <numDescargas>1721</numDescargas>
+    </app>
+    <app>
+        <codigo>16</codigo>
+        <nombre>app16y</nombre>
+        <descripcion>App para reproducir musica</descripcion>
+        <sizeKB>361.0636672849863</sizeKB>
+        <numDescargas>26826</numDescargas>
+    </app>
+    <app>
+        <codigo>17</codigo>
+        <nombre>app17w</nombre>
+        <descripcion>App para llevar las operaciones contabilidad de una empresa</descripcion>
+        <sizeKB>582.0313322110267</sizeKB>
+        <numDescargas>10208</numDescargas>
+    </app>
+    <app>
+        <codigo>18</codigo>
+        <nombre>app18k</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>566.4046095907272</sizeKB>
+        <numDescargas>47422</numDescargas>
+    </app>
+    <app>
+        <codigo>19</codigo>
+        <nombre>app19k</nombre>
+        <descripcion>App para jugar</descripcion>
+        <sizeKB>542.4683803287035</sizeKB>
+        <numDescargas>39249</numDescargas>
+    </app>
+    <app>
+        <codigo>20</codigo>
+        <nombre>app20w</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>757.0411638771939</sizeKB>
+        <numDescargas>20125</numDescargas>
+    </app>
+    <app>
+        <codigo>21</codigo>
+        <nombre>app21v</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>897.20152394365</sizeKB>
+        <numDescargas>29382</numDescargas>
+    </app>
+    <app>
+        <codigo>22</codigo>
+        <nombre>app22o</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>871.7269795100814</sizeKB>
+        <numDescargas>27781</numDescargas>
+    </app>
+    <app>
+        <codigo>23</codigo>
+        <nombre>app23r</nombre>
+        <descripcion>App de gestión de archivos</descripcion>
+        <sizeKB>581.1077099556744</sizeKB>
+        <numDescargas>14106</numDescargas>
+    </app>
+    <app>
+        <codigo>24</codigo>
+        <nombre>app24u</nombre>
+        <descripcion>App para jugar</descripcion>
+        <sizeKB>443.9400924092893</sizeKB>
+        <numDescargas>46896</numDescargas>
+    </app>
+    <app>
+        <codigo>25</codigo>
+        <nombre>app25s</nombre>
+        <descripcion>App para jugar</descripcion>
+        <sizeKB>311.10728546430994</sizeKB>
+        <numDescargas>31756</numDescargas>
+    </app>
+    <app>
+        <codigo>26</codigo>
+        <nombre>app26n</nombre>
+        <descripcion>App para ver videos en streaming</descripcion>
+        <sizeKB>410.5727534013836</sizeKB>
+        <numDescargas>23407</numDescargas>
+    </app>
+    <app>
+        <codigo>27</codigo>
+        <nombre>app27a</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>751.4332915673456</sizeKB>
+        <numDescargas>37227</numDescargas>
+    </app>
+    <app>
+        <codigo>28</codigo>
+        <nombre>app28l</nombre>
+        <descripcion>App de gestión de archivos</descripcion>
+        <sizeKB>589.1321713738482</sizeKB>
+        <numDescargas>47986</numDescargas>
+    </app>
+    <app>
+        <codigo>29</codigo>
+        <nombre>app29m</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>468.88108794315895</sizeKB>
+        <numDescargas>22010</numDescargas>
+    </app>
+    <app>
+        <codigo>30</codigo>
+        <nombre>app30k</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>940.2885949249682</sizeKB>
+        <numDescargas>973</numDescargas>
+    </app>
+    <app>
+        <codigo>31</codigo>
+        <nombre>app31o</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>391.278466670214</sizeKB>
+        <numDescargas>25789</numDescargas>
+    </app>
+    <app>
+        <codigo>32</codigo>
+        <nombre>app32v</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>440.38322652573464</sizeKB>
+        <numDescargas>12053</numDescargas>
+    </app>
+    <app>
+        <codigo>33</codigo>
+        <nombre>app33a</nombre>
+        <descripcion>App de gestión de archivos</descripcion>
+        <sizeKB>967.6313602815159</sizeKB>
+        <numDescargas>12202</numDescargas>
+    </app>
+    <app>
+        <codigo>34</codigo>
+        <nombre>app34v</nombre>
+        <descripcion>App que actúa como una red social</descripcion>
+        <sizeKB>614.1620553512201</sizeKB>
+        <numDescargas>41440</numDescargas>
+    </app>
+    <app>
+        <codigo>35</codigo>
+        <nombre>app35x</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>477.48951619829813</sizeKB>
+        <numDescargas>44025</numDescargas>
+    </app>
+    <app>
+        <codigo>36</codigo>
+        <nombre>app36x</nombre>
+        <descripcion>App para reproducir musica</descripcion>
+        <sizeKB>537.5280862436059</sizeKB>
+        <numDescargas>33064</numDescargas>
+    </app>
+    <app>
+        <codigo>37</codigo>
+        <nombre>app37d</nombre>
+        <descripcion>App para ver videos en streaming</descripcion>
+        <sizeKB>498.04230042342135</sizeKB>
+        <numDescargas>12676</numDescargas>
+    </app>
+    <app>
+        <codigo>38</codigo>
+        <nombre>app38d</nombre>
+        <descripcion>App de gestión de archivos</descripcion>
+        <sizeKB>497.50737781651003</sizeKB>
+        <numDescargas>34056</numDescargas>
+    </app>
+    <app>
+        <codigo>39</codigo>
+        <nombre>app39o</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>182.2937206073231</sizeKB>
+        <numDescargas>40983</numDescargas>
+    </app>
+    <app>
+        <codigo>40</codigo>
+        <nombre>app40o</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>687.9011802212655</sizeKB>
+        <numDescargas>19965</numDescargas>
+    </app>
+    <app>
+        <codigo>41</codigo>
+        <nombre>app41w</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>662.3813195708357</sizeKB>
+        <numDescargas>3888</numDescargas>
+    </app>
+    <app>
+        <codigo>42</codigo>
+        <nombre>app42i</nombre>
+        <descripcion>App para ver videos en streaming</descripcion>
+        <sizeKB>204.2493478712774</sizeKB>
+        <numDescargas>15029</numDescargas>
+    </app>
+    <app>
+        <codigo>43</codigo>
+        <nombre>app43z</nombre>
+        <descripcion>App dedicada a la grabación de audio</descripcion>
+        <sizeKB>424.69267335966356</sizeKB>
+        <numDescargas>19631</numDescargas>
+    </app>
+    <app>
+        <codigo>44</codigo>
+        <nombre>app44y</nombre>
+        <descripcion>App hecha para grabar la pantalla del dispositivo</descripcion>
+        <sizeKB>880.7570016222669</sizeKB>
+        <numDescargas>20371</numDescargas>
+    </app>
+    <app>
+        <codigo>45</codigo>
+        <nombre>app45m</nombre>
+        <descripcion>App para reproducir musica</descripcion>
+        <sizeKB>835.8991098589721</sizeKB>
+        <numDescargas>16855</numDescargas>
+    </app>
+    <app>
+        <codigo>46</codigo>
+        <nombre>app46r</nombre>
+        <descripcion>App para llevar las operaciones contabilidad de una empresa</descripcion>
+        <sizeKB>184.73912499164788</sizeKB>
+        <numDescargas>10472</numDescargas>
+    </app>
+    <app>
+        <codigo>47</codigo>
+        <nombre>app47z</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>127.36493822954368</sizeKB>
+        <numDescargas>28155</numDescargas>
+    </app>
+    <app>
+        <codigo>48</codigo>
+        <nombre>app48x</nombre>
+        <descripcion>App que comprueba la hora dorada</descripcion>
+        <sizeKB>610.9150093335318</sizeKB>
+        <numDescargas>46443</numDescargas>
+    </app>
+    <app>
+        <codigo>49</codigo>
+        <nombre>app49g</nombre>
+        <descripcion>App para llevar las operaciones contabilidad de una empresa</descripcion>
+        <sizeKB>389.6062968399542</sizeKB>
+        <numDescargas>44449</numDescargas>
+    </app>
+</apps>

@@ -21,7 +21,7 @@ public class EscribirFichero {
         
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(nombreFichero))) {
             
-            for (App app : datos) {//Escribimos cada app por su toString() (1 por lÌnea):
+            for (App app : datos) {//Escribimos cada app por su toString() (1 por l√≠nea):
                 
                 bw.write(app.toString());
                 bw.newLine();
@@ -66,7 +66,7 @@ public class EscribirFichero {
 
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-            //Con el Marshaller, lo escrito ser· puesto en XML directamente:
+            //Con el Marshaller, lo escrito ser√° puesto en XML directamente:
             jaxbMarshaller.marshal(listaApps, new File(nombre));
 
 

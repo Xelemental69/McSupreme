@@ -28,7 +28,7 @@ public class LeerFichero {
             // Crea el objeto Unmarshaller
             Unmarshaller um = contexto.createUnmarshaller();
 
-            // Llama al método de unmarshalling, extrayendo los datos de la clase
+            // Llama al mÃ©todo de unmarshalling, extrayendo los datos de la clase
             Apps apps = (Apps) um.unmarshal(new File(nombreFichero));
             appList.addAll(apps.getAppList());
             

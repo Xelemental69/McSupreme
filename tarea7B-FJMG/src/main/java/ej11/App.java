@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.*;
 import java.util.*;
 import java.util.stream.*;
 
-//Ajustamos las anotaciones que tendrá cada app en XML:
+//Ajustamos las anotaciones que tendrï¿½ cada app en XML:
 @XmlRootElement(name = "app")
 @XmlAccessorType(XmlAccessType.FIELD)
 
@@ -29,10 +29,10 @@ public class App {
     private static int instances;
     private static Random rng = new Random();
     private static String[] descripciones = {"App para reproducir musica",
-        "App para la edición de fotos", "App que comprueba la hora dorada",
-        "App dedicada a la grabación de audio",
+        "App para la ediciÃ³n de fotos", "App que comprueba la hora dorada",
+        "App dedicada a la grabaciÃ³n de audio",
         "App hecha para grabar la pantalla del dispositivo",
-        "App de gestión de archivos", "App que actúa como una red social",
+        "App de gestiÃ³n de archivos", "App que actÃºa como una red social",
         "App para jugar", "App para ver videos en streaming",
         "App para llevar las operaciones contabilidad de una empresa"};
 
@@ -44,29 +44,29 @@ public class App {
         this.descripcion = descripciones[rng.nextInt(descripciones.length)];
         DoubleStream dobles = rng.doubles(1, 100.0, 1024.0);
 
-        //NOTA: Solo puedo permitirme hacer la siguiente línea porque
-        //el tamaño del DoubleStream es 1,si llegase a ser mayor el tamaño,
-        // no tendría ni idea de cómo hacer esto
+        //NOTA: Solo puedo permitirme hacer la siguiente lÃ­nea porque
+        //el tamaÃ±o del DoubleStream es 1,si llegase a ser mayor el tamaÃ±o,
+        // no tendrÃ­a ni idea de cÃ³mo hacer esto
         this.sizeKB = dobles.reduce(0, Double::sum);
 
         IntStream enteros = rng.ints(1, 0, 50000);
 
-        //NOTA: Solo puedo permitirme hacer la siguiente línea porque
-        //el tamaño del IntStream es 1,si llegase a ser mayor el tamaño,
-        // no tendría ni idea de cómo hacer esto
-        this.numDescargas = enteros.min().getAsInt();
+        //NOTA: Solo puedo permitirme hacer la siguiente lÃ­nea porque
+        //el tamaÃ±o del IntStream es 1,si llegase a ser mayor el tamaÃ±o,
+        // no tendrÃ­a ni idea de cÃ³mo hacer esto
+        this.numDescargas = enteros.reduce(0, Integer::sum);
 
         instances++;
         
     }
 
-    public App(int codigo, String nombre, String descripcion,
-            double tamañoKB, int numeroDescargas) {//Parametrizado
+    public App(String nombre, String descripcion,
+            double sizeKB, int numeroDescargas) {//Parametrizado
         
-        this.codigo = codigo;
+        this.codigo = instances;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.sizeKB = tamañoKB;
+        this.sizeKB = sizeKB;
         this.numDescargas = numeroDescargas;
         instances++;
     }
@@ -109,15 +109,15 @@ public class App {
 
     }
 
-    public double getTamañoKB() {
+    public double getsizeKB() {
 
         return sizeKB;
 
     }
 
-    public void setTamañoKB(double tamañoKB) {
+    public void setsizeKB(double sizeKB) {
 
-        this.sizeKB = tamañoKB;
+        this.sizeKB = sizeKB;
 
     }
 
@@ -142,7 +142,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-    //Este main nos servirá para comprobar la clase:
+    //Este main nos servirÃ¡ para comprobar la clase:
         
         App ap1 = new App();
         System.out.println(ap1);
