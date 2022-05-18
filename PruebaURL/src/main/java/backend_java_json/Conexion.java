@@ -28,7 +28,6 @@ public class Conexion {
 
                 // Se crea el objeto Connection	
                 instancia = DriverManager.getConnection(SERVIDOR + NOMBRE_BASE_DATOS, USER, PASS);
-
                 System.out.println("Conexión realizada con éxito.");
 
             } catch (SQLException e) {
